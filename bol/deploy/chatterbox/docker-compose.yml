@@ -1,0 +1,58 @@
+﻿# Wraps devnen/Chatterbox-TTS-Server (https://github.com/devnen/Chatterbox-TTS-Server) —
+# see README.md in this directory for setup. Builds from a local clone of that
+# repo (./vendor) rather than a prebuilt image: devnen doesn't publish an
+# official image, and the third-party Docker Hub mirrors that exist aren't
+# something to point a production deploy at sight-unseen — building from the
+# repo's own Dockerfile is the trustworthy path.
+#
+# Deliberately kept OUT of the main docker-compose.yml at the repo root: this
+# needs an NVIDIA GPU the API/worker don't, and the model download makes it
+# slow and fragile to bring up alongside an app deploy. Once running, point
+# BOL at it with CHATTERBOX_BASE_URL=http://<this-host>:8004/v1 in .env.
+
+services:
+  chatterbox-tts-server:
+    build:
+      context: ./vendor
+      dockerfile: Dockerfile
+      args:
+        - RUNTIME=nvidia
+    ports:
+      # Bind to localhost or a private network only, or put this behind
+      # auth — see the "Network" section in README.md. The OpenAI-compatible
+      # endpoint has no authentication of its own.
+      - "8004:8004"
+    volumes:
+      - ./config.yaml:/app/config.yaml
+      - ./voices:/app/voices
+      - ./vendor/reference_audio:/app/reference_audio
+      - ./vendor/outputs:/app/outputs
+      - ./vendor/logs:/app/logs
+      # Named volume so the model download survives container rebuilds.
+      - hf_cache:/app/hf_cache
+
+    # GPU reservation — see README.md if this errors with "CDI device
+    # injection failed" on an older Docker Compose (use `runtime: nvidia`
+    # instead, per upstream's own compose file).
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+    restart: unless-stopped
+    environment:
+      - HF_HUB_ENABLE_HF_TRANSFER=1
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8004/api/model-info"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 120s
+
+volumes:
+  hf_cache:

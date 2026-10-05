@@ -1,0 +1,22 @@
+node_modules/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.venv/
+dist/
+build/
+.DS_Store
+.next/
+*.tsbuildinfo
+.pytest_cache/
+frontend/.next/
+*.egg-info/
+
+# Cloned upstream source + runtime data for the optional self-hosted
+# Chatterbox TTS server — see deploy/chatterbox/README.md.
+deploy/chatterbox/vendor/
+deploy/chatterbox/voices/
+
+

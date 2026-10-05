@@ -1,0 +1,30 @@
+# LiveKit agent worker process. No public port — never listens on HTTP.
+# Talks to the API service exclusively via API_BASE_URL (see
+# worker/api_client.py); never opens its own DB connection.
+FROM python:3.12-slim
+
+# livekit-plugins-silero's VAD model and fastembed both use onnxruntime,
+# which dlopens libgomp.so.1 at import time — not present in the slim base
+# image. Without it, prewarm() (worker/agent.py) fails on the very first job.
+RUN apt-get update && apt-get install -y --no-install-recommends libgomp1 \
+    && rm -rf /var/lib/apt/lists/*
+
+ENV PYTHONUNBUFFERED=1
+
+WORKDIR /app
+
+RUN pip install --no-cache-dir uv
+
+# See backend/Dockerfile for why source is copied before install (not a
+# deps-only-then-source split) — same non-editable-install reasoning.
+COPY . .
+RUN uv pip install --system ".[worker]"
+
+# Bakes LiveKit's bundled models (Silero VAD, turn detector) into the image
+# — without this, the first job after every deploy pays for a runtime
+# download instead of the greeting playing immediately. Invoked against
+# livekit.agents directly, not `worker.agent download-files` (deprecated
+# as of livekit-agents 1.5.10, and only auto-discovers plugins this way).
+RUN python -m livekit.agents download-files
+
+CMD ["python", "-m", "worker.agent", "start"]

@@ -1,0 +1,17 @@
+# Never bake real secrets into an image layer — backend/.env exists on disk
+# for local dev (gitignored, but not docker-ignored without this).
+.env
+.env.*
+!.env.example
+
+.venv
+__pycache__
+*.pyc
+.pytest_cache
+.ruff_cache
+*.egg-info
+
+tests
+.git
+.gitignore
+README.md

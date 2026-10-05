@@ -1,16 +1,8 @@
-.env
-.env.local
-.env.*.local
-.venv/
-venv/
-__pycache__/
-*.pyc
-.pytest_cache/
-.ruff_cache/
-*.egg-info/
+.claude/
 
-node_modules/
-.next/
-out/
+# Local SeaweedFS binary (over GitHub 100 MB limit) and its runtime data
+bol/deploy/minio/bin/
+bol/deploy/minio/data/
 
-.DS_Store
+# Unreviewed: may hold storage credentials
+bol/deploy/minio/s3-config.json

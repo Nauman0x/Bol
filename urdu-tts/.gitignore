@@ -1,0 +1,9 @@
+piper1-gpl/
+data/
+runs/
+checkpoints/
+voices/
+samples/
+export/
+__pycache__/
+.pytest_cache/
