@@ -90,10 +90,23 @@ Detach with `Ctrl-b d`, re-attach with `tmux attach -t train`. Watch progress wi
 
 - Out of memory: `BATCH=12 scripts/train.sh start` (or 8).
 - Spare VRAM in `nvidia-smi`: try `BATCH=24`.
-- **Interrupted** (reboot, crash, Ctrl-C): `scripts/train.sh resume` continues from the newest checkpoint.
-- Copy the newest checkpoint somewhere safe about twice a day.
+- **Interrupted** (reboot, crash, Ctrl-C): `scripts/train.sh resume` continues from the newest intact checkpoint.
 
 Stop Windows from sleeping while this runs.
+
+### Surviving a power cut
+
+Training saves a checkpoint at the end of every epoch, and `train.sh` copies one to `runs/backup/` every 30 minutes, keeping the last 3. After a power cut it continues from the newest checkpoint that is not damaged, so you lose the epoch that was in progress, not the run. A checkpoint that was half-written when the power went is detected and skipped.
+
+To make the restart happen without you, instead of starting training in tmux:
+
+1. In Windows PowerShell, from this folder: `powershell -ExecutionPolicy Bypass -File install_autostart.ps1`, then `Start-ScheduledTask -TaskName UrduTTS-Train`. From now on training resumes every time you log on to Windows.
+2. BIOS: set "Restore on AC Power Loss" (or "AC Back") to "Power On", so the PC boots when power returns.
+3. Windows: turn on automatic sign-in (`netplwiz`), so the logon happens without you. Without this, training resumes when you next sign in.
+
+Follow progress with `wsl -d Ubuntu-24.04 -- tail -f ~/urdu-tts/runs/train.log`. Stop training with `wsl -d Ubuntu-24.04 -- pkill -INT -f piper.train`. When training is finished, remove the task, or it will start training again at the next logon: `powershell -ExecutionPolicy Bypass -File install_autostart.ps1 -Remove`.
+
+Test it once before relying on it: with training running, restart the PC and check that `train.log` shows it continuing from a checkpoint in `runs/`, not from the base checkpoint.
 
 ## 6. Evaluate
 
