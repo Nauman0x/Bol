@@ -9,9 +9,18 @@
 #
 # Run from the urdu-tts folder. Override with env vars:
 #   DATA=data/s2 VOICE=ur_PK-bol-medium BATCH=16 BASE_CKPT=... scripts/train.sh start
+# or put the same assignments in ./train.env, which every run (including the
+# autostart task) reads. Variables set on the command line win over train.env.
 set -euo pipefail
 
 MODE="${1:-}"
+if [ -f train.env ]; then
+    for var in DATA VOICE BATCH BASE_CKPT RUNS BACKUP_EVERY_MIN BACKUP_KEEP; do
+        [ -n "${!var:-}" ] && continue
+        value="$(sed -n "s/^$var=//p" train.env | tail -n 1)"
+        [ -n "$value" ] && export "$var=$value"
+    done
+fi
 DATA="${DATA:-data/s2}"
 VOICE="${VOICE:-ur_PK-bol-medium}"
 BATCH="${BATCH:-16}"
@@ -62,7 +71,8 @@ fit() {
     echo "$(date '+%F %T') mode=$MODE csv=$csv batch=$BATCH checkpoint=$ckpt"
     # max_epochs -1: the base checkpoint is already past epoch 3000, so any finite
     # default would end training immediately. Stop it yourself when quality plateaus.
-    "$@" python3 -m piper.train fit \
+    # piper_train_fit.py is piper.train minus its val_mos checkpoint, which crashes without torchaudio.
+    "$@" python3 scripts/piper_train_fit.py fit \
         --data.voice_name "$VOICE" \
         --data.csv_path "$csv" \
         --data.audio_dir "$DATA/wavs/" \
@@ -73,6 +83,8 @@ fit() {
         --data.batch_size "$BATCH" \
         --trainer.default_root_dir "$RUNS" \
         --trainer.max_epochs -1 \
+        --trainer.log_every_n_steps 10 \
+        --model.mos_metric none \
         --ckpt_path "$ckpt"
 }
 

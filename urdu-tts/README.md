@@ -61,6 +61,18 @@ python scripts/download_data.py --voice 2 --out data/raw_v2 --hours 15
 
 This downloads shards one at a time and keeps only clips that clearly match that voice, stopping at `--hours` of audio. Rerun the same command to resume after an interruption. Use `data/raw_v2` / `data/v2` in place of `data/raw_s2` / `data/s2` below, and pass `DATA=data/v2` to `train.sh`.
 
+### Casual voice instead (what this project uses)
+
+URDUTTS is formal audiobook narration. For everyday, code-switched Urdu use one speaker of [`ASLP-lab/UrduSpeech`](https://huggingface.co/datasets/ASLP-lab/UrduSpeech) (CC BY 4.0; podcasts, interviews, vlogs). Speakers are diarized per category; the largest have 1-1.5 h. This project uses podcast `SPEAKER_0038`:
+
+```sh
+python scripts/download_aslp.py --category podcast --speaker SPEAKER_0038 --out data/raw_p38
+python scripts/prepare_dataset.py --raw data/raw_p38 --out data/p38 --allow-latin --max-sec 30 --test-size 20
+printf 'DATA=data/p38\nBATCH=8\n' > train.env
+```
+
+`download_aslp.py` drops clips that do not sound like the speaker (diarization errors; see `speaker_check.tsv`). `--allow-latin` keeps English words written in Latin script, which espeak-ng reads as English inside Urdu sentences. `--max-sec 30` keeps the long podcast turns, which need `BATCH=8` on a 12 GB card. `train.env` makes every `train.sh` run, including the autostart task, use this dataset.
+
 ## 4. Prepare
 
 ```sh
@@ -77,7 +89,7 @@ Smoke run first (10 minutes on 200 clips):
 scripts/train.sh smoke
 ```
 
-It should log falling losses and leave a checkpoint under `runs/smoke/lightning_logs/`. Exit code 124 is the expected timeout. Then the real run, inside tmux so it survives closing the terminal:
+It should log falling losses and leave a checkpoint under `runs/smoke/lightning_logs/`; it stops itself after 10 minutes. Check that resuming works: `RUNS=runs/smoke scripts/train.sh resume` should print `checkpoint=runs/smoke/...`; stop it with Ctrl-C. Then the real run, inside tmux so it survives closing the terminal:
 
 ```sh
 tmux new -s train
@@ -159,5 +171,5 @@ Expect a few hours of training. Only train on a voice you have consent to use.
 These are checked by the steps above rather than assumed:
 
 - How cleanly the four URDUTTS voices separate (`--cluster` prints a silhouette score and per-voice similarity; listen to the samples).
-- Piper's training flags beyond those in its [TRAINING.md](https://github.com/OHF-Voice/piper1-gpl/blob/main/docs/TRAINING.md): `train.sh` also passes the standard Lightning flags `--trainer.default_root_dir` and `--trainer.max_epochs`. If the smoke run rejects a flag, check `python3 -m piper.train fit --help`.
+- Training starts through `scripts/piper_train_fit.py`, which is `piper.train` without its `val_mos` checkpoint: that needs torchaudio, which has no build for the torch version RTX 50xx cards require, and Lightning aborts after the first epoch without it.
 - Training time and VRAM figures are estimates.
