@@ -46,22 +46,20 @@ export PYTHONPATH=scripts
 
 ## 3. Download the dataset
 
-```sh
-python scripts/download_data.py --inspect
-```
-
-If it says the dataset is gated, accept the terms on the Hugging Face page and run `hf auth login`. Check the printed columns and speaker names, then pull a few clips of each candidate speaker and listen:
+The public release is [`kaab4321/UrduTTS`](https://huggingface.co/datasets/kaab4321/UrduTTS) (not gated): about 29 GB of 44.1 kHz clips in ~500 MB shards. It has four male speakers but **no speaker labels**, so the script recovers them by clustering speaker embeddings.
 
 ```sh
-python scripts/download_data.py --speaker 1 --limit 20 --out data/listen_s1
-python scripts/download_data.py --speaker 2 --limit 20 --out data/listen_s2
+python scripts/download_data.py --inspect                 # splits, shard sizes, columns
+python scripts/download_data.py --cluster --shards 2      # ~1 GB; finds the 4 voices
 ```
 
-The speaker value must match what `--inspect` printed. Pick the cleaner, more pleasant voice, then download it in full:
+`--cluster` saves the voice centroids to `data/voices.npz` and writes the 20 most typical clips of each voice to `data/listen_v1` ... `data/listen_v4` (in Windows: `\\wsl$\Ubuntu-24.04\home\<user>\urdu-tts\data\`). Listen, pick the cleaner, more pleasant voice, then extract it:
 
 ```sh
-python scripts/download_data.py --speaker 2 --out data/raw_s2
+python scripts/download_data.py --voice 2 --out data/raw_v2 --hours 15
 ```
+
+This downloads shards one at a time and keeps only clips that clearly match that voice, stopping at `--hours` of audio. Rerun the same command to resume after an interruption. Use `data/raw_v2` / `data/v2` in place of `data/raw_s2` / `data/s2` below, and pass `DATA=data/v2` to `train.sh`.
 
 ## 4. Prepare
 
@@ -160,6 +158,6 @@ Expect a few hours of training. Only train on a voice you have consent to use.
 
 These are checked by the steps above rather than assumed:
 
-- URDUTTS column names and whether the Hugging Face repo is gated (`--inspect` shows both).
+- How cleanly the four URDUTTS voices separate (`--cluster` prints a silhouette score and per-voice similarity; listen to the samples).
 - Piper's training flags beyond those in its [TRAINING.md](https://github.com/OHF-Voice/piper1-gpl/blob/main/docs/TRAINING.md): `train.sh` also passes the standard Lightning flags `--trainer.default_root_dir` and `--trainer.max_epochs`. If the smoke run rejects a flag, check `python3 -m piper.train fit --help`.
 - Training time and VRAM figures are estimates.
