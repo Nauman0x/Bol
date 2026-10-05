@@ -1,0 +1,17 @@
+I'm fine-tuning an Urdu text-to-speech voice with Piper on this PC. Everything is in the urdu-tts/ folder of this repo. Read urdu-tts/README.md first: it is the runbook, and the scripts it refers to are in urdu-tts/scripts/.
+
+Context:
+- This PC is Windows with an NVIDIA GPU (10-12 GB VRAM). Training must run inside WSL2 Ubuntu 24.04, which I have already installed. Start by confirming `wsl nvidia-smi` shows the GPU and tell me the card, VRAM and free disk space.
+- The scripts were written on a laptop with no GPU. Only the text normaliser (scripts/normalize_ur.py) and the checkpoint-validity check in scripts/train.sh have been tested. The download, audio preparation, training, synthesis, evaluation and export scripts have never been run, so expect to fix things as they fail. Fix the scripts in the repo rather than working around them.
+- Two things were guessed and need checking against reality: the column and speaker names of the Hugging Face dataset XKaab/URDUTTS (run download_data.py --inspect before anything else touches the data), and the two extra Lightning flags in scripts/train.sh (--trainer.default_root_dir, --trainer.max_epochs). If Piper rejects a flag, check `python3 -m piper.train fit --help` and the current docs/TRAINING.md in the piper1-gpl repo.
+- This is a non-commercial final-year project, so the CC BY-NC dataset is fine.
+
+What I want:
+1. Work through the README steps in order: copy urdu-tts into the WSL home directory (~/urdu-tts, not /mnt/c), run setup_wsl.sh, download, prepare, smoke run, then the full training run.
+2. Stop and ask me at these points: when sudo needs my password, if the dataset is gated and needs a Hugging Face login, and after downloading 20 sample clips each of speaker 1 and speaker 2 so I can listen and choose the voice. Tell me where the sample files are in Windows Explorer terms (\\wsl$\...).
+3. Do not start the full training run until the 10-minute smoke run has logged losses, written a checkpoint, and `scripts/train.sh resume` has been shown to pick that checkpoint up.
+4. Training must survive power cuts. Use the "Surviving a power cut" section of the README: once the smoke run passes, start the full run through install_autostart.ps1 and the scheduled task (scripts/train.sh auto), not a plain tmux session. The scheduled task and the auto mode have never been run, so test them: with training running, restart the PC, then confirm runs/train.log shows it resuming from a checkpoint under runs/ and not from the base checkpoint. Also confirm that copies appear in runs/backup/. Tell me which BIOS and Windows sign-in settings I still need to change myself for a fully unattended restart.
+5. Once full training is running, tell me how to check on it and how to stop it, and render the sentences in urdu-tts/sentences/listen.txt from the latest checkpoint when I ask.
+6. Commit any script fixes you make, with clear messages, so I can push them.
+
+Tell me plainly what worked, what failed, and what you changed in the scripts.
