@@ -37,7 +37,7 @@ def process(item, args, lexicon):
     text = normalize(raw_text, lexicon)
     if not text:
         return name, text, 0.0, "empty_text"
-    if has_latin(text):
+    if has_latin(text) and not args.allow_latin:
         return name, text, 0.0, "latin_chars"
 
     samples, sr = sf.read(args.raw / "wavs" / name, dtype="float32", always_2d=True)
@@ -83,6 +83,8 @@ def main():
     ap.add_argument("--raw", type=Path, required=True)
     ap.add_argument("--out", type=Path, required=True)
     ap.add_argument("--lexicon", type=Path, default=None)
+    ap.add_argument("--allow-latin", action="store_true",
+                    help="keep clips with English words in Latin script (code-switched speech); espeak reads them as English")
     ap.add_argument("--min-sec", type=float, default=1.5)
     ap.add_argument("--max-sec", type=float, default=15.0)
     ap.add_argument("--min-cps", type=float, default=4.0, help="min characters per second")

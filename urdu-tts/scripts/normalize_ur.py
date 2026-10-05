@@ -59,7 +59,9 @@ _PRESENTATION_FORMS = re.compile(r"[ﭐ-﷿ﹰ-ﻼ]+")
 _INVISIBLE = re.compile(r"[ـ​-‏‪-‮⁠-⁤﻿]")
 _NUMBER = re.compile(r"\d+(?:,\d+)*(?:\.\d+)?")
 _RUPEES = re.compile(r"\bRs\.?\s*(\d+(?:,\d+)*(?:\.\d+)?)", re.IGNORECASE)
-_DISALLOWED = re.compile(r"[^؀-ۿA-Za-z!\s]")
+_DISALLOWED = re.compile(r"[^؀-ۿA-Za-z!'\s]")
+# Keep apostrophes only inside English words (don't, artisans'), which espeak reads as English.
+_STRAY_APOSTROPHE = re.compile(r"(?<![A-Za-z])'")
 _PUNCT_RUN = re.compile(rf"\s*([{PUNCT}])[\s{PUNCT}]*")
 _TOKEN_SPLIT = re.compile(rf"(\s+|[{PUNCT}])")
 _LATIN = re.compile(r"[A-Za-z]")
@@ -117,7 +119,9 @@ def normalize(text: str, lexicon: dict[str, str] | None = None) -> str:
     text = _NUMBER.sub(lambda m: f" {number_to_words(m.group())} ", text)
 
     text = text.translate(PUNCT_MAP)
+    text = text.replace("’", "'").replace("‘", "'")
     text = _DISALLOWED.sub(" ", text)
+    text = _STRAY_APOSTROPHE.sub(" ", text)
 
     if lexicon:
         text = "".join(lexicon.get(tok, tok) for tok in _TOKEN_SPLIT.split(text))
