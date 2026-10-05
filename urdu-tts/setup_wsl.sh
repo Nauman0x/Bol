@@ -17,8 +17,10 @@ cd piper1-gpl
 python3 -m venv .venv
 source .venv/bin/activate
 python3 -m pip install --upgrade pip
-python3 -m pip install -e '.[train]'
+python3 -m pip install -e '.[train]' scikit-build
 ./build_monotonic_align.sh
+# Editable install skips the espeak-ng phonemizer extension; build it in place.
+python3 setup.py build_ext --inplace
 cd ..
 
 python3 -m pip install datasets soundfile librosa soxr pyloudnorm transformers jiwer tensorboard pytest
