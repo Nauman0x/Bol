@@ -24,7 +24,9 @@ if ($Remove) {
 }
 
 $command = "cd $ProjectDir && mkdir -p runs && scripts/train.sh auto >> runs/train.log 2>&1"
-$action = New-ScheduledTaskAction -Execute "wsl.exe" -Argument "-d $Distro -- bash -lc `"$command`""
+# Run with no console window: closing a visible one (or Ctrl-C in it) kills training
+# (task result 0xC000013A).
+$action = New-ScheduledTaskAction -Execute "conhost.exe" -Argument "--headless wsl.exe -d $Distro -- bash -lc `"$command`""
 $trigger = New-ScheduledTaskTrigger -AtLogOn -User $env:USERNAME
 # Default task settings would kill the run after 3 days and refuse to start on battery.
 $settings = New-ScheduledTaskSettingsSet -ExecutionTimeLimit ([TimeSpan]::Zero) `
