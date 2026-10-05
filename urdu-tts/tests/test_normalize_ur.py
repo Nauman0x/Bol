@@ -53,6 +53,11 @@ def test_diacritics_kept():
     assert normalize("اِس") == "اِس"
 
 
+def test_english_apostrophes_kept():
+    assert normalize("I don't know, artisans' کام") == "I don't know، artisans' کام"
+    assert normalize("'یہ' کتاب") == "یہ کتاب"
+
+
 def test_latin_detected():
     assert has_latin(normalize("یہ WhatsApp ہے"))
     assert not has_latin(normalize("یہ کتاب ہے"))
