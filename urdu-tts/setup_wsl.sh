@@ -23,7 +23,8 @@ python3 -m pip install -e '.[train]' scikit-build
 python3 setup.py build_ext --inplace
 cd ..
 
-python3 -m pip install datasets soundfile librosa soxr pyloudnorm transformers jiwer tensorboard pytest
+# onnxscript: torch.onnx.export needs it from torch 2.9 on (checkpoint -> .onnx).
+python3 -m pip install datasets soundfile librosa soxr pyloudnorm transformers jiwer tensorboard pytest scikit-learn onnxscript
 
 python3 -c "import torch; print('torch', torch.__version__, 'cuda', torch.cuda.is_available()); assert torch.cuda.is_available()"
 python3 -m pytest tests -q
