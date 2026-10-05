@@ -13,8 +13,11 @@ OUT="${OUT:-export/$VOICE.onnx}"
 [ -f "$CKPT" ] || { echo "Checkpoint not found: '$CKPT'" >&2; exit 1; }
 [ -f "$RUNS/$VOICE.onnx.json" ] || { echo "Missing voice config $RUNS/$VOICE.onnx.json" >&2; exit 1; }
 
+[ -n "${VIRTUAL_ENV:-}" ] || source piper1-gpl/.venv/bin/activate
+
 mkdir -p "$(dirname "$OUT")"
-python3 -m piper.train.export_onnx --checkpoint "$CKPT" --output-file "$OUT"
+# piper_export_onnx.py: Piper's exporter with torch's TorchScript exporter (the default one fails on VITS).
+python3 scripts/piper_export_onnx.py --checkpoint "$CKPT" --output-file "$OUT"
 cp "$RUNS/$VOICE.onnx.json" "$OUT.json"
 
 echo "آج موسم بہت اچھا ہے۔" | python3 -m piper -m "$OUT" -f "$(dirname "$OUT")/test.wav"

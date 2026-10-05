@@ -27,10 +27,13 @@ from normalize_ur import load_lexicon, normalize
 def export_checkpoint(ckpt: Path, config: Path) -> Path:
     preview = Path("runs/preview")
     preview.mkdir(parents=True, exist_ok=True)
-    onnx = preview / (ckpt.stem.replace("=", "") + ".onnx")
-    if not onnx.exists():
+    # Name by run version too (every run has a last.ckpt), and re-export when the
+    # checkpoint is newer than the preview: last.ckpt is overwritten every epoch.
+    onnx = preview / f"{ckpt.parent.parent.name}-{ckpt.stem.replace('=', '')}.onnx"
+    if not onnx.exists() or onnx.stat().st_mtime < ckpt.stat().st_mtime:
         subprocess.run(
-            [sys.executable, "-m", "piper.train.export_onnx", "--checkpoint", str(ckpt), "--output-file", str(onnx)],
+            [sys.executable, str(Path(__file__).with_name("piper_export_onnx.py")),
+             "--checkpoint", str(ckpt), "--output-file", str(onnx)],
             check=True,
         )
     shutil.copyfile(config, str(onnx) + ".json")
