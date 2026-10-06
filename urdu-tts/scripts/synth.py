@@ -50,7 +50,7 @@ def main():
     # and Urdu words respelled with diacritics where espeak mispronounces them.
     lexicon_dir = Path(__file__).parent.parent / "lexicon"
     ap.add_argument("--lexicon", type=Path, nargs="*",
-                    default=[lexicon_dir / "english_ur.tsv", lexicon_dir / "urdu_fix.tsv"])
+                    default=[lexicon_dir / "english_ur.tsv", lexicon_dir / "urdu_fix.tsv", lexicon_dir / "phonemes.tsv"])
     ap.add_argument("--no-lexicon", action="store_true")
     ap.add_argument("--out", type=Path, required=True)
     # Sampling noise; lower is cleaner but flatter. Defaults come from the voice config (0.667 / 0.8).

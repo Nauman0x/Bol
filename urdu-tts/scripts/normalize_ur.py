@@ -65,6 +65,14 @@ _STRAY_APOSTROPHE = re.compile(r"(?<![A-Za-z])'")
 _PUNCT_RUN = re.compile(rf"\s*([{PUNCT}])[\s{PUNCT}]*")
 _TOKEN_SPLIT = re.compile(rf"(\s+|[{PUNCT}])")
 _LATIN = re.compile(r"[A-Za-z]")
+# Raw phonemes for Piper, e.g. [[ əssəlˈaːmʊ ]]: passed through untouched (synthesis only;
+# piper's training data loader does not read them).
+_RAW_PHONEMES = re.compile(r"(\[\[.*?\]\])")
+# کیا is "kya" (what) or "kiya" (did); espeak always says kya. It is "did" after نے at the
+# end of a clause (میں نے چیک کیا ہے) and before a passive (رابطہ کیا گیا): spell it کِیا there.
+_CLAUSE_END = r"(?=\s*(?:ہے|ہیں|تھا|تھی|تھے|[۔؟!،]|$))"
+_KIYA_AFTER_NE = re.compile(r"(نے\s(?:[^۔؟!،]*?\s)?)کیا" + _CLAUSE_END)
+_KIYA_PASSIVE = re.compile(r"(?<!\S)کیا(?=\s+(?:گیا|گئی|گئے|جائے|جائیں|جاتا|جاتی|جاتے)(?:\s|[۔؟!،]|$))")
 
 
 def int_to_words(n: int) -> str:
@@ -117,6 +125,19 @@ def load_lexicons(paths) -> dict[str, str]:
 
 
 def normalize(text: str, lexicon: dict[str, str] | None = None) -> str:
+    parts = _RAW_PHONEMES.split(text)
+    out = [p if _RAW_PHONEMES.fullmatch(p) else _normalize_text(p, lexicon) for p in parts]
+    text = re.sub(r"\s+", " ", " ".join(p for p in out if p)).strip()
+    return re.sub(rf" ([{PUNCT}])", r"\1", text)
+
+
+def _apply_phrases(text: str, phrases: dict[str, str]) -> str:
+    for phrase in sorted(phrases, key=len, reverse=True):
+        text = re.sub(rf"(?<!\S){re.escape(phrase)}(?=\s|[{PUNCT}]|$)", lambda _: phrases[phrase], text)
+    return text
+
+
+def _normalize_text(text: str, lexicon: dict[str, str] | None) -> str:
     text = _PRESENTATION_FORMS.sub(lambda m: unicodedata.normalize("NFKC", m.group()), text)
     text = unicodedata.normalize("NFC", text)
     text = _INVISIBLE.sub("", text)
@@ -130,9 +151,13 @@ def normalize(text: str, lexicon: dict[str, str] | None = None) -> str:
     text = text.replace("’", "'").replace("‘", "'")
     text = _DISALLOWED.sub(" ", text)
     text = _STRAY_APOSTROPHE.sub(" ", text)
+    text = _KIYA_AFTER_NE.sub(r"\1کِیا", text)
+    text = _KIYA_PASSIVE.sub("کِیا", text)
 
     if lexicon:
-        # English entries are lower-case; "Order" and "ORDER" match "order".
+        # Multi-word entries (السلام علیکم) first, then word by word; English entries are
+        # lower-case, so "Order" and "ORDER" match "order".
+        text = _apply_phrases(text, {k: v for k, v in lexicon.items() if " " in k})
         text = "".join(lexicon.get(tok, lexicon.get(tok.lower(), tok)) for tok in _TOKEN_SPLIT.split(text))
 
     text = _PUNCT_RUN.sub(r"\1 ", text)
