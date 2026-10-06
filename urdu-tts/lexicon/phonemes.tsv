@@ -1,0 +1,9 @@
+# Words and phrases given as exact phonemes, for pronunciations no respelling can
+# fix (e.g. stress). Synthesis only: synth.py uses this file by default, but do NOT
+# pass it to prepare_dataset.py, because piper's training loader cannot read [[ ]].
+# Multi-word entries match whole phrases. Phonemes must exist in the voice's
+# phoneme_id_map (see the .onnx.json); ˈ marks the stressed syllable.
+# word or phrase<TAB>[[ phonemes ]]
+السلام علیکم	[[ əssəlˈaːmʊ əlˈɛːkʊm ]]
+اسلام علیکم	[[ əssəlˈaːmʊ əlˈɛːkʊm ]]
+وعلیکم السلام	[[ ʋəlˈɛːkʊm əssəlˈaːm ]]

@@ -63,6 +63,21 @@ def test_english_lexicon_case_insensitive():
     assert normalize("آپ کا Order OK ہے", lexicon) == "آپ کا آرڈر اوکے ہے"
 
 
+def test_kiya_did_vs_kya_what():
+    assert normalize("میں نے چیک کیا ہے") == "میں نے چیک کِیا ہے"
+    assert normalize("آپ نے فون کیا تھا؟") == "آپ نے فون کِیا تھا؟"
+    assert normalize("رابطہ کیا گیا") == "رابطہ کِیا گیا"
+    assert normalize("آپ کی کیا مدد کروں؟") == "آپ کی کیا مدد کروں؟"
+    assert normalize("آپ نے کیا کہا؟") == "آپ نے کیا کہا؟"
+    assert normalize("یہ کیا ہے؟") == "یہ کیا ہے؟"
+
+
+def test_phrase_lexicon_and_raw_phonemes():
+    lexicon = {"السلام علیکم": "[[ əssəlˈaːmʊ əlˈɛːkʊm ]]"}
+    assert normalize("السلام علیکم! جی", lexicon) == "[[ əssəlˈaːmʊ əlˈɛːkʊm ]]! جی"
+    assert normalize("جی [[ hˈaː ]] ٹھیک ہے") == "جی [[ hˈaː ]] ٹھیک ہے"
+
+
 def test_latin_detected():
     assert has_latin(normalize("یہ WhatsApp ہے"))
     assert not has_latin(normalize("یہ کتاب ہے"))
