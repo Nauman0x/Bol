@@ -15,7 +15,7 @@ set -euo pipefail
 
 MODE="${1:-}"
 if [ -f train.env ]; then
-    for var in DATA VOICE BATCH BASE_CKPT RUNS BACKUP_EVERY_MIN BACKUP_KEEP MAX_EPOCHS EXTRA_ARGS; do
+    for var in DATA VOICE BATCH BASE_CKPT RUNS BACKUP_EVERY_MIN BACKUP_KEEP MAX_EPOCHS EXTRA_ARGS FREEZE; do
         [ -n "${!var:-}" ] && continue
         value="$(sed -n "s/^$var=//p" train.env | tail -n 1)"
         [ -n "$value" ] && export "$var=$value"
@@ -32,6 +32,8 @@ BACKUP_KEEP="${BACKUP_KEEP:-3}"
 MAX_EPOCHS="${MAX_EPOCHS:--1}"
 # Extra piper.train flags, e.g. "--model.learning_rate 1e-4 --model.warmup_epochs 10".
 EXTRA_ARGS="${EXTRA_ARGS:-}"
+# Parameter prefixes to keep fixed, read by piper_train_fit.py, e.g. "model_g.enc_p,model_g.dp".
+export FREEZE="${FREEZE:-}"
 
 [ -n "${VIRTUAL_ENV:-}" ] || source piper1-gpl/.venv/bin/activate
 
@@ -74,7 +76,7 @@ backup_loop() {
 fit() {
     local csv="$1" ckpt="$2"
     shift 2
-    echo "$(date '+%F %T') mode=$MODE csv=$csv batch=$BATCH checkpoint=$ckpt max_epochs=$MAX_EPOCHS extra=$EXTRA_ARGS"
+    echo "$(date '+%F %T') mode=$MODE csv=$csv batch=$BATCH checkpoint=$ckpt max_epochs=$MAX_EPOCHS freeze=$FREEZE extra=$EXTRA_ARGS"
     # Starting from the base voice copies its weights only (warmstart): a fresh
     # optimizer, learning-rate schedule and epoch count. --ckpt_path would resume the
     # base voice's own training (epoch 3206, its optimizer state), which in practice
