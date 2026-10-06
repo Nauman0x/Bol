@@ -71,6 +71,22 @@ python scripts/prepare_dataset.py --raw data/raw_p38 --out data/p38 --allow-lati
 printf 'DATA=data/p38\nBATCH=8\n' > train.env
 ```
 
+Then drop clips whose machine-made transcript does not match the audio (some include words from before or after the clip, which teaches the model to mumble), and train on the result:
+
+```sh
+python scripts/eval_cer.py data/p38 --index data/p38/metadata.csv --save data/p38/cer_train.tsv
+python scripts/filter_dataset.py --data data/p38 --cer data/p38/cer_train.tsv --out data/p38c
+cat > train.env <<'EOF'
+DATA=data/p38c
+RUNS=runs_v2
+BATCH=8
+MAX_EPOCHS=600
+EXTRA_ARGS=--model.learning_rate 1e-4 --model.learning_rate_d 5e-5 --model.warmup_epochs 10 --model.init_lr_ratio 0.1
+EOF
+```
+
+Starting from the base voice, `train.sh` copies only its weights (`--model.warmstart_ckpt`), so the run gets a fresh optimizer, a warm-up and a learning rate that anneals over `MAX_EPOCHS`. Resuming the base voice's own training state instead (`--ckpt_path`) garbled pronunciation within two epochs on this 1-hour dataset. `EXTRA_ARGS` is written without quotes.
+
 `download_aslp.py` drops clips that do not sound like the speaker (diarization errors; see `speaker_check.tsv`). `--allow-latin` keeps English words written in Latin script, which espeak-ng reads as English inside Urdu sentences. `--max-sec 30` keeps the long podcast turns, which need `BATCH=8` on a 12 GB card. `train.env` makes every `train.sh` run, including the autostart task, use this dataset.
 
 ## 4. Prepare

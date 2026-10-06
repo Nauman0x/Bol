@@ -15,7 +15,7 @@ set -euo pipefail
 
 MODE="${1:-}"
 if [ -f train.env ]; then
-    for var in DATA VOICE BATCH BASE_CKPT RUNS BACKUP_EVERY_MIN BACKUP_KEEP; do
+    for var in DATA VOICE BATCH BASE_CKPT RUNS BACKUP_EVERY_MIN BACKUP_KEEP MAX_EPOCHS EXTRA_ARGS; do
         [ -n "${!var:-}" ] && continue
         value="$(sed -n "s/^$var=//p" train.env | tail -n 1)"
         [ -n "$value" ] && export "$var=$value"
@@ -28,6 +28,10 @@ BASE_CKPT="${BASE_CKPT:-checkpoints/ur/ur_PK/fasih/medium/epoch=3206-step=383452
 RUNS="${RUNS:-runs}"
 BACKUP_EVERY_MIN="${BACKUP_EVERY_MIN:-30}"
 BACKUP_KEEP="${BACKUP_KEEP:-3}"
+# -1 trains until stopped. A finite count also anneals the learning rate to 5% by the end.
+MAX_EPOCHS="${MAX_EPOCHS:--1}"
+# Extra piper.train flags, e.g. "--model.learning_rate 1e-4 --model.warmup_epochs 10".
+EXTRA_ARGS="${EXTRA_ARGS:-}"
 
 [ -n "${VIRTUAL_ENV:-}" ] || source piper1-gpl/.venv/bin/activate
 
@@ -70,9 +74,14 @@ backup_loop() {
 fit() {
     local csv="$1" ckpt="$2"
     shift 2
-    echo "$(date '+%F %T') mode=$MODE csv=$csv batch=$BATCH checkpoint=$ckpt"
-    # max_epochs -1: the base checkpoint is already past epoch 3000, so any finite
-    # default would end training immediately. Stop it yourself when quality plateaus.
+    echo "$(date '+%F %T') mode=$MODE csv=$csv batch=$BATCH checkpoint=$ckpt max_epochs=$MAX_EPOCHS extra=$EXTRA_ARGS"
+    # Starting from the base voice copies its weights only (warmstart): a fresh
+    # optimizer, learning-rate schedule and epoch count. --ckpt_path would resume the
+    # base voice's own training (epoch 3206, its optimizer state), which in practice
+    # wrecked pronunciation within two epochs on a 1-hour dataset. Our own
+    # checkpoints are resumed in full with --ckpt_path.
+    local start
+    if [ "$ckpt" = "$BASE_CKPT" ]; then start=(--model.warmstart_ckpt "$ckpt"); else start=(--ckpt_path "$ckpt"); fi
     # piper_train_fit.py is piper.train minus its val_mos checkpoint, which crashes without torchaudio.
     "$@" python3 scripts/piper_train_fit.py fit \
         --data.voice_name "$VOICE" \
@@ -84,10 +93,11 @@ fit() {
         --data.config_path "$RUNS/$VOICE.onnx.json" \
         --data.batch_size "$BATCH" \
         --trainer.default_root_dir "$RUNS" \
-        --trainer.max_epochs -1 \
+        --trainer.max_epochs "$MAX_EPOCHS" \
         --trainer.log_every_n_steps 10 \
         --model.mos_metric none \
-        --ckpt_path "$ckpt"
+        $EXTRA_ARGS \
+        "${start[@]}"
 }
 
 CSV="$DATA/metadata.csv"
