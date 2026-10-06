@@ -32,12 +32,12 @@ courier	کوریئر
 rider	رائیڈر
 address	ایڈریس
 location	لوکیشن
-dispatch	ڈسپیچ
-dispatched	ڈسپیچ
+dispatch	ڈِسپَیچ
+dispatched	ڈِسپَیچ
 tracking	ٹریکنگ
 track	ٹریک
 status	اسٹیٹس
-return	ریٹرن
+return	رِٹَرن
 refund	ریفنڈ
 exchange	ایکسچینج
 cancel	کینسل
@@ -279,3 +279,38 @@ loan	لون
 installment	انسٹالمنٹ
 warranty	وارنٹی
 guarantee	گارنٹی
+warehouse	ویئرہاؤس
+staff	اسٹاف
+member	ممبر
+members	ممبرز
+membership	ممبرشپ
+subscription	سبسکرپشن
+packages	پیکجز
+offers	آفرز
+voucher	واؤچر
+coupon	کوپن
+promo	پرومو
+points	پوائنٹس
+feedback	فیڈ بیک
+review	ریویو
+rating	ریٹنگ
+weekday	ویک ڈے
+holiday	ہالیڈے
+timing	ٹائمنگ
+timings	ٹائمنگز
+slot	سلاٹ
+reminder	ریمائنڈر
+alert	الرٹ
+notification	نوٹیفکیشن
+verify	ویریفائی
+verified	ویریفائیڈ
+verification	ویریفیکیشن
+cnic	شناختی کارڈ
+id	آئی ڈی
+pickup	پک اپ
+drop	ڈراپ
+fare	فیئر
+ride	رائیڈ
+driver	ڈرائیور
+captain	کیپٹن
+seat	سیٹ

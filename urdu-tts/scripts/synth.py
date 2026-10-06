@@ -21,7 +21,7 @@ from pathlib import Path
 
 from piper import PiperVoice, SynthesisConfig
 
-from normalize_ur import load_lexicon, normalize
+from normalize_ur import load_lexicons, normalize
 
 
 def export_checkpoint(ckpt: Path, config: Path) -> Path:
@@ -46,8 +46,11 @@ def main():
     ap.add_argument("--config", type=Path, default=None, help="voice config json; required for .ckpt")
     ap.add_argument("--text", action="append", default=[])
     ap.add_argument("--text-file", type=Path, default=None)
-    # English words in Latin script -> Urdu spelling, as the Rasa voice was trained on.
-    ap.add_argument("--lexicon", type=Path, default=Path(__file__).parent.parent / "lexicon" / "english_ur.tsv")
+    # English words in Latin script -> Urdu spelling (as the Rasa voice was trained on),
+    # and Urdu words respelled with diacritics where espeak mispronounces them.
+    lexicon_dir = Path(__file__).parent.parent / "lexicon"
+    ap.add_argument("--lexicon", type=Path, nargs="*",
+                    default=[lexicon_dir / "english_ur.tsv", lexicon_dir / "urdu_fix.tsv"])
     ap.add_argument("--no-lexicon", action="store_true")
     ap.add_argument("--out", type=Path, required=True)
     # Sampling noise; lower is cleaner but flatter. Defaults come from the voice config (0.667 / 0.8).
@@ -72,7 +75,7 @@ def main():
     if not texts:
         sys.exit("No text given.")
 
-    lexicon = load_lexicon(args.lexicon) if args.lexicon and not args.no_lexicon and args.lexicon.exists() else None
+    lexicon = None if args.no_lexicon else load_lexicons(p for p in args.lexicon if p.exists())
     voice = PiperVoice.load(str(model))
     syn_config = SynthesisConfig(
         noise_scale=args.noise_scale, noise_w_scale=args.noise_w, length_scale=args.length_scale
