@@ -58,6 +58,11 @@ def test_english_apostrophes_kept():
     assert normalize("'یہ' کتاب") == "یہ کتاب"
 
 
+def test_english_lexicon_case_insensitive():
+    lexicon = {"order": "آرڈر", "ok": "اوکے"}
+    assert normalize("آپ کا Order OK ہے", lexicon) == "آپ کا آرڈر اوکے ہے"
+
+
 def test_latin_detected():
     assert has_latin(normalize("یہ WhatsApp ہے"))
     assert not has_latin(normalize("یہ کتاب ہے"))
