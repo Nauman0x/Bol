@@ -61,7 +61,26 @@ python scripts/download_data.py --voice 2 --out data/raw_v2 --hours 15
 
 This downloads shards one at a time and keeps only clips that clearly match that voice, stopping at `--hours` of audio. Rerun the same command to resume after an interruption. Use `data/raw_v2` / `data/v2` in place of `data/raw_s2` / `data/s2` below, and pass `DATA=data/v2` to `train.sh`.
 
-### Casual voice instead (what this project uses)
+### Clean casual voice: Rasa (what this project uses)
+
+[`ai4bharat/Rasa`](https://huggingface.co/datasets/ai4bharat/Rasa) (CC BY 4.0, gated: accept its terms and `hf auth login`) has studio recordings of one male and one female Urdu voice, about 26 h each, in several styles. The conversational, emotion and assistant-command styles give about 11 h of casual-register speech per voice, with English loanwords written in Urdu script:
+
+```sh
+python scripts/download_rasa.py --inspect
+python scripts/download_rasa.py --gender Male --exclude WIKI,BOOK,NEWS,PROPER --out data/raw_rasa_m
+python scripts/prepare_dataset.py --raw data/raw_rasa_m --out data/rasa_m
+cat > train.env <<'EOF'
+DATA=data/rasa_m
+RUNS=runs_rasa
+BATCH=12
+MAX_EPOCHS=120
+EXTRA_ARGS=--model.warmup_epochs 3 --model.init_lr_ratio 0.1
+EOF
+```
+
+Whisper CER after 4 epochs: 7.0% on held-out Rasa sentences (stock voice 7.2%) and 2.3% on casual code-switched sentences (stock 6.0%). Because Rasa spells English loanwords in Urdu script, `synth.py` converts English words in Latin script with `lexicon/english_ur.tsv`; use the same lexicon wherever this voice is deployed.
+
+### Podcast voice (tried first; not recommended)
 
 URDUTTS is formal audiobook narration. For everyday, code-switched Urdu use one speaker of [`ASLP-lab/UrduSpeech`](https://huggingface.co/datasets/ASLP-lab/UrduSpeech) (CC BY 4.0; podcasts, interviews, vlogs). Speakers are diarized per category; the largest have 1-1.5 h. This project uses podcast `SPEAKER_0038`:
 
