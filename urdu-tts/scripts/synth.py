@@ -19,7 +19,7 @@ import time
 import wave
 from pathlib import Path
 
-from piper import PiperVoice
+from piper import PiperVoice, SynthesisConfig
 
 from normalize_ur import load_lexicon, normalize
 
@@ -48,6 +48,10 @@ def main():
     ap.add_argument("--text-file", type=Path, default=None)
     ap.add_argument("--lexicon", type=Path, default=None)
     ap.add_argument("--out", type=Path, required=True)
+    # Sampling noise; lower is cleaner but flatter. Defaults come from the voice config (0.667 / 0.8).
+    ap.add_argument("--noise-scale", type=float, default=None)
+    ap.add_argument("--noise-w", type=float, default=None)
+    ap.add_argument("--length-scale", type=float, default=None, help=">1 slower, <1 faster")
     args = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
 
@@ -68,6 +72,9 @@ def main():
 
     lexicon = load_lexicon(args.lexicon) if args.lexicon else None
     voice = PiperVoice.load(str(model))
+    syn_config = SynthesisConfig(
+        noise_scale=args.noise_scale, noise_w_scale=args.noise_w, length_scale=args.length_scale
+    )
     args.out.mkdir(parents=True, exist_ok=True)
 
     audio_seconds, started = 0.0, time.perf_counter()
@@ -76,7 +83,7 @@ def main():
             text = normalize(text, lexicon)
             name = f"{i:04d}.wav"
             with wave.open(str(args.out / name), "wb") as wav_file:
-                voice.synthesize_wav(text, wav_file)
+                voice.synthesize_wav(text, wav_file, syn_config=syn_config)
             with wave.open(str(args.out / name), "rb") as wav_file:
                 audio_seconds += wav_file.getnframes() / wav_file.getframerate()
             index.write(f"{name}\t{text}\n")
