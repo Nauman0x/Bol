@@ -78,12 +78,15 @@ python scripts/eval_cer.py data/p38 --index data/p38/metadata.csv --save data/p3
 python scripts/filter_dataset.py --data data/p38 --cer data/p38/cer_train.tsv --out data/p38c
 cat > train.env <<'EOF'
 DATA=data/p38c
-RUNS=runs_v2
+RUNS=runs_v3
 BATCH=8
-MAX_EPOCHS=600
-EXTRA_ARGS=--model.learning_rate 1e-4 --model.learning_rate_d 5e-5 --model.warmup_epochs 10 --model.init_lr_ratio 0.1
+MAX_EPOCHS=300
+FREEZE=model_g.enc_p,model_g.dp
+EXTRA_ARGS=--model.warmup_epochs 5 --model.init_lr_ratio 0.1
 EOF
 ```
+
+`FREEZE` keeps the base voice's text encoder and duration predictor fixed, so pronunciation and timing stay as good as the stock voice and only the sound of the voice is trained. Without it, every run on this 1-hour dataset garbled words (Whisper CER 59-69% against 33% for the stock voice; 28% with it).
 
 Starting from the base voice, `train.sh` copies only its weights (`--model.warmstart_ckpt`), so the run gets a fresh optimizer, a warm-up and a learning rate that anneals over `MAX_EPOCHS`. Resuming the base voice's own training state instead (`--ckpt_path`) garbled pronunciation within two epochs on this 1-hour dataset. `EXTRA_ARGS` is written without quotes.
 
