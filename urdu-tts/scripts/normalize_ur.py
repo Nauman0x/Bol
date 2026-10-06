@@ -124,7 +124,8 @@ def normalize(text: str, lexicon: dict[str, str] | None = None) -> str:
     text = _STRAY_APOSTROPHE.sub(" ", text)
 
     if lexicon:
-        text = "".join(lexicon.get(tok, tok) for tok in _TOKEN_SPLIT.split(text))
+        # English entries are lower-case; "Order" and "ORDER" match "order".
+        text = "".join(lexicon.get(tok, lexicon.get(tok.lower(), tok)) for tok in _TOKEN_SPLIT.split(text))
 
     text = _PUNCT_RUN.sub(r"\1 ", text)
     return re.sub(r"\s+", " ", text).strip()

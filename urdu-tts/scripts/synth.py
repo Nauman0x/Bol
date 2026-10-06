@@ -46,7 +46,9 @@ def main():
     ap.add_argument("--config", type=Path, default=None, help="voice config json; required for .ckpt")
     ap.add_argument("--text", action="append", default=[])
     ap.add_argument("--text-file", type=Path, default=None)
-    ap.add_argument("--lexicon", type=Path, default=None)
+    # English words in Latin script -> Urdu spelling, as the Rasa voice was trained on.
+    ap.add_argument("--lexicon", type=Path, default=Path(__file__).parent.parent / "lexicon" / "english_ur.tsv")
+    ap.add_argument("--no-lexicon", action="store_true")
     ap.add_argument("--out", type=Path, required=True)
     # Sampling noise; lower is cleaner but flatter. Defaults come from the voice config (0.667 / 0.8).
     ap.add_argument("--noise-scale", type=float, default=None)
@@ -70,7 +72,7 @@ def main():
     if not texts:
         sys.exit("No text given.")
 
-    lexicon = load_lexicon(args.lexicon) if args.lexicon else None
+    lexicon = load_lexicon(args.lexicon) if args.lexicon and not args.no_lexicon and args.lexicon.exists() else None
     voice = PiperVoice.load(str(model))
     syn_config = SynthesisConfig(
         noise_scale=args.noise_scale, noise_w_scale=args.noise_w, length_scale=args.length_scale
