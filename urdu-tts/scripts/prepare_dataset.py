@@ -26,7 +26,7 @@ import pyloudnorm
 import soundfile as sf
 from tqdm import tqdm
 
-from normalize_ur import has_latin, load_lexicon, normalize
+from normalize_ur import has_latin, load_lexicons, normalize
 
 SAMPLE_RATE = 22050
 
@@ -82,7 +82,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--raw", type=Path, required=True)
     ap.add_argument("--out", type=Path, required=True)
-    ap.add_argument("--lexicon", type=Path, default=None)
+    ap.add_argument("--lexicon", type=Path, nargs="*", default=[],
+                    help="pronunciation fixes, e.g. lexicon/urdu_fix.tsv; use the same files at synthesis")
     ap.add_argument("--allow-latin", action="store_true",
                     help="keep clips with English words in Latin script (code-switched speech); espeak reads them as English")
     ap.add_argument("--min-sec", type=float, default=1.5)
@@ -99,7 +100,7 @@ def main():
     args = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
 
-    lexicon = load_lexicon(args.lexicon) if args.lexicon else None
+    lexicon = load_lexicons(args.lexicon) if args.lexicon else None
     items = []
     for line in (args.raw / "raw.tsv").read_text(encoding="utf-8").splitlines():
         name, _, text = line.partition("\t")

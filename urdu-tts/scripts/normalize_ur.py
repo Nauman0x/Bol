@@ -108,6 +108,14 @@ def load_lexicon(path: str | Path) -> dict[str, str]:
     return lexicon
 
 
+def load_lexicons(paths) -> dict[str, str]:
+    """Merge several lexicon files; later files win."""
+    lexicon = {}
+    for path in paths:
+        lexicon.update(load_lexicon(path))
+    return lexicon
+
+
 def normalize(text: str, lexicon: dict[str, str] | None = None) -> str:
     text = _PRESENTATION_FORMS.sub(lambda m: unicodedata.normalize("NFKC", m.group()), text)
     text = unicodedata.normalize("NFC", text)

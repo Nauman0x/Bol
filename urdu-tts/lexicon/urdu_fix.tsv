@@ -1,0 +1,14 @@
+# Urdu words that espeak-ng's `ur` voice mispronounces, respelled with diacritics
+# (zabar َ, zer ِ, pesh ُ, shadd ّ) or a closer letter so it produces the right
+# phonemes. Used in training (prepare_dataset.py --lexicon) and at synthesis
+# (synth.py, by default), so the model learns and speaks the same sounds.
+# Check a respelling with:
+#   python -c "from piper.phonemize_espeak import EspeakPhonemizer as P; print(P().phonemize('ur', 'صُبح'))"
+# word<TAB>respelling
+السلام	اَسّلامُ
+علیکم	علَیکُم
+صبح	سُبح
+دوپہر	دوپَہَر
+جھجک	جھِجھک
+ریٹرن	رِٹَرن
+ڈسپیچ	ڈِسپَیچ
