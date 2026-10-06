@@ -57,7 +57,9 @@ backup_loop() {
     while sleep "$((BACKUP_EVERY_MIN * 60))"; do
         newest="$(ls -t "$RUNS"/lightning_logs/version_*/checkpoints/*.ckpt 2>/dev/null | head -n 1)"
         [ -n "$newest" ] || continue
-        name="$(basename "$newest")"
+        # The newest file is usually last.ckpt, rewritten every epoch, so name the
+        # copy by its save time; a bare name was only ever backed up once.
+        name="$(date -r "$newest" +%m%d-%H%M%S)-$(basename "$newest")"
         [ -f "$RUNS/backup/$name" ] && continue
         ckpt_ok "$newest" || continue
         cp "$newest" "$RUNS/backup/.partial" && sync && mv "$RUNS/backup/.partial" "$RUNS/backup/$name"
