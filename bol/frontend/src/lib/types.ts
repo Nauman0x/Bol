@@ -47,7 +47,7 @@ export interface ToolRef {
 
 export type AgentTool = WebhookTool | BuiltinTool | ToolRef;
 
-export type TtsProviderId = "groq" | "fish" | "chatterbox";
+export type TtsProviderId = "groq" | "fish" | "chatterbox" | "piper";
 
 export interface AgentConfig {
   system_prompt: string;

@@ -15,6 +15,8 @@ _TTS_PER_MIN = {
     # Self-hosted — nominal compute cost, not metered per-minute like the
     # hosted providers above.
     "chatterbox": 0.002,
+    # Self-hosted on CPU (BOL's own Urdu voices) — cheaper still than a GPU.
+    "piper": 0.0005,
 }
 _DEFAULT_TTS_PER_MIN = 0.03
 

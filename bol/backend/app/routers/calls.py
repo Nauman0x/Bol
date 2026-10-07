@@ -51,6 +51,7 @@ _REAP_GRACE_SEC = 120
 _PROVIDER_CONCURRENCY_LIMITS = {
     "fish": lambda: settings.fish_max_concurrent_calls,
     "chatterbox": lambda: settings.chatterbox_max_concurrent_calls,
+    "piper": lambda: settings.piper_max_concurrent_calls,
 }
 
 

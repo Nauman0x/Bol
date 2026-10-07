@@ -25,6 +25,7 @@ from app.config import settings
 from app.interruption import adaptive_supported, resolve_interruption
 from app.tts_providers import resolve_llm_model, resolve_tts_provider
 from worker.chatterbox_tts import ChatterboxTTS
+from worker.piper_tts import PiperTTS
 
 logger = logging.getLogger("BOL.worker")
 
@@ -201,6 +202,16 @@ def _require_chatterbox_url() -> str:
     return settings.chatterbox_base_url
 
 
+def _require_piper_url() -> str:
+    if not settings.piper_base_url:
+        raise RuntimeError(
+            "PIPER_BASE_URL is not configured but an agent's tts_provider (or the "
+            "platform-wide TTS_PROVIDER) is 'piper'. Point it at BOL's Urdu voice "
+            "server (urdu-tts/server/serve.py), e.g. http://localhost:8030."
+        )
+    return settings.piper_base_url
+
+
 def build_stt(config: dict) -> stt_base.STT:
     if settings.stt_provider == "local":
         raise NotImplementedError(
@@ -313,6 +324,15 @@ def build_tts(config: dict) -> tts_base.TTS:
             language=None if language == "auto" else language,
         )
 
+    if provider == "piper":
+        # BOL's own Urdu voices (urdu-tts/server/serve.py). "default" (the
+        # AgentConfig default before a voice is picked) lets the server choose
+        # its first voice rather than failing on an unknown id.
+        return PiperTTS(
+            base_url=_require_piper_url(),
+            voice_id="" if voice_id == "default" else voice_id,
+        )
+
     if provider == "local":
         raise NotImplementedError(
             "TTS_PROVIDER=local is not a real provider — use tts_provider='chatterbox' "
@@ -339,8 +359,21 @@ def build_noise_cancellation(transport: str) -> rtc.NoiseCancellationOptions:
     return noise_cancellation.BVC()
 
 
+# The Urdu voices read Urdu script only: Roman Urdu ("aap ka order") would be
+# read letter-by-letter as English. English loanwords may stay in Latin script
+# — the voice server converts the common ones to Urdu spelling.
+_PIPER_URDU_SCRIPT_NOTE = (
+    "Your replies are spoken by an Urdu voice that can only read Urdu script. "
+    "Always write in Urdu script (اردو), never Roman Urdu. Everyday English words "
+    "(order, call, account) may stay in English as people say them. Write short, "
+    "natural spoken sentences with commas where you would pause.\n\n"
+)
+
+
 def build_instructions(config: dict, streaming_tts: bool) -> str:
     preamble = _STREAMING_TTS_PREAMBLE if streaming_tts else _NON_STREAMING_TTS_PREAMBLE
+    if resolve_tts_provider(config) == "piper":
+        preamble += _PIPER_URDU_SCRIPT_NOTE
     return preamble + config["system_prompt"]
 
 

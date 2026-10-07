@@ -127,6 +127,9 @@ export function TestCallPanel({
   if (healthConfig && ttsProvider === "chatterbox" && !healthConfig.chatterbox) {
     missingConfig.push("Chatterbox (CHATTERBOX_BASE_URL)");
   }
+  if (healthConfig && ttsProvider === "piper" && !healthConfig.piper) {
+    missingConfig.push("BOL Urdu voice server (PIPER_BASE_URL)");
+  }
   if (healthConfig && ttsProvider === "fish" && !healthConfig.fish) {
     missingConfig.push("Fish Audio (FISH_API_KEY)");
   }

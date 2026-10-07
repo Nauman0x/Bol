@@ -41,6 +41,12 @@ TTS_PROVIDERS: dict[str, TtsProviderInfo] = {
         streaming=False,
         configured=lambda: bool(settings.chatterbox_base_url),
     ),
+    "piper": TtsProviderInfo(
+        id="piper",
+        label="BOL Urdu (self-hosted Piper)",
+        streaming=False,
+        configured=lambda: bool(settings.piper_base_url),
+    ),
 }
 
 

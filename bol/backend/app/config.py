@@ -97,6 +97,10 @@ class Settings(BaseSettings):
     chatterbox_base_url: str = ""
     chatterbox_model: str = "chatterbox-turbo"
 
+    # piper — BOL's own Urdu voices (urdu-tts/server/serve.py), self-hosted,
+    # CPU-only. Root URL of that server, e.g. http://localhost:8030 (no /v1).
+    piper_base_url: str = ""
+
     # speech — stt_provider: livekit (streaming, default) | groq (batch,
     # fallback) | local (Phase 6). See docs/LATENCY.md for why livekit is
     # the default: Groq STT doesn't stream, adding ~360ms of serialized
@@ -126,6 +130,9 @@ class Settings(BaseSettings):
     # come from (Fish's prepaid tier, ~5-6 calls/GPU for Chatterbox Turbo).
     fish_max_concurrent_calls: int = 5
     chatterbox_max_concurrent_calls: int = 5
+    # Piper runs ~25x faster than real time per CPU core, so one server
+    # carries more calls than a Chatterbox GPU; size this to its CPU cores.
+    piper_max_concurrent_calls: int = 10
 
 
 settings = Settings()
