@@ -144,8 +144,29 @@ def test_build_stt_livekit_non_english_boosts_keywords_via_assemblyai_keyterms_p
     monkeypatch.setattr(settings, "stt_provider", "livekit")
     monkeypatch.setattr(settings, "livekit_api_key", "lk_key")
     monkeypatch.setattr(settings, "livekit_api_secret", "lk_secret")
-    stt = build_stt({**BASE_CONFIG, "language": "ar", "boosted_keywords": ["بول"]})
-    assert stt._opts.extra_kwargs == {"keyterms_prompt": ["بول"]}
+    stt = build_stt({**BASE_CONFIG, "language": "es", "boosted_keywords": ["BOL"]})
+    assert stt._opts.extra_kwargs == {"keyterms_prompt": ["BOL"]}
+
+
+def test_build_stt_livekit_unsupported_language_falls_back_to_groq_whisper(monkeypatch):
+    # LiveKit's streaming STT rejects Urdu (every turn errored and the agent
+    # never answered), so such languages get Groq Whisper with the language.
+    monkeypatch.setattr(settings, "stt_provider", "livekit")
+    monkeypatch.setattr(settings, "livekit_api_key", "lk_key")
+    monkeypatch.setattr(settings, "livekit_api_secret", "lk_secret")
+    monkeypatch.setattr(settings, "groq_api_key", "gk_test")
+    for language in ("ur", "ar", "hi"):
+        stt = build_stt({**BASE_CONFIG, "language": language})
+        assert type(stt).__module__.startswith("livekit.plugins.groq")
+        assert stt._opts.languages == [language]
+
+
+def test_build_turn_handling_adaptive_downgrades_for_non_streaming_language(monkeypatch):
+    monkeypatch.setattr(settings, "stt_provider", "livekit")
+    handling = build_turn_handling({"interruption_mode": "adaptive", "language": "ur"})
+    assert handling["interruption"]["mode"] == "vad"
+    handling = build_turn_handling({"interruption_mode": "adaptive", "language": "es"})
+    assert handling["interruption"]["mode"] == "adaptive"
 
 
 def test_build_stt_livekit_without_keywords_has_no_extra_kwargs(monkeypatch):

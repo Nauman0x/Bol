@@ -22,6 +22,21 @@ def _isolate_external_provider_keys(monkeypatch):
     monkeypatch.setattr(settings, "fish_api_key", "")
     monkeypatch.setattr(settings, "chatterbox_base_url", "")
     monkeypatch.setattr(settings, "piper_base_url", "")
+    # Same for platform defaults a developer's .env may change (e.g.
+    # TTS_PROVIDER=piper for a local Urdu demo).
+    monkeypatch.setattr(settings, "tts_provider", "groq")
+    monkeypatch.setattr(settings, "stt_provider", "livekit")
+
+    # The voice catalog caches in Redis; a developer running the API locally
+    # leaves real voice lists there that would leak into these tests.
+    async def _cache_miss(key):
+        return None
+
+    async def _cache_skip(key, value, ttl_sec):
+        return None
+
+    monkeypatch.setattr("app.routers.voices.cache_get_json", _cache_miss)
+    monkeypatch.setattr("app.routers.voices.cache_set_json", _cache_skip)
 
 
 @pytest.fixture
