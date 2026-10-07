@@ -93,6 +93,51 @@ async def test_voices_fish_languages_are_normalized(client, monkeypatch):
     assert by_id["voice-2"]["languages"] == ["en", "fr"]
 
 
+class _PiperVoicesHttpxClient:
+    """A fixed /voices response from urdu-tts/server/serve.py."""
+
+    async def __aenter__(self):
+        return self
+
+    async def __aexit__(self, *exc):
+        return False
+
+    async def get(self, *args, **kwargs):
+        return httpx.Response(
+            200,
+            json=[
+                {"id": "rasa_female", "label": "Rasa Female (Urdu)", "languages": ["ur"]},
+                {"id": "rasa_male", "label": "Rasa Male (Urdu)", "languages": ["ur"]},
+            ],
+            request=httpx.Request("GET", "http://localhost:8030/voices"),
+        )
+
+
+async def test_voices_piper_lists_urdu_voices(client, monkeypatch):
+    monkeypatch.setattr(settings, "piper_base_url", "http://localhost:8030")
+    monkeypatch.setattr(
+        "app.routers.voices.httpx.AsyncClient", lambda **kwargs: _PiperVoicesHttpxClient()
+    )
+
+    headers = await register_and_login(client, "Acme", "voices-piper@acme-BOL.com")
+    resp = await client.get("/voices", headers=headers, params={"provider": "piper"})
+    assert resp.status_code == 200
+    voices = resp.json()
+    assert [v["id"] for v in voices] == ["rasa_female", "rasa_male"]
+    assert all(v["provider"] == "piper" and v["languages"] == ["ur"] for v in voices)
+
+
+async def test_voices_piper_502s_on_direct_query_when_unreachable(client, monkeypatch):
+    monkeypatch.setattr(settings, "piper_base_url", "http://unreachable:8030")
+    monkeypatch.setattr(
+        "app.routers.voices.httpx.AsyncClient", lambda **kwargs: _UnreachableHttpxClient()
+    )
+
+    headers = await register_and_login(client, "Acme", "voices-piper2@acme-BOL.com")
+    resp = await client.get("/voices", headers=headers, params={"provider": "piper"})
+    assert resp.status_code == 502
+
+
 async def test_voices_chatterbox_502s_on_direct_query_when_unreachable(client, monkeypatch):
     monkeypatch.setattr(settings, "chatterbox_base_url", "http://unreachable-gpu-host:8004/v1")
     monkeypatch.setattr(
@@ -136,5 +181,6 @@ async def test_tts_providers_reports_configured_state(client, monkeypatch):
     assert by_id["groq"]["configured"] is True
     assert by_id["fish"]["configured"] is False
     assert by_id["chatterbox"]["configured"] is False
+    assert by_id["piper"]["configured"] is False
     assert by_id["fish"]["streaming"] is True
     assert by_id["groq"]["streaming"] is False

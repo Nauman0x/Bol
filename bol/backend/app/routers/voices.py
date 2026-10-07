@@ -34,7 +34,10 @@ _CACHE_TTL_SEC = 600
 # CPU) — 3s was tripping on a live server, not just a dead one.
 _FETCH_TIMEOUT_SEC = 20.0
 
-TtsProviderId = Literal["groq", "fish", "chatterbox"]
+TtsProviderId = Literal["groq", "fish", "chatterbox", "piper"]
+# Self-hosted providers with no fallback voice: a direct query surfaces
+# "unreachable" as a 502 rather than an indistinguishable empty list.
+_NO_FALLBACK_PROVIDERS = {"chatterbox", "piper"}
 
 
 def _normalize_lang(code: str) -> str:
@@ -158,9 +161,42 @@ async def _fetch_chatterbox_voices() -> list[Voice]:
     return voices
 
 
+async def _fetch_piper_voices() -> list[Voice]:
+    """BOL's own Urdu voices (urdu-tts/server/serve.py). The server reports
+    real languages per voice, so these are language-filtered like Groq/Fish."""
+    if not settings.piper_base_url:
+        return []
+    try:
+        async with httpx.AsyncClient(timeout=_FETCH_TIMEOUT_SEC) as client:
+            resp = await client.get(f"{settings.piper_base_url.rstrip('/')}/voices")
+            resp.raise_for_status()
+            data = resp.json()
+    except Exception:
+        logger.exception("Failed to fetch Piper voice list")
+        raise
+
+    voices: list[Voice] = []
+    for item in data or []:
+        voice_id = item.get("id")
+        if not voice_id:
+            continue
+        languages = [_normalize_lang(lang) for lang in item.get("languages") or ["ur"]] or ["ur"]
+        voices.append(
+            Voice(
+                id=voice_id,
+                label=item.get("label") or voice_id,
+                language=languages[0],
+                languages=languages,
+                provider="piper",
+            )
+        )
+    return voices
+
+
 _LIVE_FETCHERS = {
     "fish": _fetch_fish_voices,
     "chatterbox": _fetch_chatterbox_voices,
+    "piper": _fetch_piper_voices,
 }
 
 
@@ -201,14 +237,14 @@ async def list_voices(
     # Inlined rather than the TtsProviderId alias: ruff's B008 check
     # (function call in a default) doesn't recognize Query() as immutable
     # when the annotation is a Literal type alias, only a literal Literal[...].
-    provider: Literal["groq", "fish", "chatterbox"] | None = Query(default=None),
+    provider: Literal["groq", "fish", "chatterbox", "piper"] | None = Query(default=None),
 ) -> list[Voice]:
     if provider is not None:
         # Fish already has a graceful degrade worth keeping for a direct
         # query too (a hardcoded fallback voice, see _get_voices) — only
         # Chatterbox has no such fallback, which is what made "unreachable"
         # and "genuinely zero voices" indistinguishable (both -> 200 []).
-        if provider != "chatterbox":
+        if provider not in _NO_FALLBACK_PROVIDERS:
             return await _get_voices(provider)
         try:
             return await _get_voices(provider, raise_on_error=True)
@@ -225,5 +261,7 @@ async def list_voices(
     # (and a fresh agent-builder form before a provider is chosen) still
     # get a full list, degrading gracefully per-provider rather than failing
     # the whole request for one unreachable provider.
-    results = await asyncio.gather(*(_get_voices(p) for p in ("groq", "fish", "chatterbox")))
+    results = await asyncio.gather(
+        *(_get_voices(p) for p in ("groq", "fish", "chatterbox", "piper"))
+    )
     return [voice for group in results for voice in group]

@@ -21,6 +21,7 @@ def _isolate_external_provider_keys(monkeypatch):
     monkeypatch.setattr(settings, "groq_api_key", "")
     monkeypatch.setattr(settings, "fish_api_key", "")
     monkeypatch.setattr(settings, "chatterbox_base_url", "")
+    monkeypatch.setattr(settings, "piper_base_url", "")
 
 
 @pytest.fixture

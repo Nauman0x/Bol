@@ -95,6 +95,7 @@ export interface HealthConfig {
   groq: boolean;
   fish: boolean;
   chatterbox: boolean;
+  piper: boolean;
   sip_trunk: boolean;
 }
 

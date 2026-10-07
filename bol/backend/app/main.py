@@ -80,6 +80,7 @@ def create_app() -> FastAPI:
             "groq": bool(settings.groq_api_key),
             "fish": bool(settings.fish_api_key),
             "chatterbox": bool(settings.chatterbox_base_url),
+            "piper": bool(settings.piper_base_url),
             "sip_trunk": bool(settings.livekit_sip_outbound_trunk_id),
             "secrets": bool(settings.secrets_key),
         }

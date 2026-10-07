@@ -66,6 +66,35 @@ def test_build_tts_chatterbox_without_url_raises_clear_error(monkeypatch):
         build_tts({**BASE_CONFIG, "tts_provider": "chatterbox"})
 
 
+def test_build_tts_piper_provider(monkeypatch):
+    monkeypatch.setattr(settings, "piper_base_url", "http://localhost:8030/")
+    tts = build_tts({**BASE_CONFIG, "tts_provider": "piper", "voice_id": "rasa_female"})
+    assert type(tts).__module__ == "worker.piper_tts"
+    assert tts.capabilities.streaming is False
+    assert tts._opts.base_url == "http://localhost:8030"
+    assert tts._opts.voice_id == "rasa_female"
+
+
+def test_build_tts_piper_default_voice_lets_server_choose(monkeypatch):
+    monkeypatch.setattr(settings, "piper_base_url", "http://localhost:8030")
+    tts = build_tts({**BASE_CONFIG, "tts_provider": "piper"})
+    assert tts._opts.voice_id == ""
+
+
+def test_build_tts_piper_without_url_raises_clear_error(monkeypatch):
+    monkeypatch.setattr(settings, "piper_base_url", "")
+    with pytest.raises(RuntimeError, match="PIPER_BASE_URL"):
+        build_tts({**BASE_CONFIG, "tts_provider": "piper"})
+
+
+def test_build_instructions_piper_asks_for_urdu_script():
+    piper = build_instructions({**BASE_CONFIG, "tts_provider": "piper"}, streaming_tts=False)
+    other = build_instructions({**BASE_CONFIG, "tts_provider": "fish"}, streaming_tts=True)
+    assert "Urdu script" in piper and "Roman Urdu" in piper
+    assert "Urdu script" not in other
+    assert piper.endswith(BASE_CONFIG["system_prompt"])
+
+
 def test_build_tts_agent_override_beats_platform_default(monkeypatch):
     monkeypatch.setattr(settings, "tts_provider", "groq")
     monkeypatch.setattr(settings, "fish_api_key", "fish_test")

@@ -47,7 +47,7 @@ class AgentConfig(BaseModel):
     voice_id: str = "default"
     # None means "use the platform-wide TTS_PROVIDER default" (see
     # app/config.py) rather than hardcoding a provider per agent.
-    tts_provider: Literal["groq", "fish", "chatterbox"] | None = None
+    tts_provider: Literal["groq", "fish", "chatterbox", "piper"] | None = None
     llm_model: str = "qwen/qwen3.6-27b"
     temperature: float = Field(default=0.7, ge=0.0, le=2.0)
     max_call_duration_sec: int = Field(default=600, ge=30, le=7200)
