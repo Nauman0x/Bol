@@ -138,7 +138,7 @@ def build_turn_handling(config: dict) -> dict:
     """
     resolved = resolve_interruption(config)
     mode = config.get("interruption_mode", "vad")
-    if mode == "adaptive" and not adaptive_supported():
+    if mode == "adaptive" and not (adaptive_supported() and uses_streaming_stt(config)):
         # STT_PROVIDER=groq (or any future non-streaming provider) can't
         # gatekeep transcripts for the adaptive detector — silently asking
         # for it anyway would either error deep in the framework or (per
@@ -212,6 +212,24 @@ def _require_piper_url() -> str:
     return settings.piper_base_url
 
 
+# Languages LiveKit inference's streaming STT can transcribe: Deepgram Flux
+# (English) and AssemblyAI universal-streaming-multilingual (en, es, fr, de,
+# it, pt; "auto" lets it detect among those). Any other language (Urdu,
+# Hindi, Arabic, ...) is rejected by the gateway — every turn failed with
+# "LiveKit Inference STT returned an error" and the agent never answered —
+# so those agents use Groq Whisper instead, which covers ~100 languages at
+# the cost of non-streaming recognition (~360ms per turn, docs/LATENCY.md).
+_LIVEKIT_STREAMING_STT_LANGUAGES = {"auto", "en", "es", "fr", "de", "it", "pt"}
+
+
+def uses_streaming_stt(config: dict) -> bool:
+    """Whether build_stt gives this agent a streaming (LiveKit) STT."""
+    return (
+        settings.stt_provider == "livekit"
+        and config.get("language", "en") in _LIVEKIT_STREAMING_STT_LANGUAGES
+    )
+
+
 def build_stt(config: dict) -> stt_base.STT:
     if settings.stt_provider == "local":
         raise NotImplementedError(
@@ -219,7 +237,13 @@ def build_stt(config: dict) -> stt_base.STT:
         )
     language = config.get("language", "en")
 
-    if settings.stt_provider == "livekit":
+    if settings.stt_provider == "livekit" and not uses_streaming_stt(config):
+        logger.info(
+            "language=%s is not supported by LiveKit streaming STT; using Groq Whisper",
+            language,
+        )
+
+    if uses_streaming_stt(config):
         # Groq STT reports capabilities.streaming=False — livekit-agents wraps
         # it in a StreamAdapter that buffers the whole utterance and uploads
         # it only after the caller stops talking (~360ms serialized on the

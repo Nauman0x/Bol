@@ -68,6 +68,8 @@ _LATIN = re.compile(r"[A-Za-z]")
 # Raw phonemes for Piper, e.g. [[ əssəlˈaːmʊ ]]: passed through untouched (synthesis only;
 # piper's training data loader does not read them).
 _RAW_PHONEMES = re.compile(r"(\[\[.*?\]\])")
+_RAW_PUNCT = {"۔": ".", "،": ",", "؟": "?", "!": "!", "؛": ";"}
+_RAW_THEN_PUNCT = re.compile(r"\s*\]\]\s*([۔،؟!؛])")
 # کیا is "kya" (what) or "kiya" (did); espeak always says kya. It is "did" after نے at the
 # end of a clause (میں نے چیک کیا ہے) and before a passive (رابطہ کیا گیا): spell it کِیا there.
 _CLAUSE_END = r"(?=\s*(?:ہے|ہیں|تھا|تھی|تھے|[۔؟!،]|$))"
@@ -128,7 +130,11 @@ def normalize(text: str, lexicon: dict[str, str] | None = None) -> str:
     parts = _RAW_PHONEMES.split(text)
     out = [p if _RAW_PHONEMES.fullmatch(p) else _normalize_text(p, lexicon) for p in parts]
     text = re.sub(r"\s+", " ", " ".join(p for p in out if p)).strip()
-    return re.sub(rf" ([{PUNCT}])", r"\1", text)
+    text = re.sub(rf" ([{PUNCT}])", r"\1", text)
+    # Punctuation right after a raw-phoneme block would start the next text
+    # part, and espeak reads a leading "!" or "،" out as a word (fijaaya,
+    # sakta). Move it inside the block as the matching pause symbol.
+    return _RAW_THEN_PUNCT.sub(lambda m: f"{_RAW_PUNCT[m.group(1)]} ]]", text)
 
 
 def _apply_phrases(text: str, phrases: dict[str, str]) -> str:

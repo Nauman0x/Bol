@@ -74,7 +74,9 @@ def test_kiya_did_vs_kya_what():
 
 def test_phrase_lexicon_and_raw_phonemes():
     lexicon = {"السلام علیکم": "[[ əssəlˈaːmʊ əlˈɛːkʊm ]]"}
-    assert normalize("السلام علیکم! جی", lexicon) == "[[ əssəlˈaːmʊ əlˈɛːkʊm ]]! جی"
+    # Punctuation after the block moves inside it, or espeak reads "!" as a word.
+    assert normalize("السلام علیکم! جی", lexicon) == "[[ əssəlˈaːmʊ əlˈɛːkʊm! ]] جی"
+    assert normalize("السلام علیکم، جی", lexicon) == "[[ əssəlˈaːmʊ əlˈɛːkʊm, ]] جی"
     assert normalize("جی [[ hˈaː ]] ٹھیک ہے") == "جی [[ hˈaː ]] ٹھیک ہے"
 
 
