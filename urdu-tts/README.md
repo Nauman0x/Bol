@@ -195,7 +195,18 @@ echo "آج موسم بہت اچھا ہے۔" | python -m piper -m ur_PK-bol-mediu
 
 Pass text through `scripts/normalize_ur.py` first, as training did.
 
-## 8. Your own voice (later)
+## 8. Use the voices in BOL
+
+BOL's `piper` TTS provider talks to a small HTTP server that loads every voice in `export/`, normalises the text the same way as training (numbers, English words via `lexicon/english_ur.tsv`, pronunciation fixes via `lexicon/urdu_fix.tsv` and `lexicon/phonemes.tsv`) and streams 16-bit PCM one sentence at a time. It runs separately because Piper is GPL-3.0; BOL only calls it over HTTP.
+
+```sh
+python server/serve.py --voices export --port 8030     # piper venv active, from this folder
+curl localhost:8030/voices
+```
+
+A voice file `export/ur_PK-bol_rasa_female-medium.onnx` is served as voice id `rasa_female`. In BOL's `.env` set `PIPER_BASE_URL=http://localhost:8030` (WSL forwards the port to Windows), then pick **BOL Urdu (self-hosted Piper)**, language **Urdu**, and a voice in the agent form. The agent is told to answer in Urdu script, since the voice cannot read Roman Urdu.
+
+## 9. Your own voice (later)
 
 1. Record 1-2 hours: quiet room, same microphone and distance throughout, 44.1 or 48 kHz mono WAV, one sentence per file, 3-12 seconds each, steady neutral delivery.
 2. Put the files in `data/raw_me/wavs/` and write `data/raw_me/raw.tsv` (`file.wav<TAB>sentence`).
