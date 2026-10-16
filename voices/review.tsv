@@ -1,0 +1,2217 @@
+0001.wav	ep001	4.23	0.07	low_conf
+0002.wav	ep001	3.40	0.04	latin,low_conf
+0003.wav	ep001	7.63	0.00	latin,low_conf
+0004.wav	ep001	9.42	0.00	latin,low_conf
+0005.wav	ep001	5.78	0.54	
+0006.wav	ep001	3.54	0.26	low_conf
+0007.wav	ep001	8.15	0.50	
+0008.wav	ep001	6.98	0.77	
+0009.wav	ep001	5.43	0.20	low_conf
+0010.wav	ep001	4.63	0.79	
+0011.wav	ep001	6.84	0.72	
+0012.wav	ep001	3.79	0.46	low_conf
+0013.wav	ep001	8.05	0.13	low_conf
+0014.wav	ep001	3.88	0.73	
+0015.wav	ep001	9.43	0.87	
+0016.wav	ep001	5.28	0.50	digits
+0017.wav	ep001	8.78	0.83	
+0018.wav	ep001	10.49	0.69	
+0019.wav	ep001	9.98	0.62	
+0020.wav	ep001	10.55	0.90	
+0021.wav	ep001	9.54	0.90	digits
+0022.wav	ep001	9.66	0.96	
+0023.wav	ep001	7.93	0.80	
+0024.wav	ep001	6.96	0.83	
+0025.wav	ep001	6.20	0.94	
+0026.wav	ep001	6.33	0.59	
+0027.wav	ep001	9.79	0.76	
+0028.wav	ep001	7.96	0.56	
+0030.wav	ep001	4.90	0.50	
+0031.wav	ep001	6.73	0.38	low_conf
+0032.wav	ep001	3.95	0.73	
+0033.wav	ep001	7.14	0.36	low_conf
+0034.wav	ep001	4.87	0.47	low_conf
+0035.wav	ep001	7.62	0.42	low_conf
+0036.wav	ep001	8.01	0.68	
+0037.wav	ep001	2.37	0.99	
+0038.wav	ep001	4.05	0.95	
+0039.wav	ep001	4.38	0.54	
+0040.wav	ep001	10.46	0.51	
+0041.wav	ep001	7.50	0.46	low_conf
+0042.wav	ep001	2.91	0.80	
+0043.wav	ep001	3.02	0.85	
+0044.wav	ep001	3.53	0.90	
+0045.wav	ep001	6.25	0.90	
+0046.wav	ep001	7.01	0.20	low_conf
+0047.wav	ep001	8.57	0.65	
+0048.wav	ep001	7.77	0.46	low_conf
+0049.wav	ep001	3.78	0.93	
+0050.wav	ep001	11.95	0.56	
+0051.wav	ep001	7.25	0.42	low_conf
+0052.wav	ep001	6.01	0.65	
+0053.wav	ep001	4.69	0.41	low_conf
+0054.wav	ep001	8.04	0.46	latin,low_conf
+0055.wav	ep001	3.92	0.61	
+0056.wav	ep001	7.00	0.09	digits,low_conf
+0057.wav	ep001	6.57	0.16	low_conf
+0058.wav	ep001	4.92	0.44	latin,digits,low_conf
+0059.wav	ep001	7.83	0.17	low_conf
+0060.wav	ep001	7.81	0.00	latin,low_conf
+0061.wav	ep001	4.05	0.84	
+0062.wav	ep001	3.03	0.85	
+0063.wav	ep001	5.30	0.81	
+0065.wav	ep002	8.03	0.27	low_conf
+0066.wav	ep002	6.00	0.95	
+0067.wav	ep002	6.13	0.61	
+0068.wav	ep002	7.81	0.80	
+0069.wav	ep002	7.37	0.87	
+0070.wav	ep002	3.33	0.36	low_conf
+0071.wav	ep002	6.84	0.61	
+0072.wav	ep002	8.84	0.08	low_conf
+0073.wav	ep002	11.78	0.53	
+0074.wav	ep002	7.74	0.37	low_conf
+0075.wav	ep002	7.81	0.78	
+0076.wav	ep002	6.35	0.52	
+0077.wav	ep002	8.32	0.69	
+0078.wav	ep002	10.31	0.74	
+0079.wav	ep002	10.15	0.81	
+0081.wav	ep002	10.18	0.65	digits
+0082.wav	ep002	3.79	0.91	
+0083.wav	ep002	9.44	0.91	
+0084.wav	ep002	3.00	0.42	low_conf
+0085.wav	ep002	8.57	0.66	
+0086.wav	ep002	11.35	0.77	
+0087.wav	ep002	5.29	0.18	digits,low_conf
+0088.wav	ep002	11.01	0.22	latin,digits,low_conf
+0089.wav	ep002	3.09	0.87	
+0090.wav	ep002	11.95	0.26	digits,low_conf
+0091.wav	ep002	6.94	0.90	
+0092.wav	ep002	3.86	0.99	
+0093.wav	ep002	3.80	0.80	
+0094.wav	ep002	3.73	0.78	
+0095.wav	ep002	10.75	0.39	digits,low_conf
+0096.wav	ep002	2.88	0.78	
+0097.wav	ep002	11.45	0.08	latin,low_conf
+0098.wav	ep002	6.04	0.62	digits
+0099.wav	ep002	8.29	0.86	digits
+0100.wav	ep002	2.35	0.94	
+0101.wav	ep002	5.55	0.62	digits
+0102.wav	ep002	4.85	0.70	digits
+0103.wav	ep002	6.89	0.76	digits
+0104.wav	ep002	7.13	0.23	low_conf
+0105.wav	ep002	4.99	0.37	low_conf
+0106.wav	ep002	8.35	0.96	
+0107.wav	ep002	5.97	0.86	
+0108.wav	ep002	5.76	0.87	
+0109.wav	ep002	8.68	0.07	low_conf
+0110.wav	ep002	10.69	0.69	
+0111.wav	ep002	7.07	0.69	
+0113.wav	ep002	3.50	0.72	
+0114.wav	ep002	11.92	0.17	low_conf
+0115.wav	ep002	11.49	0.01	low_conf
+0116.wav	ep002	6.28	0.57	
+0117.wav	ep002	8.12	0.07	low_conf
+0118.wav	ep002	3.49	0.92	
+0119.wav	ep002	6.72	0.74	
+0120.wav	ep002	9.45	0.85	
+0121.wav	ep002	4.92	0.91	
+0123.wav	ep002	10.23	0.15	low_conf
+0124.wav	ep002	9.32	0.25	low_conf
+0125.wav	ep002	3.63	0.70	
+0126.wav	ep002	5.63	0.64	
+0127.wav	ep002	9.13	0.39	latin,low_conf
+0128.wav	ep002	5.35	0.19	latin,low_conf
+0129.wav	ep002	5.95	0.73	digits
+0130.wav	ep002	2.60	0.66	
+0131.wav	ep002	6.37	0.26	low_conf
+0132.wav	ep002	5.60	0.67	
+0133.wav	ep003	6.84	0.71	
+0134.wav	ep003	8.41	0.64	digits
+0135.wav	ep003	5.67	0.49	low_conf
+0136.wav	ep003	7.87	0.32	latin,low_conf
+0137.wav	ep003	6.00	0.12	low_conf
+0138.wav	ep003	8.22	0.19	low_conf
+0139.wav	ep003	5.07	0.24	low_conf
+0140.wav	ep003	9.55	0.08	latin,low_conf
+0141.wav	ep003	6.59	0.17	latin,low_conf
+0142.wav	ep003	7.48	0.15	latin,low_conf
+0143.wav	ep003	3.20	0.87	latin
+0144.wav	ep003	3.86	0.50	latin
+0145.wav	ep003	4.02	0.46	latin,low_conf
+0146.wav	ep003	2.98	0.16	latin,low_conf
+0147.wav	ep003	9.41	0.24	latin,digits,low_conf
+0148.wav	ep003	4.19	0.72	
+0149.wav	ep003	8.58	0.10	latin,digits,low_conf
+0150.wav	ep003	3.69	0.77	latin,digits
+0151.wav	ep003	6.25	0.27	latin,digits,low_conf
+0152.wav	ep003	6.98	0.57	
+0153.wav	ep003	6.20	0.17	latin,digits,low_conf
+0154.wav	ep003	3.08	0.91	
+0155.wav	ep003	3.86	0.92	
+0156.wav	ep003	7.59	0.07	low_conf
+0157.wav	ep003	4.22	0.90	
+0158.wav	ep003	7.83	0.06	low_conf
+0159.wav	ep003	6.39	0.64	
+0160.wav	ep003	8.20	0.85	
+0161.wav	ep003	8.58	0.72	
+0162.wav	ep003	4.11	0.87	
+0163.wav	ep003	5.35	0.82	
+0164.wav	ep003	6.00	0.52	
+0165.wav	ep003	10.36	0.20	low_conf
+0166.wav	ep003	7.46	0.68	
+0167.wav	ep003	6.18	0.78	
+0168.wav	ep003	7.07	0.56	latin
+0169.wav	ep003	8.48	0.53	latin,digits
+0170.wav	ep003	8.83	0.66	
+0171.wav	ep003	6.13	0.49	low_conf
+0172.wav	ep003	2.38	0.47	low_conf
+0174.wav	ep003	7.63	0.28	latin,low_conf
+0175.wav	ep003	7.55	0.31	latin,low_conf
+0176.wav	ep003	10.56	0.00	latin,low_conf
+0177.wav	ep003	4.26	0.00	latin,low_conf
+0178.wav	ep003	3.55	0.93	
+0179.wav	ep003	6.33	0.38	latin,low_conf
+0180.wav	ep003	7.37	0.05	latin,low_conf
+0181.wav	ep003	3.82	0.51	
+0182.wav	ep003	10.91	0.22	latin,low_conf
+0183.wav	ep003	4.12	0.72	latin
+0184.wav	ep003	9.83	0.20	latin,low_conf
+0185.wav	ep003	3.16	0.92	latin
+0186.wav	ep003	3.32	0.97	latin
+0187.wav	ep003	7.21	0.76	latin
+0188.wav	ep003	11.87	0.52	
+0189.wav	ep003	9.25	0.69	
+0190.wav	ep003	3.82	0.76	
+0191.wav	ep003	10.16	0.05	latin,low_conf
+0192.wav	ep003	8.07	0.19	latin,low_conf
+0193.wav	ep003	8.15	0.47	latin,low_conf
+0194.wav	ep003	5.82	0.54	
+0195.wav	ep003	5.63	0.58	
+0196.wav	ep003	5.16	0.43	low_conf
+0198.wav	ep003	10.10	0.12	latin,low_conf
+0199.wav	ep003	6.23	0.62	
+0200.wav	ep003	2.33	0.90	
+0201.wav	ep003	4.89	0.76	
+0202.wav	ep003	7.32	0.82	
+0203.wav	ep003	6.83	0.64	
+0204.wav	ep003	11.62	0.05	low_conf
+0205.wav	ep003	4.23	0.13	low_conf
+0206.wav	ep003	8.42	0.27	low_conf
+0207.wav	ep003	8.09	0.18	latin,low_conf
+0208.wav	ep003	4.29	0.01	latin,low_conf
+0209.wav	ep003	11.42	0.09	latin,low_conf
+0210.wav	ep003	10.44	0.81	latin
+0211.wav	ep003	4.18	0.99	
+0212.wav	ep003	6.15	0.84	
+0213.wav	ep003	3.54	0.68	
+0214.wav	ep003	10.23	0.01	low_conf
+0215.wav	ep003	3.31	0.81	
+0216.wav	ep003	5.89	0.66	
+0217.wav	ep003	5.61	0.60	
+0218.wav	ep003	6.09	0.42	low_conf
+0219.wav	ep003	6.99	0.24	latin,low_conf
+0220.wav	ep003	5.58	0.95	
+0221.wav	ep003	9.81	0.43	low_conf
+0222.wav	ep003	6.62	0.67	
+0223.wav	ep003	4.71	0.84	
+0224.wav	ep003	10.72	0.62	
+0225.wav	ep003	3.77	0.80	
+0227.wav	ep003	10.28	0.77	
+0228.wav	ep003	7.98	0.82	
+0229.wav	ep003	6.92	0.43	low_conf
+0230.wav	ep003	4.51	0.59	
+0231.wav	ep003	3.72	0.96	
+0232.wav	ep003	3.43	0.04	low_conf
+0233.wav	ep003	5.22	0.84	
+0234.wav	ep003	10.19	0.60	
+0235.wav	ep003	9.18	0.58	
+0236.wav	ep003	11.68	0.53	
+0237.wav	ep003	4.16	0.91	
+0238.wav	ep003	5.38	0.80	
+0239.wav	ep003	7.39	0.27	latin,low_conf
+0240.wav	ep003	2.41	0.88	latin
+0241.wav	ep003	4.03	1.00	
+0242.wav	ep003	8.13	0.52	
+0243.wav	ep003	4.45	0.71	
+0244.wav	ep003	3.36	0.35	low_conf
+0245.wav	ep003	4.65	0.22	low_conf
+0246.wav	ep003	10.35	0.04	low_conf
+0247.wav	ep003	11.61	0.40	low_conf
+0248.wav	ep003	7.33	0.44	latin,low_conf
+0249.wav	ep003	10.39	0.95	
+0250.wav	ep003	3.27	0.80	latin
+0251.wav	ep003	6.66	0.02	latin,low_conf
+0252.wav	ep003	5.98	0.04	latin,low_conf
+0253.wav	ep003	6.34	0.67	latin,digits
+0254.wav	ep003	7.53	0.34	latin,low_conf
+0255.wav	ep003	6.17	0.48	low_conf
+0256.wav	ep003	10.04	0.08	latin,low_conf
+0257.wav	ep003	7.02	0.07	latin,low_conf
+0258.wav	ep003	2.69	0.94	latin
+0259.wav	ep003	8.26	0.68	latin
+0260.wav	ep003	5.53	0.98	latin
+0261.wav	ep003	4.74	0.89	
+0262.wav	ep003	4.95	0.63	latin
+0263.wav	ep003	8.03	0.08	low_conf
+0264.wav	ep003	6.73	0.81	
+0265.wav	ep003	3.99	0.78	
+0267.wav	ep003	6.51	0.93	
+0268.wav	ep003	3.82	0.97	
+0269.wav	ep003	7.63	0.46	low_conf
+0270.wav	ep003	7.50	0.35	latin,low_conf
+0271.wav	ep003	6.32	0.67	
+0272.wav	ep003	5.37	0.75	
+0273.wav	ep003	7.32	0.70	
+0274.wav	ep003	9.72	0.79	
+0275.wav	ep003	5.01	0.65	
+0276.wav	ep003	5.85	0.81	
+0277.wav	ep003	10.00	0.18	low_conf
+0278.wav	ep003	7.70	0.23	low_conf
+0279.wav	ep003	5.41	0.77	
+0280.wav	ep003	6.00	0.79	
+0281.wav	ep003	3.94	0.82	
+0282.wav	ep003	3.90	0.45	low_conf
+0283.wav	ep003	3.47	0.91	
+0284.wav	ep003	4.10	0.74	
+0285.wav	ep003	6.26	0.82	
+0286.wav	ep003	5.13	0.93	
+0287.wav	ep003	10.83	0.72	
+0288.wav	ep003	9.54	0.77	
+0289.wav	ep003	4.84	0.74	latin
+0290.wav	ep003	10.37	0.33	low_conf
+0291.wav	ep003	7.72	0.54	
+0292.wav	ep003	3.24	0.99	
+0293.wav	ep003	3.21	0.96	
+0294.wav	ep003	11.83	0.77	
+0295.wav	ep003	8.59	0.68	
+0296.wav	ep003	3.65	0.84	
+0297.wav	ep003	7.22	0.13	low_conf
+0298.wav	ep003	4.17	0.66	
+0299.wav	ep003	9.95	0.51	latin
+0300.wav	ep003	11.88	0.29	low_conf
+0302.wav	ep004	3.24	0.67	
+0303.wav	ep004	4.45	0.88	
+0304.wav	ep004	3.94	0.84	
+0305.wav	ep004	8.57	0.74	
+0307.wav	ep004	7.90	0.70	
+0308.wav	ep004	5.01	0.58	
+0309.wav	ep004	8.97	0.72	
+0310.wav	ep004	3.49	0.76	
+0311.wav	ep004	5.68	0.78	
+0312.wav	ep004	4.29	0.60	latin
+0313.wav	ep004	6.16	0.73	latin
+0315.wav	ep004	7.79	0.65	
+0316.wav	ep004	8.68	0.30	latin,low_conf
+0317.wav	ep004	7.79	0.82	
+0318.wav	ep004	6.86	0.30	latin,low_conf
+0319.wav	ep004	4.14	0.02	low_conf
+0320.wav	ep004	7.98	0.09	latin,low_conf
+0321.wav	ep004	4.62	0.60	
+0322.wav	ep005	3.32	0.97	
+0323.wav	ep005	3.85	0.91	
+0324.wav	ep005	4.17	0.81	
+0325.wav	ep005	6.71	0.80	
+0326.wav	ep005	2.87	0.93	
+0327.wav	ep005	3.76	0.95	
+0328.wav	ep005	4.01	0.92	
+0329.wav	ep005	11.37	0.33	low_conf
+0330.wav	ep005	4.85	0.99	
+0331.wav	ep005	8.73	0.77	
+0332.wav	ep005	7.39	0.74	
+0333.wav	ep005	6.63	0.82	
+0334.wav	ep005	8.56	0.76	
+0335.wav	ep005	6.34	0.90	
+0336.wav	ep005	4.54	0.89	
+0337.wav	ep005	6.12	0.74	
+0338.wav	ep005	3.10	0.71	
+0339.wav	ep005	6.87	0.55	
+0340.wav	ep005	10.47	0.75	
+0341.wav	ep005	10.79	0.78	
+0342.wav	ep005	4.87	0.87	
+0343.wav	ep005	4.09	0.67	
+0344.wav	ep005	3.22	0.57	
+0345.wav	ep005	6.49	0.63	
+0346.wav	ep005	6.87	0.66	
+0347.wav	ep005	4.78	0.66	
+0348.wav	ep005	8.46	0.22	low_conf
+0349.wav	ep005	8.99	0.38	low_conf
+0350.wav	ep005	7.65	0.68	
+0351.wav	ep005	10.34	0.45	low_conf
+0352.wav	ep005	8.54	0.52	
+0353.wav	ep005	7.18	0.36	low_conf
+0354.wav	ep005	10.31	0.50	low_conf
+0355.wav	ep005	10.66	0.25	latin,digits,low_conf
+0356.wav	ep005	6.79	0.76	
+0358.wav	ep005	3.95	0.83	
+0359.wav	ep005	6.32	0.62	
+0360.wav	ep005	6.16	0.90	
+0361.wav	ep005	9.48	0.25	low_conf
+0362.wav	ep005	7.00	0.33	low_conf
+0363.wav	ep005	3.21	0.85	
+0364.wav	ep005	7.08	0.43	low_conf
+0365.wav	ep005	5.63	0.26	low_conf
+0366.wav	ep005	4.81	0.86	
+0368.wav	ep005	6.24	0.02	low_conf
+0369.wav	ep005	6.13	0.35	low_conf
+0371.wav	ep005	5.01	0.73	
+0372.wav	ep005	4.67	0.64	
+0373.wav	ep005	6.23	0.98	
+0374.wav	ep005	10.47	0.43	low_conf
+0375.wav	ep005	6.36	0.80	
+0376.wav	ep005	6.60	0.69	
+0377.wav	ep005	3.83	0.25	latin,low_conf
+0378.wav	ep005	4.18	0.36	latin,low_conf
+0379.wav	ep005	3.94	0.77	
+0380.wav	ep005	11.03	0.49	latin,low_conf
+0381.wav	ep005	4.22	0.42	low_conf
+0382.wav	ep005	9.25	0.78	
+0383.wav	ep005	4.03	0.98	
+0384.wav	ep005	4.66	0.74	
+0385.wav	ep005	3.49	1.00	
+0386.wav	ep005	7.90	0.62	
+0387.wav	ep005	5.52	0.58	
+0388.wav	ep005	10.17	0.84	
+0389.wav	ep005	9.44	0.55	
+0390.wav	ep005	5.47	0.68	
+0391.wav	ep005	7.10	0.42	low_conf
+0392.wav	ep005	6.10	0.93	
+0393.wav	ep005	11.72	0.88	
+0394.wav	ep005	4.29	0.99	
+0395.wav	ep005	3.59	0.90	
+0396.wav	ep005	7.28	0.63	
+0397.wav	ep005	6.03	0.91	
+0398.wav	ep005	8.16	0.25	low_conf
+0399.wav	ep005	9.66	0.86	
+0400.wav	ep005	3.61	0.99	
+0401.wav	ep005	6.80	0.83	
+0402.wav	ep005	6.96	0.31	latin,low_conf
+0403.wav	ep005	5.58	0.92	
+0404.wav	ep005	6.93	0.59	latin
+0405.wav	ep005	6.45	0.49	low_conf
+0406.wav	ep005	2.65	0.96	
+0407.wav	ep005	7.05	0.14	low_conf
+0408.wav	ep005	11.71	0.21	low_conf
+0409.wav	ep005	4.09	0.68	
+0410.wav	ep005	3.41	0.78	
+0411.wav	ep005	4.22	0.94	
+0412.wav	ep005	7.35	0.58	
+0413.wav	ep005	7.17	0.67	
+0414.wav	ep005	6.34	0.85	
+0415.wav	ep005	3.95	1.00	
+0416.wav	ep005	4.30	0.88	
+0417.wav	ep005	7.44	0.79	
+0418.wav	ep005	5.64	0.45	low_conf
+0419.wav	ep005	11.83	0.16	latin,low_conf
+0420.wav	ep006	11.32	0.51	latin
+0421.wav	ep006	4.37	0.91	
+0422.wav	ep006	9.39	0.72	
+0423.wav	ep006	7.45	0.34	low_conf
+0424.wav	ep006	3.91	0.90	
+0425.wav	ep006	7.33	0.83	
+0426.wav	ep006	7.38	0.69	
+0427.wav	ep006	6.02	0.88	
+0428.wav	ep006	9.27	0.09	low_conf
+0429.wav	ep006	7.85	0.11	low_conf
+0430.wav	ep006	9.06	0.17	low_conf
+0431.wav	ep006	10.88	0.29	low_conf
+0432.wav	ep006	6.66	0.71	
+0433.wav	ep006	11.45	0.52	
+0434.wav	ep006	3.23	0.76	
+0435.wav	ep006	3.55	0.74	
+0436.wav	ep006	5.11	0.43	low_conf
+0437.wav	ep006	4.00	0.73	
+0438.wav	ep006	5.70	0.87	
+0439.wav	ep006	11.37	0.44	low_conf
+0440.wav	ep006	5.25	0.53	
+0441.wav	ep006	9.23	0.15	low_conf
+0442.wav	ep006	7.18	0.44	low_conf
+0443.wav	ep006	10.02	0.57	
+0444.wav	ep006	3.46	0.57	
+0445.wav	ep006	7.57	0.80	
+0446.wav	ep006	4.52	0.79	
+0448.wav	ep006	5.73	0.95	
+0449.wav	ep006	5.92	0.11	low_conf
+0450.wav	ep006	11.86	0.55	
+0451.wav	ep006	4.81	0.57	
+0452.wav	ep006	9.93	0.30	low_conf
+0453.wav	ep006	8.10	0.36	low_conf
+0454.wav	ep006	4.39	0.41	low_conf
+0455.wav	ep006	5.06	0.74	
+0456.wav	ep006	9.19	0.03	low_conf
+0457.wav	ep006	3.81	0.49	low_conf
+0458.wav	ep006	6.41	0.43	low_conf
+0459.wav	ep006	3.75	0.72	
+0460.wav	ep006	3.22	0.76	
+0461.wav	ep006	5.40	0.61	
+0462.wav	ep006	7.86	0.77	
+0463.wav	ep006	4.94	0.77	
+0464.wav	ep006	5.54	0.47	low_conf
+0465.wav	ep006	6.79	0.57	
+0466.wav	ep006	7.31	0.08	low_conf
+0467.wav	ep006	11.70	0.35	low_conf
+0468.wav	ep006	9.81	0.13	latin,low_conf
+0469.wav	ep006	3.01	0.70	
+0470.wav	ep006	4.24	0.00	latin,low_conf
+0471.wav	ep006	5.66	0.55	
+0472.wav	ep006	6.05	0.02	low_conf
+0473.wav	ep007	7.27	0.61	
+0474.wav	ep007	6.57	0.75	
+0475.wav	ep007	6.23	0.67	
+0476.wav	ep007	4.15	0.46	low_conf
+0477.wav	ep007	11.73	0.29	low_conf
+0478.wav	ep007	5.85	0.77	
+0479.wav	ep007	11.34	0.65	
+0480.wav	ep007	6.15	0.47	low_conf
+0481.wav	ep007	9.08	0.56	
+0482.wav	ep007	7.63	0.73	
+0483.wav	ep007	6.28	0.52	
+0484.wav	ep007	10.53	0.68	
+0485.wav	ep007	4.17	0.77	
+0486.wav	ep007	4.80	0.85	
+0487.wav	ep007	8.00	0.62	
+0488.wav	ep007	11.15	0.64	
+0489.wav	ep007	9.90	0.64	
+0490.wav	ep007	3.26	0.63	
+0491.wav	ep007	7.60	0.49	low_conf
+0492.wav	ep007	11.36	0.31	low_conf
+0493.wav	ep007	9.22	0.00	latin,low_conf
+0494.wav	ep007	8.39	0.00	low_conf
+0495.wav	ep007	5.61	0.00	latin,low_conf
+0497.wav	ep007	9.47	0.00	latin,low_conf
+0501.wav	ep007	5.78	0.79	
+0502.wav	ep007	6.82	0.72	
+0505.wav	ep007	8.94	0.07	low_conf
+0506.wav	ep007	7.79	0.38	low_conf
+0507.wav	ep007	5.56	0.49	low_conf
+0509.wav	ep007	3.50	0.96	
+0511.wav	ep007	11.64	0.54	latin
+0512.wav	ep007	7.01	0.94	
+0513.wav	ep007	4.65	0.74	
+0514.wav	ep007	5.08	0.96	
+0515.wav	ep007	4.75	0.98	
+0516.wav	ep007	4.00	0.93	
+0517.wav	ep007	10.99	0.70	
+0518.wav	ep007	4.34	0.86	
+0519.wav	ep007	9.40	0.71	
+0520.wav	ep007	9.03	0.12	low_conf
+0521.wav	ep007	10.29	0.57	
+0522.wav	ep007	6.90	0.37	low_conf
+0523.wav	ep007	6.36	0.25	low_conf
+0524.wav	ep007	5.35	0.64	
+0525.wav	ep007	6.46	0.42	low_conf
+0526.wav	ep007	7.25	0.80	
+0527.wav	ep007	7.03	0.72	
+0528.wav	ep007	4.34	0.22	low_conf
+0529.wav	ep007	3.36	0.99	
+0530.wav	ep007	5.69	0.46	low_conf
+0531.wav	ep007	7.95	0.81	
+0532.wav	ep007	3.72	0.95	
+0533.wav	ep007	10.60	0.83	
+0534.wav	ep007	6.41	0.85	
+0535.wav	ep007	7.25	0.37	latin,low_conf
+0536.wav	ep007	11.69	0.58	
+0537.wav	ep007	9.51	0.87	
+0538.wav	ep007	10.26	0.74	
+0539.wav	ep007	7.01	0.63	
+0540.wav	ep007	6.41	0.65	
+0541.wav	ep007	4.90	0.68	
+0542.wav	ep007	4.70	0.97	
+0543.wav	ep007	8.56	0.77	
+0544.wav	ep007	3.44	0.67	
+0545.wav	ep007	4.77	0.65	
+0546.wav	ep007	3.73	0.96	
+0547.wav	ep007	8.70	0.94	
+0548.wav	ep007	3.81	0.82	
+0549.wav	ep007	3.01	0.78	
+0550.wav	ep007	3.77	0.91	
+0551.wav	ep007	10.34	0.67	
+0552.wav	ep007	9.92	0.79	
+0553.wav	ep007	3.86	0.91	
+0554.wav	ep007	11.45	0.25	latin,low_conf
+0555.wav	ep007	6.93	0.76	
+0556.wav	ep007	6.11	0.25	latin,low_conf
+0557.wav	ep007	7.19	0.63	latin
+0560.wav	ep008	8.80	0.07	latin,low_conf
+0561.wav	ep008	4.17	0.67	
+0562.wav	ep008	6.89	0.78	
+0563.wav	ep008	9.46	0.48	low_conf
+0564.wav	ep008	10.05	0.08	low_conf
+0565.wav	ep008	7.42	0.59	
+0566.wav	ep008	11.49	0.58	
+0567.wav	ep008	6.07	0.34	low_conf
+0568.wav	ep008	7.62	0.17	latin,low_conf
+0569.wav	ep008	9.78	0.42	low_conf
+0571.wav	ep008	6.91	0.00	latin,low_conf
+0573.wav	ep008	11.38	0.00	latin,low_conf
+0574.wav	ep008	7.81	0.43	low_conf
+0576.wav	ep008	9.93	0.20	low_conf
+0577.wav	ep008	6.80	0.73	
+0579.wav	ep008	6.91	0.73	
+0580.wav	ep008	3.42	0.72	
+0581.wav	ep008	3.37	0.41	low_conf
+0583.wav	ep008	11.01	0.54	
+0584.wav	ep008	7.89	0.72	
+0585.wav	ep008	8.79	0.11	low_conf
+0587.wav	ep008	5.32	0.54	
+0588.wav	ep008	10.72	0.45	low_conf
+0590.wav	ep008	6.71	0.53	
+0591.wav	ep008	6.32	0.68	
+0592.wav	ep008	9.26	0.45	low_conf
+0595.wav	ep008	5.94	0.11	low_conf
+0596.wav	ep008	10.02	0.29	low_conf
+0597.wav	ep008	6.39	0.01	low_conf
+0598.wav	ep008	11.32	0.08	latin,low_conf
+0599.wav	ep008	7.28	0.09	low_conf
+0600.wav	ep008	6.60	0.23	low_conf
+0601.wav	ep008	6.81	0.34	low_conf
+0602.wav	ep008	8.59	0.53	
+0605.wav	ep008	7.88	0.67	
+0606.wav	ep008	10.54	0.33	low_conf
+0607.wav	ep008	4.13	0.58	
+0608.wav	ep008	11.93	0.24	low_conf
+0609.wav	ep008	6.91	0.80	
+0610.wav	ep008	11.70	0.60	
+0611.wav	ep008	6.25	0.36	low_conf
+0612.wav	ep008	6.24	0.22	low_conf
+0613.wav	ep008	4.00	0.42	low_conf
+0614.wav	ep008	3.59	0.69	
+0615.wav	ep008	9.54	0.26	low_conf
+0616.wav	ep008	10.65	0.81	
+0618.wav	ep008	7.01	0.51	
+0619.wav	ep008	7.38	0.78	
+0621.wav	ep008	3.86	0.27	low_conf
+0622.wav	ep008	9.81	0.41	low_conf
+0623.wav	ep008	6.71	0.45	low_conf
+0624.wav	ep008	4.26	0.67	
+0625.wav	ep008	6.73	0.65	
+0626.wav	ep008	8.87	0.62	
+0627.wav	ep008	6.83	0.33	low_conf
+0628.wav	ep008	5.85	0.39	low_conf
+0629.wav	ep008	7.77	0.59	
+0630.wav	ep008	6.27	0.41	low_conf
+0631.wav	ep008	9.80	0.44	low_conf
+0633.wav	ep008	6.06	0.00	digits,low_conf
+0634.wav	ep008	7.38	0.08	latin,low_conf
+0635.wav	ep008	4.32	0.03	latin,digits,low_conf
+0636.wav	ep008	4.47	0.44	digits,low_conf
+0637.wav	ep008	5.90	0.05	digits,low_conf
+0638.wav	ep008	10.78	0.54	
+0640.wav	ep008	11.35	0.00	latin,low_conf
+0641.wav	ep008	6.63	0.00	latin,low_conf
+0642.wav	ep008	7.60	0.65	
+0643.wav	ep008	7.46	0.34	low_conf
+0644.wav	ep008	7.15	0.33	low_conf
+0645.wav	ep008	7.78	0.59	
+0647.wav	ep008	11.75	0.67	
+0648.wav	ep008	4.76	0.94	
+0649.wav	ep008	11.48	0.48	low_conf
+0650.wav	ep008	3.11	0.95	
+0651.wav	ep008	8.72	0.84	
+0652.wav	ep008	10.36	0.37	low_conf
+0653.wav	ep008	4.23	0.97	
+0654.wav	ep008	7.04	0.47	low_conf
+0655.wav	ep008	6.20	0.73	
+0656.wav	ep008	10.64	0.17	latin,low_conf
+0657.wav	ep008	9.90	0.77	latin
+0658.wav	ep008	7.27	0.76	
+0659.wav	ep008	11.00	0.73	
+0660.wav	ep009	5.70	0.46	low_conf
+0661.wav	ep009	5.18	0.31	low_conf
+0662.wav	ep009	3.72	0.84	
+0663.wav	ep009	6.98	0.37	low_conf
+0665.wav	ep009	10.77	0.75	
+0669.wav	ep009	5.18	0.35	low_conf
+0671.wav	ep009	6.28	0.81	
+0673.wav	ep009	4.85	0.46	low_conf
+0675.wav	ep009	7.00	0.65	
+0676.wav	ep009	3.41	0.66	
+0677.wav	ep009	6.01	0.94	
+0679.wav	ep009	5.08	0.65	
+0680.wav	ep009	10.64	0.80	
+0681.wav	ep009	6.87	0.20	low_conf
+0682.wav	ep009	10.07	0.69	
+0683.wav	ep009	2.28	0.93	
+0685.wav	ep009	8.52	0.84	
+0686.wav	ep009	2.03	0.43	low_conf
+0687.wav	ep009	7.24	0.03	low_conf
+0688.wav	ep009	10.82	0.33	low_conf
+0689.wav	ep009	8.54	0.78	
+0691.wav	ep009	8.93	0.76	
+0692.wav	ep009	7.84	0.72	
+0693.wav	ep009	8.25	0.75	
+0694.wav	ep009	5.94	0.95	
+0695.wav	ep009	6.55	0.82	
+0696.wav	ep009	6.46	0.81	
+0697.wav	ep009	2.77	0.93	
+0698.wav	ep009	8.62	0.74	
+0699.wav	ep009	9.85	0.62	
+0700.wav	ep009	9.39	0.69	
+0701.wav	ep009	6.43	0.82	
+0702.wav	ep009	10.99	0.69	
+0703.wav	ep009	6.61	0.32	low_conf
+0704.wav	ep009	3.85	0.88	
+0705.wav	ep009	4.16	0.83	
+0706.wav	ep009	3.91	0.85	
+0707.wav	ep009	7.00	0.54	
+0708.wav	ep009	6.76	0.74	
+0709.wav	ep009	4.95	0.85	
+0710.wav	ep009	6.80	0.46	low_conf
+0711.wav	ep009	6.46	0.12	latin,low_conf
+0712.wav	ep009	6.58	0.80	
+0713.wav	ep009	6.61	0.87	
+0714.wav	ep009	5.38	0.68	
+0715.wav	ep009	2.19	0.62	
+0716.wav	ep009	3.02	0.77	
+0718.wav	ep009	8.47	0.42	low_conf
+0719.wav	ep009	11.59	0.47	low_conf
+0720.wav	ep009	11.34	0.23	low_conf
+0721.wav	ep009	10.57	0.07	low_conf
+0722.wav	ep009	4.22	0.30	low_conf
+0725.wav	ep009	7.46	0.84	
+0726.wav	ep009	3.82	0.78	
+0727.wav	ep009	6.84	0.21	low_conf
+0728.wav	ep009	4.29	0.50	
+0729.wav	ep009	7.24	0.05	low_conf
+0731.wav	ep009	3.72	0.21	low_conf
+0732.wav	ep009	6.79	0.75	
+0733.wav	ep009	8.23	0.76	
+0734.wav	ep009	8.11	0.77	
+0736.wav	ep010	5.66	0.82	
+0737.wav	ep010	10.59	0.29	low_conf
+0738.wav	ep010	7.01	0.23	low_conf
+0739.wav	ep010	5.93	0.25	latin,low_conf
+0740.wav	ep010	11.63	0.42	latin,low_conf
+0741.wav	ep010	10.45	0.40	low_conf
+0742.wav	ep010	8.84	0.32	low_conf
+0743.wav	ep010	4.75	0.70	
+0744.wav	ep010	6.60	0.35	low_conf
+0745.wav	ep010	2.60	0.64	
+0746.wav	ep010	10.57	0.22	low_conf
+0747.wav	ep010	6.96	0.23	low_conf
+0748.wav	ep010	9.51	0.34	low_conf
+0749.wav	ep010	6.55	0.31	low_conf
+0750.wav	ep010	11.67	0.36	low_conf
+0751.wav	ep010	8.68	0.04	low_conf
+0752.wav	ep010	7.47	0.00	low_conf
+0753.wav	ep010	7.13	0.00	latin,low_conf
+0754.wav	ep010	3.81	0.05	low_conf
+0755.wav	ep010	8.58	0.50	
+0756.wav	ep010	5.66	0.68	
+0757.wav	ep010	11.24	0.00	latin,low_conf
+0758.wav	ep010	7.07	0.82	
+0759.wav	ep010	7.40	0.10	latin,low_conf
+0760.wav	ep010	4.26	0.43	latin,low_conf
+0761.wav	ep010	7.90	0.27	latin,low_conf
+0762.wav	ep010	6.81	0.57	
+0763.wav	ep010	7.26	0.90	
+0764.wav	ep010	6.65	0.84	
+0765.wav	ep010	10.26	0.45	latin,low_conf
+0766.wav	ep010	10.83	0.58	latin
+0767.wav	ep010	8.54	0.49	latin,low_conf
+0768.wav	ep010	4.69	0.49	latin,low_conf
+0769.wav	ep010	10.53	0.51	latin
+0770.wav	ep010	3.16	0.60	
+0771.wav	ep010	4.02	0.69	
+0772.wav	ep010	6.17	0.48	low_conf
+0773.wav	ep010	8.72	0.43	low_conf
+0774.wav	ep010	11.62	0.51	
+0775.wav	ep010	8.10	0.19	low_conf
+0776.wav	ep010	7.26	0.40	low_conf
+0777.wav	ep010	8.56	0.30	low_conf
+0778.wav	ep011	4.75	0.60	
+0779.wav	ep011	10.63	0.04	low_conf
+0780.wav	ep011	6.92	0.12	latin,low_conf
+0781.wav	ep011	11.30	0.13	latin,low_conf
+0782.wav	ep011	4.53	0.51	
+0783.wav	ep011	8.33	0.54	
+0784.wav	ep011	5.06	0.22	low_conf
+0785.wav	ep011	4.34	0.54	
+0786.wav	ep011	5.54	0.53	
+0787.wav	ep011	7.12	0.59	
+0788.wav	ep011	6.46	0.65	
+0789.wav	ep011	8.52	0.71	
+0790.wav	ep011	7.79	0.41	low_conf
+0791.wav	ep011	7.49	0.82	
+0792.wav	ep011	3.85	0.38	low_conf
+0793.wav	ep011	4.65	0.96	
+0794.wav	ep011	3.30	0.92	
+0795.wav	ep011	4.15	0.77	
+0796.wav	ep011	9.00	0.91	
+0797.wav	ep011	4.93	0.99	
+0798.wav	ep011	3.04	0.89	
+0799.wav	ep011	3.68	0.02	low_conf
+0800.wav	ep011	5.32	0.73	
+0801.wav	ep011	5.55	0.00	latin,low_conf
+0802.wav	ep011	7.46	0.34	low_conf
+0803.wav	ep011	6.66	0.47	low_conf
+0804.wav	ep011	3.81	0.85	
+0805.wav	ep011	5.39	0.51	
+0806.wav	ep011	5.84	0.65	
+0807.wav	ep011	7.45	0.74	
+0808.wav	ep011	8.06	0.57	
+0809.wav	ep011	2.95	0.81	
+0810.wav	ep011	4.50	0.84	latin
+0811.wav	ep011	11.98	0.69	latin
+0812.wav	ep011	9.95	0.08	low_conf
+0813.wav	ep011	7.80	0.41	low_conf
+0814.wav	ep011	6.49	0.14	latin,low_conf
+0815.wav	ep011	6.69	0.76	latin
+0816.wav	ep011	9.36	0.32	low_conf
+0817.wav	ep012	11.38	0.30	latin,low_conf
+0818.wav	ep012	4.74	0.43	latin,low_conf
+0819.wav	ep012	3.11	0.08	low_conf
+0822.wav	ep012	6.02	0.33	low_conf
+0823.wav	ep012	11.43	0.63	
+0825.wav	ep012	8.29	0.38	low_conf
+0826.wav	ep012	4.85	0.98	
+0827.wav	ep012	3.88	0.92	
+0828.wav	ep013	8.23	0.43	low_conf
+0829.wav	ep013	6.07	0.57	
+0830.wav	ep013	4.05	0.63	
+0831.wav	ep013	7.47	0.48	low_conf
+0832.wav	ep013	10.21	0.14	low_conf
+0833.wav	ep013	7.37	0.28	low_conf
+0834.wav	ep013	3.99	0.63	
+0835.wav	ep013	4.26	0.82	
+0836.wav	ep013	3.70	0.73	
+0837.wav	ep013	7.88	0.57	
+0838.wav	ep013	8.73	0.21	low_conf
+0839.wav	ep013	3.78	0.61	
+0840.wav	ep013	6.19	0.80	
+0841.wav	ep013	11.99	0.59	latin
+0842.wav	ep013	4.66	0.85	
+0844.wav	ep013	6.11	0.72	
+0846.wav	ep013	11.27	0.64	
+0847.wav	ep013	6.76	0.84	
+0848.wav	ep013	3.39	0.95	
+0849.wav	ep013	10.09	0.28	latin,low_conf
+0850.wav	ep014	7.28	0.79	
+0851.wav	ep014	3.30	0.74	
+0852.wav	ep014	5.38	0.63	
+0853.wav	ep014	8.25	0.61	
+0854.wav	ep014	6.08	0.89	
+0855.wav	ep014	8.50	0.40	low_conf
+0856.wav	ep014	8.50	0.92	
+0857.wav	ep014	11.53	0.38	low_conf
+0858.wav	ep014	4.84	0.85	
+0859.wav	ep014	4.81	0.63	
+0860.wav	ep014	3.72	0.72	
+0861.wav	ep014	8.74	0.64	
+0862.wav	ep014	10.11	0.14	low_conf
+0863.wav	ep014	5.83	0.60	
+0864.wav	ep014	9.31	0.13	latin,low_conf
+0866.wav	ep014	11.97	0.52	
+0867.wav	ep014	6.89	0.10	latin,low_conf
+0868.wav	ep014	9.87	0.34	latin,low_conf
+0869.wav	ep014	6.88	0.45	low_conf
+0870.wav	ep014	6.05	0.30	latin,low_conf
+0871.wav	ep014	10.38	0.04	latin,digits,low_conf
+0872.wav	ep014	5.49	0.57	
+0873.wav	ep014	8.71	0.12	latin,low_conf
+0874.wav	ep014	11.24	0.47	latin,low_conf
+0875.wav	ep014	8.69	0.83	
+0876.wav	ep015	11.12	0.03	latin,low_conf
+0877.wav	ep015	8.24	0.28	low_conf
+0878.wav	ep015	8.99	0.51	
+0879.wav	ep015	9.71	0.34	low_conf
+0880.wav	ep015	9.27	0.32	low_conf
+0881.wav	ep015	8.85	0.46	low_conf
+0882.wav	ep015	8.10	0.39	low_conf
+0883.wav	ep015	6.20	0.28	low_conf
+0884.wav	ep016	9.92	0.27	low_conf
+0885.wav	ep016	7.13	0.54	
+0886.wav	ep016	9.75	0.64	
+0887.wav	ep016	5.59	0.98	
+0888.wav	ep016	6.76	0.96	
+0889.wav	ep016	10.58	0.06	low_conf
+0891.wav	ep016	11.02	0.28	low_conf
+0892.wav	ep016	11.31	0.85	
+0893.wav	ep016	6.27	0.53	
+0894.wav	ep016	8.02	0.37	low_conf
+0895.wav	ep016	11.53	0.38	low_conf
+0896.wav	ep016	7.50	0.33	low_conf
+0897.wav	ep016	8.81	0.56	
+0900.wav	ep016	3.41	0.98	
+0901.wav	ep016	7.00	0.49	low_conf
+0902.wav	ep016	8.46	0.06	low_conf
+0903.wav	ep016	11.71	0.01	low_conf
+0904.wav	ep016	8.90	0.18	low_conf
+0905.wav	ep016	4.41	0.39	low_conf
+0906.wav	ep016	11.92	0.24	low_conf
+0907.wav	ep016	6.16	0.01	latin,low_conf
+0908.wav	ep016	9.93	0.53	latin
+0911.wav	ep016	6.17	0.42	latin,low_conf
+0912.wav	ep016	5.90	0.89	latin
+0915.wav	ep016	6.97	0.00	low_conf
+0916.wav	ep016	7.64	0.00	latin,low_conf
+0917.wav	ep016	7.00	0.03	low_conf
+0918.wav	ep016	10.50	0.01	low_conf
+0919.wav	ep016	9.33	0.28	low_conf
+0920.wav	ep016	9.26	0.50	
+0921.wav	ep016	8.97	0.05	low_conf
+0922.wav	ep016	6.41	0.47	low_conf
+0924.wav	ep016	3.72	0.88	
+0926.wav	ep016	10.41	0.54	
+0927.wav	ep016	3.76	0.70	
+0928.wav	ep016	9.08	0.34	low_conf
+0929.wav	ep016	8.41	0.74	
+0931.wav	ep016	6.16	0.75	
+0933.wav	ep016	8.89	0.84	
+0934.wav	ep016	6.32	0.93	
+0935.wav	ep016	8.08	0.76	
+0936.wav	ep016	5.24	0.79	
+0938.wav	ep016	5.27	0.75	
+0939.wav	ep016	8.73	0.56	
+0940.wav	ep016	9.79	0.61	latin
+0941.wav	ep016	7.36	0.50	latin
+0942.wav	ep016	7.50	0.39	latin,low_conf
+0943.wav	ep016	2.90	0.97	
+0944.wav	ep016	10.69	0.91	
+0945.wav	ep016	8.00	0.72	
+0946.wav	ep016	4.27	0.78	
+0947.wav	ep016	7.17	0.84	
+0948.wav	ep016	6.13	0.58	
+0949.wav	ep016	7.21	0.88	
+0950.wav	ep016	4.86	0.99	
+0951.wav	ep016	5.78	0.54	
+0952.wav	ep016	7.33	0.55	
+0953.wav	ep016	3.80	0.93	
+0954.wav	ep016	8.17	0.45	low_conf
+0955.wav	ep016	9.50	0.38	low_conf
+0956.wav	ep016	6.55	0.20	low_conf
+0957.wav	ep016	9.27	0.80	
+0958.wav	ep016	7.07	0.94	
+0959.wav	ep016	11.31	0.04	latin,low_conf
+0960.wav	ep016	10.47	0.00	low_conf
+0962.wav	ep017	3.11	0.87	
+0963.wav	ep017	4.61	0.18	low_conf
+0964.wav	ep017	5.12	0.80	
+0965.wav	ep017	4.50	0.81	
+0966.wav	ep017	4.68	0.92	
+0967.wav	ep017	7.29	0.69	
+0968.wav	ep017	5.38	0.72	
+0969.wav	ep017	2.92	0.70	
+0970.wav	ep017	6.03	0.83	
+0971.wav	ep017	6.91	0.55	
+0972.wav	ep017	6.06	0.66	
+0974.wav	ep017	7.85	0.71	
+0975.wav	ep017	3.57	0.72	
+0976.wav	ep017	6.66	0.84	
+0978.wav	ep017	3.49	0.26	low_conf
+0979.wav	ep017	11.54	0.38	low_conf
+0980.wav	ep017	10.37	0.79	
+0981.wav	ep017	4.26	0.78	
+0982.wav	ep017	10.47	0.50	
+0983.wav	ep017	2.84	0.88	
+0984.wav	ep017	6.52	0.91	
+0985.wav	ep017	10.72	0.83	
+0986.wav	ep017	7.40	0.65	
+0987.wav	ep017	7.21	0.58	
+0988.wav	ep017	6.08	0.76	
+0990.wav	ep017	11.50	0.30	low_conf
+0991.wav	ep017	4.28	0.14	low_conf
+0992.wav	ep017	4.89	0.04	low_conf
+0993.wav	ep017	5.52	0.73	
+0994.wav	ep017	7.33	0.49	low_conf
+0995.wav	ep017	8.19	0.64	
+0996.wav	ep017	7.08	0.48	low_conf
+0997.wav	ep017	7.24	0.38	low_conf
+0998.wav	ep017	8.31	0.85	
+0999.wav	ep017	4.27	0.86	
+1000.wav	ep017	6.79	0.23	latin,low_conf
+1001.wav	ep017	5.59	0.85	
+1002.wav	ep017	10.12	0.65	
+1003.wav	ep017	11.22	0.57	
+1004.wav	ep017	6.71	0.91	
+1005.wav	ep017	7.43	0.67	
+1006.wav	ep017	8.96	0.97	
+1007.wav	ep017	7.17	0.02	low_conf
+1008.wav	ep017	6.01	0.46	low_conf
+1009.wav	ep017	3.48	0.90	
+1010.wav	ep017	6.82	0.83	
+1011.wav	ep017	7.10	0.84	
+1012.wav	ep017	3.67	0.86	
+1013.wav	ep017	11.87	0.16	low_conf
+1014.wav	ep017	6.61	0.49	low_conf
+1015.wav	ep017	3.05	0.39	low_conf
+1016.wav	ep017	7.68	0.65	
+1017.wav	ep017	5.14	0.45	low_conf
+1018.wav	ep017	7.65	0.84	
+1019.wav	ep017	8.96	0.55	
+1020.wav	ep017	5.44	0.24	low_conf
+1021.wav	ep017	9.62	0.48	low_conf
+1022.wav	ep017	9.38	0.90	
+1024.wav	ep017	5.65	0.64	
+1025.wav	ep017	10.83	0.73	
+1026.wav	ep017	8.20	0.68	
+1028.wav	ep017	9.28	0.66	
+1029.wav	ep017	7.98	0.84	
+1030.wav	ep017	8.75	0.93	latin
+1031.wav	ep017	7.83	0.57	
+1033.wav	ep018	9.97	0.46	low_conf
+1034.wav	ep018	5.59	0.67	
+1035.wav	ep018	8.78	0.57	
+1036.wav	ep018	8.25	0.85	
+1037.wav	ep018	5.58	0.83	
+1038.wav	ep018	8.82	0.83	
+1039.wav	ep018	6.00	0.43	low_conf
+1040.wav	ep018	11.71	0.11	low_conf
+1041.wav	ep018	8.78	0.60	
+1042.wav	ep018	6.79	0.10	low_conf
+1043.wav	ep018	6.05	0.50	
+1044.wav	ep018	11.00	0.46	low_conf
+1045.wav	ep018	4.59	0.90	
+1046.wav	ep018	6.88	0.69	
+1047.wav	ep018	11.78	0.58	
+1048.wav	ep018	6.31	0.30	low_conf
+1050.wav	ep018	9.26	0.02	low_conf
+1051.wav	ep018	4.07	0.01	low_conf
+1052.wav	ep018	6.31	0.22	low_conf
+1053.wav	ep018	9.16	0.20	low_conf
+1054.wav	ep018	10.40	0.75	
+1055.wav	ep018	7.91	0.75	
+1056.wav	ep018	6.58	0.64	
+1057.wav	ep018	6.69	0.15	low_conf
+1058.wav	ep018	7.56	0.58	
+1060.wav	ep018	3.50	0.65	
+1061.wav	ep018	8.27	0.40	latin,low_conf
+1062.wav	ep018	6.89	0.15	low_conf
+1063.wav	ep018	7.89	0.49	low_conf
+1064.wav	ep018	10.10	0.04	latin,low_conf
+1065.wav	ep018	7.40	0.60	
+1066.wav	ep018	9.36	0.43	latin,digits,low_conf
+1069.wav	ep018	6.85	0.56	
+1071.wav	ep018	10.00	0.66	
+1072.wav	ep018	10.45	0.42	low_conf
+1073.wav	ep018	5.16	0.61	
+1074.wav	ep018	8.23	0.09	low_conf
+1075.wav	ep018	8.27	0.26	low_conf
+1076.wav	ep018	11.14	0.04	latin,low_conf
+1077.wav	ep018	5.40	0.77	
+1078.wav	ep018	10.63	0.21	digits,low_conf
+1079.wav	ep018	6.96	0.48	low_conf
+1080.wav	ep018	9.42	0.41	low_conf
+1081.wav	ep018	6.46	0.09	latin,low_conf
+1082.wav	ep018	6.37	0.22	low_conf
+1083.wav	ep018	6.68	0.19	latin,low_conf
+1085.wav	ep019	6.36	0.63	digits
+1086.wav	ep019	9.04	0.41	latin,low_conf
+1087.wav	ep019	8.91	0.53	
+1088.wav	ep019	11.61	0.57	
+1089.wav	ep019	2.95	0.69	
+1090.wav	ep019	4.88	0.81	
+1091.wav	ep019	8.93	0.54	
+1092.wav	ep019	7.95	0.57	
+1093.wav	ep019	6.08	0.77	
+1094.wav	ep019	3.56	0.57	latin
+1095.wav	ep019	6.47	0.15	low_conf
+1096.wav	ep019	3.37	0.82	
+1097.wav	ep019	9.26	0.53	
+1098.wav	ep019	5.25	0.97	
+1099.wav	ep019	3.76	0.86	digits
+1100.wav	ep019	5.50	0.71	digits
+1101.wav	ep020	6.26	0.86	
+1102.wav	ep020	4.98	0.75	
+1103.wav	ep020	5.26	0.93	
+1104.wav	ep020	8.12	0.67	
+1105.wav	ep020	8.63	0.84	
+1106.wav	ep020	8.85	0.20	low_conf
+1107.wav	ep020	3.79	0.65	
+1108.wav	ep020	7.58	0.48	low_conf
+1109.wav	ep020	6.88	0.73	
+1110.wav	ep020	5.12	0.35	low_conf
+1111.wav	ep020	6.29	0.89	
+1112.wav	ep020	11.37	0.53	
+1113.wav	ep020	9.88	0.71	
+1114.wav	ep020	6.22	0.88	
+1115.wav	ep020	8.52	0.30	low_conf
+1116.wav	ep020	9.31	0.23	low_conf
+1117.wav	ep020	10.68	0.82	
+1118.wav	ep020	4.84	0.82	
+1119.wav	ep020	6.01	0.81	
+1120.wav	ep020	7.39	0.70	
+1121.wav	ep020	2.84	0.89	
+1122.wav	ep020	7.60	0.54	
+1123.wav	ep020	3.06	0.97	
+1124.wav	ep020	2.98	0.81	
+1125.wav	ep020	8.22	0.41	low_conf
+1126.wav	ep020	6.70	0.56	
+1127.wav	ep020	4.41	0.96	
+1128.wav	ep020	10.84	0.94	
+1129.wav	ep020	4.68	0.73	
+1130.wav	ep020	4.81	0.78	
+1131.wav	ep020	8.57	0.39	low_conf
+1132.wav	ep020	10.96	0.63	
+1133.wav	ep020	2.86	0.99	
+1134.wav	ep020	5.33	0.64	
+1135.wav	ep020	7.69	0.60	
+1136.wav	ep020	3.86	0.94	
+1137.wav	ep020	10.22	0.26	low_conf
+1138.wav	ep020	6.58	0.96	
+1139.wav	ep020	8.57	0.88	
+1140.wav	ep020	9.80	0.55	
+1141.wav	ep020	5.41	0.84	
+1142.wav	ep020	5.75	0.64	
+1143.wav	ep020	5.93	0.80	
+1144.wav	ep020	6.13	0.50	
+1145.wav	ep020	4.81	0.86	
+1146.wav	ep020	3.49	0.99	
+1147.wav	ep020	6.66	0.49	low_conf
+1149.wav	ep020	6.06	0.67	
+1150.wav	ep020	11.35	0.39	low_conf
+1151.wav	ep020	11.62	0.46	low_conf
+1152.wav	ep020	11.78	0.18	low_conf
+1153.wav	ep020	7.83	0.61	
+1154.wav	ep020	8.82	0.06	low_conf
+1155.wav	ep020	11.29	0.69	
+1156.wav	ep020	5.19	0.82	
+1157.wav	ep020	3.89	0.99	
+1158.wav	ep020	11.72	0.51	
+1159.wav	ep020	3.53	0.87	
+1160.wav	ep020	4.61	0.69	
+1161.wav	ep020	6.77	0.95	
+1163.wav	ep020	9.24	0.60	
+1164.wav	ep021	7.79	0.37	low_conf
+1165.wav	ep021	7.24	0.69	
+1166.wav	ep021	3.19	0.76	
+1167.wav	ep021	7.43	0.84	
+1168.wav	ep021	6.10	0.50	low_conf
+1169.wav	ep021	3.86	0.48	low_conf
+1170.wav	ep021	6.05	0.56	
+1171.wav	ep021	3.95	0.95	
+1172.wav	ep021	8.87	0.62	
+1173.wav	ep021	5.69	0.53	
+1174.wav	ep021	3.91	0.77	
+1175.wav	ep021	6.50	0.85	
+1176.wav	ep021	9.86	0.07	low_conf
+1177.wav	ep021	3.64	0.83	
+1179.wav	ep021	5.35	0.37	low_conf
+1180.wav	ep021	6.92	0.89	
+1181.wav	ep021	9.94	0.63	
+1182.wav	ep021	5.45	0.36	low_conf
+1183.wav	ep021	6.50	0.89	
+1184.wav	ep021	9.92	0.81	
+1185.wav	ep021	6.34	0.85	
+1186.wav	ep021	3.10	0.86	
+1187.wav	ep021	11.35	0.71	
+1188.wav	ep021	9.94	0.21	low_conf
+1189.wav	ep021	8.76	0.62	
+1190.wav	ep021	3.83	0.96	
+1191.wav	ep021	3.65	0.59	
+1192.wav	ep021	9.72	0.40	latin,low_conf
+1193.wav	ep021	10.49	0.57	latin
+1194.wav	ep021	10.81	0.49	low_conf
+1195.wav	ep021	7.69	0.40	low_conf
+1196.wav	ep021	3.92	0.74	
+1197.wav	ep021	2.84	0.88	
+1198.wav	ep021	3.23	0.90	
+1199.wav	ep021	2.60	0.85	
+1200.wav	ep021	2.67	0.93	
+1201.wav	ep021	5.29	0.99	
+1202.wav	ep021	2.83	0.75	
+1203.wav	ep021	2.86	0.88	
+1204.wav	ep021	10.69	0.70	
+1205.wav	ep021	5.52	0.76	
+1206.wav	ep021	9.27	0.57	
+1207.wav	ep021	5.98	0.71	
+1208.wav	ep021	9.17	0.86	
+1209.wav	ep022	8.12	0.44	low_conf
+1210.wav	ep022	4.07	0.04	low_conf
+1211.wav	ep022	10.19	0.52	
+1212.wav	ep022	3.89	0.88	
+1213.wav	ep022	4.02	0.85	
+1214.wav	ep022	4.35	0.94	
+1215.wav	ep022	11.21	0.73	
+1216.wav	ep022	9.48	0.51	
+1217.wav	ep022	3.89	0.25	low_conf
+1218.wav	ep022	4.18	0.08	low_conf
+1219.wav	ep022	6.53	0.49	low_conf
+1220.wav	ep022	9.26	0.57	
+1221.wav	ep022	4.86	0.61	
+1222.wav	ep022	5.91	0.63	
+1223.wav	ep022	10.03	0.37	low_conf
+1224.wav	ep022	7.23	0.02	low_conf
+1225.wav	ep022	6.79	0.84	
+1226.wav	ep022	3.68	0.75	
+1227.wav	ep022	7.16	0.69	
+1229.wav	ep023	5.84	0.19	low_conf
+1231.wav	ep023	6.71	0.80	
+1232.wav	ep023	6.55	0.72	
+1233.wav	ep023	2.62	0.83	
+1234.wav	ep023	5.66	0.89	
+1235.wav	ep023	8.55	0.79	
+1236.wav	ep023	4.92	0.39	low_conf
+1237.wav	ep023	8.24	0.51	
+1238.wav	ep023	7.82	0.75	
+1239.wav	ep023	10.61	0.47	low_conf
+1240.wav	ep023	4.53	0.62	
+1241.wav	ep023	4.84	0.59	
+1242.wav	ep023	3.26	0.24	low_conf
+1243.wav	ep023	6.17	0.66	
+1244.wav	ep023	6.92	0.58	
+1245.wav	ep023	9.93	0.57	
+1246.wav	ep023	7.51	0.63	
+1247.wav	ep023	6.38	0.41	low_conf
+1248.wav	ep023	4.95	0.50	low_conf
+1249.wav	ep023	3.13	0.89	
+1250.wav	ep023	4.38	0.78	
+1251.wav	ep023	9.79	0.30	low_conf
+1253.wav	ep023	7.28	0.88	
+1254.wav	ep023	7.18	0.64	
+1255.wav	ep023	7.08	0.37	low_conf
+1256.wav	ep023	6.92	0.04	latin,low_conf
+1257.wav	ep023	8.90	0.15	low_conf
+1258.wav	ep023	6.11	0.67	
+1259.wav	ep023	6.91	0.37	low_conf
+1260.wav	ep023	7.04	0.20	low_conf
+1261.wav	ep023	5.36	0.46	low_conf
+1262.wav	ep023	7.60	0.69	
+1264.wav	ep023	5.72	0.62	
+1265.wav	ep023	6.61	0.60	
+1266.wav	ep023	3.98	0.57	
+1267.wav	ep023	8.95	0.53	
+1268.wav	ep023	10.85	0.45	low_conf
+1269.wav	ep023	10.63	0.20	low_conf
+1270.wav	ep023	6.18	0.07	low_conf
+1271.wav	ep023	8.43	0.00	latin,low_conf
+1272.wav	ep023	3.84	0.04	low_conf
+1273.wav	ep023	8.27	0.00	low_conf
+1274.wav	ep023	6.64	0.07	low_conf
+1275.wav	ep023	8.22	0.07	low_conf
+1276.wav	ep023	4.22	0.21	low_conf
+1277.wav	ep023	6.24	0.56	
+1278.wav	ep023	5.37	0.53	
+1279.wav	ep023	4.13	0.06	low_conf
+1280.wav	ep023	6.21	0.66	
+1281.wav	ep023	5.28	0.50	low_conf
+1285.wav	ep023	5.99	0.27	low_conf
+1286.wav	ep023	10.29	0.05	low_conf
+1288.wav	ep023	8.12	0.37	low_conf
+1289.wav	ep023	4.38	0.53	
+1290.wav	ep023	6.44	0.58	
+1291.wav	ep023	5.12	0.01	low_conf
+1292.wav	ep023	5.83	0.44	low_conf
+1293.wav	ep023	6.70	0.39	low_conf
+1294.wav	ep023	9.78	0.31	low_conf
+1296.wav	ep023	9.03	0.10	low_conf
+1297.wav	ep023	6.56	0.04	low_conf
+1298.wav	ep023	6.18	0.45	low_conf
+1299.wav	ep023	4.87	0.48	low_conf
+1300.wav	ep023	4.16	0.18	low_conf
+1301.wav	ep023	6.12	0.37	low_conf
+1302.wav	ep023	4.70	0.63	
+1304.wav	ep023	7.66	0.67	
+1305.wav	ep023	4.13	0.72	
+1307.wav	ep023	4.48	0.62	
+1308.wav	ep023	6.24	0.62	
+1309.wav	ep023	3.80	0.71	
+1310.wav	ep023	3.12	0.75	
+1311.wav	ep023	7.64	0.71	
+1312.wav	ep023	9.56	0.12	low_conf
+1313.wav	ep023	4.57	0.55	
+1314.wav	ep023	3.94	0.71	
+1315.wav	ep023	10.19	0.23	low_conf
+1317.wav	ep023	6.10	0.30	low_conf
+1319.wav	ep023	5.46	0.49	low_conf
+1320.wav	ep023	5.35	0.73	
+1321.wav	ep023	6.24	0.80	
+1322.wav	ep023	8.55	0.14	low_conf
+1323.wav	ep023	6.48	0.73	
+1324.wav	ep023	8.47	0.13	low_conf
+1325.wav	ep023	5.72	0.67	
+1326.wav	ep023	6.13	0.19	low_conf
+1327.wav	ep023	8.10	0.55	
+1328.wav	ep023	3.87	0.13	low_conf
+1329.wav	ep023	5.05	0.44	low_conf
+1330.wav	ep023	7.17	0.20	low_conf
+1331.wav	ep023	3.24	0.35	low_conf
+1332.wav	ep023	5.44	0.67	
+1333.wav	ep023	2.06	0.44	low_conf
+1334.wav	ep023	3.86	0.41	low_conf
+1336.wav	ep023	4.93	0.68	
+1338.wav	ep023	9.26	0.14	low_conf
+1340.wav	ep023	10.93	0.18	low_conf
+1341.wav	ep023	6.52	0.53	
+1342.wav	ep023	6.69	0.44	low_conf
+1344.wav	ep023	5.04	0.39	low_conf
+1345.wav	ep023	5.83	0.36	low_conf
+1346.wav	ep023	4.57	0.51	
+1347.wav	ep023	11.04	0.41	low_conf
+1348.wav	ep023	11.00	0.18	low_conf
+1349.wav	ep023	5.80	0.32	low_conf
+1350.wav	ep023	3.31	0.46	low_conf
+1351.wav	ep023	8.15	0.52	
+1352.wav	ep023	6.42	0.13	low_conf
+1353.wav	ep023	3.70	0.17	low_conf
+1355.wav	ep023	10.02	0.07	low_conf
+1357.wav	ep023	11.98	0.53	
+1359.wav	ep023	7.37	0.68	
+1360.wav	ep023	5.29	0.83	
+1362.wav	ep023	7.06	0.38	low_conf
+1363.wav	ep023	4.43	0.89	
+1364.wav	ep023	3.62	0.93	
+1365.wav	ep023	6.02	0.96	
+1366.wav	ep023	2.82	0.97	
+1367.wav	ep023	9.27	0.00	latin,low_conf
+1368.wav	ep023	6.09	0.00	latin,low_conf
+1369.wav	ep023	8.00	0.09	low_conf
+1370.wav	ep023	7.67	0.00	low_conf
+1371.wav	ep023	5.64	0.04	latin,low_conf
+1372.wav	ep023	6.02	0.57	
+1373.wav	ep023	8.94	0.33	low_conf
+1374.wav	ep023	5.82	0.46	low_conf
+1375.wav	ep023	4.01	0.20	low_conf
+1376.wav	ep024	4.47	0.56	
+1378.wav	ep024	6.41	0.73	
+1379.wav	ep024	6.83	0.63	
+1380.wav	ep024	3.33	0.67	
+1381.wav	ep024	7.10	0.66	
+1382.wav	ep024	10.64	0.56	digits
+1383.wav	ep024	10.94	0.53	
+1384.wav	ep024	6.73	0.24	low_conf
+1385.wav	ep024	10.28	0.12	low_conf
+1386.wav	ep024	11.38	0.16	low_conf
+1387.wav	ep024	3.77	0.57	
+1388.wav	ep024	7.70	0.45	low_conf
+1389.wav	ep024	3.59	0.11	low_conf
+1390.wav	ep024	4.33	0.06	latin,low_conf
+1391.wav	ep024	11.67	0.03	latin,low_conf
+1392.wav	ep024	6.79	0.21	digits,low_conf
+1393.wav	ep024	7.36	0.62	
+1394.wav	ep024	8.49	0.38	low_conf
+1395.wav	ep024	5.78	0.42	low_conf
+1396.wav	ep024	5.81	0.69	
+1397.wav	ep024	5.30	0.26	low_conf
+1398.wav	ep024	7.88	0.21	low_conf
+1400.wav	ep024	8.74	0.65	
+1404.wav	ep024	9.86	0.28	low_conf
+1406.wav	ep024	11.22	0.01	low_conf
+1407.wav	ep024	3.97	0.01	low_conf
+1408.wav	ep024	10.15	0.00	latin,low_conf
+1409.wav	ep024	4.62	0.14	latin,low_conf
+1410.wav	ep024	4.96	0.51	latin
+1411.wav	ep024	8.34	0.00	latin,low_conf
+1412.wav	ep024	4.97	0.04	low_conf
+1413.wav	ep024	8.53	0.01	latin,low_conf
+1414.wav	ep024	7.52	0.01	latin,low_conf
+1415.wav	ep024	5.88	0.00	low_conf
+1416.wav	ep024	8.14	0.02	low_conf
+1417.wav	ep024	11.28	0.00	low_conf
+1418.wav	ep024	6.39	0.12	low_conf
+1419.wav	ep024	4.90	0.22	low_conf
+1420.wav	ep024	6.93	0.35	low_conf
+1421.wav	ep024	4.80	0.06	low_conf
+1422.wav	ep024	4.54	0.48	low_conf
+1423.wav	ep024	2.81	0.75	
+1425.wav	ep024	3.66	0.06	low_conf
+1426.wav	ep024	6.18	0.70	
+1427.wav	ep024	6.59	0.21	low_conf
+1428.wav	ep024	3.58	0.34	low_conf
+1429.wav	ep024	6.58	0.79	
+1430.wav	ep024	6.97	0.62	
+1431.wav	ep024	9.34	0.57	
+1432.wav	ep024	10.37	0.27	low_conf
+1433.wav	ep024	4.42	0.25	low_conf
+1434.wav	ep024	5.81	0.10	low_conf
+1435.wav	ep024	5.93	0.05	latin,low_conf
+1436.wav	ep024	3.32	0.75	
+1437.wav	ep025	11.84	0.37	low_conf
+1438.wav	ep025	11.71	0.49	low_conf
+1439.wav	ep025	7.54	0.34	latin,low_conf
+1440.wav	ep025	7.95	0.23	low_conf
+1441.wav	ep025	4.70	0.57	
+1442.wav	ep025	6.17	0.87	
+1443.wav	ep025	4.71	0.22	low_conf
+1444.wav	ep025	5.75	0.80	
+1445.wav	ep025	5.67	0.88	
+1446.wav	ep025	11.69	0.71	
+1447.wav	ep025	4.23	0.88	
+1448.wav	ep025	6.35	0.70	
+1449.wav	ep025	6.38	0.71	
+1450.wav	ep025	5.59	0.69	
+1451.wav	ep025	6.43	0.71	
+1452.wav	ep025	4.52	0.29	low_conf
+1453.wav	ep025	10.28	0.50	
+1454.wav	ep025	6.66	0.37	low_conf
+1455.wav	ep025	6.25	0.33	low_conf
+1456.wav	ep025	6.75	0.79	
+1457.wav	ep025	4.10	0.44	low_conf
+1458.wav	ep025	6.99	0.61	
+1459.wav	ep025	5.40	0.07	low_conf
+1460.wav	ep025	3.13	0.79	
+1461.wav	ep025	7.85	0.69	
+1462.wav	ep025	4.54	0.69	
+1463.wav	ep025	5.68	0.56	
+1464.wav	ep025	10.29	0.38	low_conf
+1465.wav	ep025	6.48	0.78	
+1466.wav	ep025	6.04	0.64	
+1467.wav	ep025	8.87	0.70	
+1468.wav	ep025	3.41	0.86	
+1469.wav	ep025	3.18	0.88	
+1471.wav	ep025	8.85	0.65	
+1472.wav	ep025	4.51	0.99	
+1473.wav	ep025	5.69	0.78	
+1474.wav	ep025	3.80	0.77	
+1475.wav	ep025	3.01	0.89	
+1476.wav	ep025	5.00	0.79	
+1477.wav	ep025	5.22	0.41	low_conf
+1478.wav	ep025	7.62	0.41	low_conf
+1479.wav	ep025	5.62	0.70	
+1480.wav	ep025	6.09	0.19	low_conf
+1482.wav	ep025	3.84	0.83	
+1483.wav	ep025	3.19	0.90	
+1484.wav	ep025	4.21	0.97	
+1485.wav	ep025	10.49	0.27	low_conf
+1486.wav	ep025	4.70	0.86	
+1488.wav	ep025	11.30	0.48	low_conf
+1489.wav	ep025	5.22	0.54	
+1490.wav	ep025	8.40	0.72	
+1491.wav	ep025	10.95	0.16	latin,digits,low_conf
+1492.wav	ep025	6.66	0.06	latin,low_conf
+1493.wav	ep025	5.41	0.00	latin,low_conf
+1494.wav	ep025	5.69	0.54	
+1496.wav	ep025	6.19	0.62	
+1497.wav	ep025	3.96	0.52	
+1498.wav	ep025	8.76	0.67	
+1499.wav	ep025	7.55	0.18	low_conf
+1500.wav	ep025	5.31	0.14	low_conf
+1501.wav	ep025	8.21	0.31	low_conf
+1502.wav	ep025	4.90	0.93	
+1503.wav	ep025	5.89	0.99	
+1504.wav	ep025	7.67	0.47	low_conf
+1505.wav	ep025	6.14	0.94	
+1507.wav	ep025	4.10	0.50	
+1508.wav	ep026	8.65	0.75	
+1509.wav	ep026	6.50	0.77	
+1511.wav	ep026	4.90	0.92	
+1512.wav	ep026	11.05	0.74	
+1513.wav	ep026	5.25	0.97	
+1515.wav	ep026	8.76	0.77	
+1516.wav	ep026	9.13	0.36	latin,digits,low_conf
+1518.wav	ep026	7.07	0.60	
+1519.wav	ep026	4.00	0.61	
+1520.wav	ep026	3.87	0.86	
+1521.wav	ep026	6.34	0.73	
+1522.wav	ep026	7.01	0.83	
+1525.wav	ep026	8.05	0.86	
+1526.wav	ep026	3.85	0.86	
+1527.wav	ep026	4.08	0.86	
+1528.wav	ep026	4.04	0.95	
+1529.wav	ep026	3.00	0.92	
+1530.wav	ep026	8.06	0.39	low_conf
+1531.wav	ep026	3.72	0.58	
+1538.wav	ep026	9.20	0.79	
+1540.wav	ep026	8.15	0.55	
+1543.wav	ep026	3.99	0.97	
+1545.wav	ep026	9.45	0.36	low_conf
+1547.wav	ep026	6.96	0.71	
+1548.wav	ep026	7.08	0.63	
+1550.wav	ep026	7.23	0.93	
+1551.wav	ep026	6.69	0.99	
+1554.wav	ep026	7.07	0.70	
+1555.wav	ep026	3.04	0.91	
+1557.wav	ep026	5.23	0.64	
+1560.wav	ep026	3.46	0.08	latin,low_conf
+1562.wav	ep026	6.26	0.82	
+1563.wav	ep026	6.29	0.64	
+1564.wav	ep026	8.07	0.69	
+1568.wav	ep026	2.65	0.82	
+1570.wav	ep026	4.22	0.83	
+1571.wav	ep026	4.99	0.99	
+1573.wav	ep026	5.71	0.77	
+1574.wav	ep026	7.86	0.83	
+1575.wav	ep026	7.77	0.98	
+1576.wav	ep026	10.09	0.90	
+1577.wav	ep026	7.78	0.86	
+1579.wav	ep026	4.78	0.84	
+1582.wav	ep026	5.92	0.92	
+1586.wav	ep026	4.04	0.60	
+1587.wav	ep026	6.68	0.47	low_conf
+1588.wav	ep026	5.11	0.72	
+1589.wav	ep026	7.58	0.26	low_conf
+1593.wav	ep026	8.99	0.54	
+1594.wav	ep026	9.34	0.72	
+1595.wav	ep026	6.95	0.92	
+1597.wav	ep026	11.50	0.68	
+1598.wav	ep026	4.56	0.82	
+1599.wav	ep026	9.06	0.41	low_conf
+1601.wav	ep026	9.53	0.31	low_conf
+1602.wav	ep026	8.39	0.69	
+1603.wav	ep026	9.86	0.69	
+1606.wav	ep027	7.10	0.49	low_conf
+1607.wav	ep027	7.87	0.67	
+1608.wav	ep027	4.88	0.51	
+1609.wav	ep027	4.09	0.90	
+1610.wav	ep027	3.83	0.81	
+1611.wav	ep027	8.31	0.65	
+1612.wav	ep027	5.56	0.47	low_conf
+1613.wav	ep027	7.11	0.85	
+1614.wav	ep027	8.53	0.44	low_conf
+1615.wav	ep027	3.23	0.02	latin,low_conf
+1616.wav	ep027	4.50	0.90	latin
+1617.wav	ep027	3.56	0.59	latin
+1618.wav	ep027	7.04	0.10	low_conf
+1619.wav	ep027	4.91	0.70	latin
+1620.wav	ep027	10.42	0.71	latin
+1621.wav	ep027	6.19	0.00	latin,low_conf
+1622.wav	ep027	3.49	0.05	low_conf
+1623.wav	ep027	3.92	0.02	low_conf
+1624.wav	ep027	7.96	0.00	low_conf
+1625.wav	ep027	7.57	0.10	low_conf
+1627.wav	ep027	6.15	0.02	low_conf
+1628.wav	ep027	5.16	0.02	low_conf
+1629.wav	ep027	7.92	0.09	low_conf
+1632.wav	ep028	7.21	0.93	
+1633.wav	ep028	7.74	0.76	
+1635.wav	ep028	10.42	0.79	
+1636.wav	ep028	4.51	0.82	
+1637.wav	ep029	7.02	0.92	
+1638.wav	ep029	4.13	0.64	
+1639.wav	ep029	4.15	0.98	
+1640.wav	ep029	4.10	0.87	
+1641.wav	ep029	4.21	0.85	
+1642.wav	ep029	7.43	0.98	
+1643.wav	ep029	5.30	0.71	
+1644.wav	ep029	4.08	0.98	
+1645.wav	ep029	4.39	0.99	
+1646.wav	ep029	7.50	0.92	
+1647.wav	ep029	4.16	0.87	
+1649.wav	ep030	5.70	0.92	
+1650.wav	ep030	3.74	0.47	low_conf
+1651.wav	ep030	7.46	0.67	
+1652.wav	ep030	11.32	0.89	
+1653.wav	ep030	10.61	0.93	
+1655.wav	ep031	6.90	0.74	
+1657.wav	ep031	3.45	0.99	
+1658.wav	ep031	10.88	0.84	
+1659.wav	ep031	7.69	0.63	
+1661.wav	ep031	3.56	0.88	
+1662.wav	ep031	6.76	0.39	low_conf
+1663.wav	ep031	3.10	0.82	
+1664.wav	ep031	6.41	0.28	low_conf
+1666.wav	ep032	11.27	0.57	
+1667.wav	ep032	9.88	0.63	
+1668.wav	ep032	5.61	0.71	
+1669.wav	ep032	6.03	0.69	
+1670.wav	ep032	7.94	0.72	
+1671.wav	ep032	7.36	0.57	
+1672.wav	ep032	6.28	0.63	
+1673.wav	ep032	7.02	0.29	low_conf
+1675.wav	ep032	4.37	0.97	
+1676.wav	ep032	3.02	0.17	low_conf
+1677.wav	ep032	6.39	0.48	low_conf
+1678.wav	ep032	8.60	0.63	
+1679.wav	ep032	6.79	0.76	
+1680.wav	ep032	8.08	0.54	
+1681.wav	ep032	7.93	0.53	
+1682.wav	ep032	9.87	0.17	low_conf
+1683.wav	ep032	9.33	0.54	
+1684.wav	ep032	3.66	0.92	
+1685.wav	ep032	4.13	0.94	
+1686.wav	ep032	7.97	0.29	low_conf
+1687.wav	ep032	10.06	0.54	
+1688.wav	ep032	6.49	0.80	
+1689.wav	ep032	2.94	0.98	
+1690.wav	ep032	9.24	0.71	
+1691.wav	ep032	11.06	0.58	
+1692.wav	ep032	8.03	0.75	
+1693.wav	ep032	11.25	0.21	low_conf
+1694.wav	ep032	11.85	0.54	
+1695.wav	ep032	5.09	0.89	
+1696.wav	ep032	3.70	0.96	
+1697.wav	ep032	10.61	0.32	low_conf
+1698.wav	ep032	9.78	0.70	
+1699.wav	ep032	7.43	0.21	latin,low_conf
+1700.wav	ep032	2.30	0.90	
+1701.wav	ep032	4.03	0.83	
+1702.wav	ep032	5.93	0.78	
+1703.wav	ep032	7.69	0.22	low_conf
+1704.wav	ep032	5.67	0.62	
+1705.wav	ep032	3.17	0.65	
+1706.wav	ep032	6.29	0.17	low_conf
+1707.wav	ep032	6.98	0.83	
+1708.wav	ep032	10.59	0.65	
+1709.wav	ep032	7.40	0.60	
+1710.wav	ep032	11.81	0.57	
+1711.wav	ep032	6.97	0.52	
+1712.wav	ep032	6.06	0.45	low_conf
+1713.wav	ep032	5.45	0.10	low_conf
+1714.wav	ep032	5.21	0.74	
+1715.wav	ep032	10.58	0.17	low_conf
+1717.wav	ep032	7.32	0.88	
+1718.wav	ep032	7.14	0.59	
+1719.wav	ep032	4.38	0.81	
+1720.wav	ep032	3.48	0.95	
+1721.wav	ep032	5.95	0.75	
+1722.wav	ep032	11.68	0.81	
+1723.wav	ep032	3.00	0.94	
+1724.wav	ep032	5.89	0.78	
+1725.wav	ep032	6.23	0.85	
+1726.wav	ep032	8.78	0.74	
+1727.wav	ep032	5.23	0.88	
+1728.wav	ep032	8.00	0.97	
+1729.wav	ep032	4.22	0.86	
+1730.wav	ep032	8.70	0.86	
+1731.wav	ep032	6.09	0.68	
+1732.wav	ep032	10.35	0.87	
+1733.wav	ep032	5.51	0.93	
+1734.wav	ep032	7.80	0.01	latin,low_conf
+1736.wav	ep032	6.65	0.73	
+1737.wav	ep032	11.45	0.74	
+1738.wav	ep032	6.28	0.79	
+1739.wav	ep032	10.74	0.76	
+1740.wav	ep032	7.40	0.92	
+1741.wav	ep032	7.23	0.98	
+1743.wav	ep032	10.18	0.45	low_conf
+1744.wav	ep032	10.06	0.64	
+1745.wav	ep033	7.04	0.64	
+1746.wav	ep033	4.20	0.84	
+1747.wav	ep033	3.27	0.71	
+1748.wav	ep033	8.79	0.37	low_conf
+1749.wav	ep033	3.76	0.71	
+1750.wav	ep033	10.93	0.69	
+1751.wav	ep033	8.53	0.42	low_conf
+1752.wav	ep033	4.03	0.54	
+1753.wav	ep033	11.29	0.55	
+1754.wav	ep033	6.14	0.60	
+1755.wav	ep033	9.56	0.75	
+1756.wav	ep033	4.81	0.74	
+1757.wav	ep033	7.31	0.88	
+1758.wav	ep033	4.23	0.88	
+1759.wav	ep033	7.02	0.70	
+1760.wav	ep033	6.13	0.86	
+1761.wav	ep033	6.58	0.68	
+1762.wav	ep033	5.02	0.60	
+1763.wav	ep033	9.17	0.81	
+1764.wav	ep033	9.06	0.48	low_conf
+1765.wav	ep033	4.50	0.88	
+1766.wav	ep033	6.37	0.52	
+1767.wav	ep033	6.61	0.61	
+1768.wav	ep033	9.41	0.41	low_conf
+1769.wav	ep033	4.95	0.69	
+1770.wav	ep033	2.81	0.63	
+1771.wav	ep033	11.36	0.00	low_conf
+1772.wav	ep033	5.45	0.74	
+1773.wav	ep033	3.81	0.88	
+1774.wav	ep033	11.55	0.75	
+1775.wav	ep033	2.02	0.22	latin,low_conf
+1776.wav	ep034	3.22	0.72	
+1777.wav	ep034	6.73	0.56	
+1778.wav	ep034	11.03	0.51	
+1779.wav	ep034	7.55	0.58	
+1780.wav	ep034	6.24	0.76	
+1781.wav	ep034	5.53	0.45	low_conf
+1782.wav	ep034	7.21	0.69	
+1783.wav	ep034	9.01	0.50	low_conf
+1784.wav	ep034	6.89	0.81	
+1785.wav	ep034	4.93	0.71	
+1786.wav	ep034	8.71	0.65	
+1787.wav	ep034	10.80	0.41	low_conf
+1788.wav	ep034	9.26	0.83	
+1789.wav	ep034	11.56	0.09	low_conf
+1790.wav	ep034	3.25	0.40	low_conf
+1791.wav	ep034	4.53	0.62	
+1792.wav	ep034	10.67	0.42	low_conf
+1793.wav	ep034	5.91	0.22	low_conf
+1794.wav	ep034	9.59	0.95	
+1795.wav	ep034	2.30	0.93	
+1796.wav	ep034	3.74	0.67	
+1797.wav	ep034	11.28	0.65	
+1798.wav	ep034	8.55	0.34	low_conf
+1799.wav	ep034	8.79	0.52	
+1800.wav	ep034	7.31	0.90	
+1801.wav	ep034	11.61	0.40	low_conf
+1802.wav	ep034	3.33	0.91	
+1803.wav	ep034	6.12	0.99	
+1804.wav	ep034	2.76	0.98	
+1805.wav	ep034	9.61	0.48	low_conf
+1806.wav	ep034	2.24	0.83	
+1807.wav	ep034	9.79	0.55	
+1808.wav	ep034	5.74	0.44	low_conf
+1809.wav	ep034	6.64	0.81	
+1810.wav	ep034	9.19	0.71	
+1811.wav	ep034	8.26	0.77	
+1812.wav	ep034	10.00	0.86	
+1813.wav	ep034	8.30	0.68	
+1814.wav	ep034	4.83	0.76	
+1816.wav	ep034	9.82	0.37	low_conf
+1817.wav	ep034	4.04	0.87	
+1818.wav	ep034	7.99	0.58	
+1819.wav	ep034	11.01	0.55	
+1820.wav	ep034	3.98	0.96	
+1821.wav	ep034	6.86	0.69	
+1822.wav	ep034	4.35	0.78	
+1823.wav	ep034	6.04	0.66	
+1824.wav	ep034	5.38	0.73	
+1825.wav	ep034	6.15	0.22	low_conf
+1826.wav	ep034	4.56	0.98	
+1827.wav	ep034	4.18	0.85	
+1828.wav	ep034	10.71	0.63	
+1829.wav	ep034	4.55	0.91	
+1830.wav	ep034	3.65	0.96	
+1831.wav	ep034	11.55	0.49	low_conf
+1832.wav	ep034	5.10	0.09	latin,low_conf
+1833.wav	ep034	6.54	0.31	latin,low_conf
+1834.wav	ep034	10.73	0.63	
+1835.wav	ep034	3.92	0.95	
+1836.wav	ep034	9.26	0.57	
+1837.wav	ep034	8.20	0.34	low_conf
+1838.wav	ep034	10.30	0.56	
+1839.wav	ep034	7.71	0.23	low_conf
+1840.wav	ep034	10.71	0.79	
+1841.wav	ep034	5.76	0.81	
+1842.wav	ep035	7.14	0.04	low_conf
+1843.wav	ep035	5.90	0.53	
+1844.wav	ep035	5.85	0.79	
+1845.wav	ep035	3.72	0.96	
+1846.wav	ep035	5.94	0.79	
+1847.wav	ep035	4.32	0.84	
+1848.wav	ep035	10.02	0.72	
+1849.wav	ep035	7.39	0.57	
+1850.wav	ep035	7.02	0.89	
+1851.wav	ep035	3.20	0.37	low_conf
+1852.wav	ep035	2.71	0.93	
+1853.wav	ep035	3.95	0.72	
+1854.wav	ep035	3.33	1.00	
+1855.wav	ep035	2.12	1.00	
+1856.wav	ep035	9.11	0.80	
+1857.wav	ep035	6.26	0.61	
+1858.wav	ep035	3.58	0.99	
+1859.wav	ep035	6.32	0.51	
+1860.wav	ep035	6.99	0.52	
+1861.wav	ep035	3.51	0.81	
+1862.wav	ep035	5.31	0.79	
+1863.wav	ep035	7.30	0.58	
+1864.wav	ep035	5.60	0.61	
+1865.wav	ep035	4.00	0.39	low_conf
+1866.wav	ep035	6.67	0.69	
+1867.wav	ep035	4.11	0.67	
+1868.wav	ep035	7.00	0.01	low_conf
+1869.wav	ep035	11.54	0.79	
+1870.wav	ep035	5.95	0.68	
+1871.wav	ep035	3.94	0.47	low_conf
+1872.wav	ep035	7.67	0.00	latin,low_conf
+1873.wav	ep035	5.13	0.52	
+1874.wav	ep035	5.56	0.85	
+1875.wav	ep036	10.65	0.17	low_conf
+1876.wav	ep036	5.10	0.54	
+1877.wav	ep036	3.52	0.82	
+1878.wav	ep036	6.21	0.46	low_conf
+1879.wav	ep036	4.92	0.53	
+1880.wav	ep036	5.54	0.85	
+1881.wav	ep036	4.25	0.72	
+1882.wav	ep036	4.01	0.62	
+1883.wav	ep036	6.30	0.52	
+1884.wav	ep036	5.52	0.93	
+1885.wav	ep036	6.01	0.74	
+1886.wav	ep036	4.36	0.96	
+1887.wav	ep036	5.19	0.86	
+1888.wav	ep036	8.65	0.02	latin,low_conf
+1889.wav	ep037	4.68	0.80	
+1890.wav	ep037	4.31	0.96	
+1891.wav	ep037	8.21	0.97	
+1892.wav	ep037	11.90	0.92	
+1893.wav	ep037	9.00	0.71	
+1894.wav	ep037	10.13	0.84	
+1895.wav	ep037	11.71	0.76	
+1896.wav	ep037	7.87	0.85	
+1897.wav	ep037	7.42	0.98	
+1898.wav	ep037	9.80	0.71	
+1899.wav	ep038	4.43	0.82	
+1900.wav	ep038	4.19	0.98	
+1901.wav	ep038	4.46	0.94	
+1902.wav	ep038	9.69	0.74	
+1903.wav	ep038	6.92	0.67	
+1904.wav	ep038	7.06	0.94	
+1905.wav	ep038	7.60	0.83	
+1906.wav	ep038	11.35	0.73	
+1907.wav	ep038	5.06	0.68	
+1908.wav	ep038	5.82	0.55	
+1909.wav	ep038	5.28	0.78	
+1910.wav	ep038	9.59	0.82	
+1911.wav	ep038	8.34	0.73	
+1912.wav	ep038	7.72	0.37	low_conf
+1913.wav	ep038	7.51	0.86	
+1915.wav	ep039	4.92	0.56	
+1916.wav	ep039	3.68	0.80	
+1918.wav	ep039	5.46	0.84	
+1919.wav	ep039	5.25	0.51	
+1920.wav	ep039	2.16	0.95	
+1921.wav	ep039	6.71	0.96	
+1922.wav	ep039	8.69	0.65	
+1923.wav	ep039	4.76	0.71	
+1925.wav	ep039	2.11	0.98	
+1927.wav	ep039	3.13	0.72	
+1928.wav	ep039	5.31	0.55	
+1929.wav	ep039	4.10	0.73	
+1930.wav	ep039	6.90	0.65	
+1931.wav	ep039	6.77	0.59	
+1932.wav	ep039	4.85	0.40	low_conf
+1933.wav	ep039	4.53	0.52	
+1934.wav	ep039	5.28	0.85	
+1935.wav	ep039	6.82	0.78	
+1936.wav	ep039	8.54	0.39	low_conf
+1937.wav	ep039	3.78	0.90	
+1938.wav	ep039	8.62	0.33	low_conf
+1939.wav	ep039	4.82	0.58	
+1940.wav	ep039	5.20	0.76	
+1941.wav	ep039	5.18	0.84	
+1942.wav	ep039	5.77	0.91	
+1943.wav	ep039	7.66	0.38	low_conf
+1944.wav	ep039	6.42	0.10	low_conf
+1945.wav	ep039	11.01	0.09	latin,low_conf
+1946.wav	ep039	4.28	0.98	latin
+1948.wav	ep039	5.50	0.78	latin
+1949.wav	ep039	8.54	0.75	
+1950.wav	ep039	10.06	0.64	
+1951.wav	ep039	8.18	0.86	
+1952.wav	ep039	3.54	0.87	
+1953.wav	ep039	3.72	0.81	
+1954.wav	ep039	2.99	0.79	
+1955.wav	ep039	6.95	0.82	
+1956.wav	ep039	11.06	0.68	
+1957.wav	ep039	9.55	0.17	latin,low_conf
+1958.wav	ep039	4.13	0.22	low_conf
+1959.wav	ep039	5.46	0.71	
+1960.wav	ep039	5.99	0.78	
+1961.wav	ep039	3.32	0.78	
+1962.wav	ep039	2.94	0.26	low_conf
+1963.wav	ep039	11.47	0.53	
+1964.wav	ep039	3.34	0.82	
+1965.wav	ep039	10.54	0.22	latin,low_conf
+1966.wav	ep039	7.93	0.36	low_conf
+1967.wav	ep039	10.43	0.15	latin,low_conf
+1968.wav	ep039	2.84	0.09	latin,low_conf
+1970.wav	ep039	5.90	0.81	latin
+1971.wav	ep039	9.37	0.75	latin
+1972.wav	ep039	6.04	0.52	latin
+1973.wav	ep039	3.43	0.48	latin,low_conf
+1974.wav	ep039	9.00	0.81	
+1975.wav	ep039	6.16	0.84	
+1976.wav	ep039	7.99	0.58	
+1977.wav	ep039	8.78	0.41	low_conf
+1978.wav	ep039	4.43	0.64	
+1979.wav	ep039	6.27	0.61	
+1980.wav	ep039	10.76	0.51	
+1981.wav	ep039	8.93	0.59	
+1982.wav	ep039	5.92	0.14	low_conf
+1984.wav	ep039	3.27	0.58	latin
+1985.wav	ep039	6.73	0.25	low_conf
+1986.wav	ep039	11.30	0.04	latin,low_conf
+1987.wav	ep039	6.50	0.49	latin,low_conf
+1988.wav	ep039	4.42	0.12	latin,low_conf
+1989.wav	ep039	5.08	0.03	low_conf
+1990.wav	ep039	2.70	0.89	
+1991.wav	ep039	4.29	0.69	
+1992.wav	ep039	5.13	0.01	low_conf
+1993.wav	ep039	11.75	0.09	latin,low_conf
+1994.wav	ep039	11.47	0.02	latin,low_conf
+1995.wav	ep039	10.30	0.01	latin,low_conf
+1996.wav	ep039	2.72	0.80	
+1997.wav	ep039	7.83	0.08	latin,low_conf
+1998.wav	ep039	4.12	0.01	low_conf
+1999.wav	ep039	3.57	0.09	low_conf
+2000.wav	ep039	11.21	0.00	latin,low_conf
+2001.wav	ep039	9.53	0.46	latin,low_conf
+2002.wav	ep039	10.72	0.09	latin,low_conf
+2003.wav	ep039	9.46	0.00	low_conf
+2004.wav	ep039	8.51	0.67	
+2005.wav	ep039	7.01	0.64	
+2006.wav	ep039	9.08	0.51	latin
+2007.wav	ep039	9.21	0.15	latin,low_conf
+2008.wav	ep039	4.55	0.95	
+2009.wav	ep039	4.17	0.15	latin,low_conf
+2010.wav	ep039	8.30	0.46	latin,low_conf
+2011.wav	ep039	3.38	0.56	latin
+2013.wav	ep039	11.62	0.03	low_conf
+2014.wav	ep039	4.46	0.09	latin,low_conf
+2015.wav	ep039	11.43	0.00	low_conf
+2016.wav	ep039	3.91	0.15	latin,low_conf
+2017.wav	ep039	8.81	0.10	latin,low_conf
+2020.wav	ep039	10.32	0.00	latin,low_conf
+2022.wav	ep039	6.33	0.00	low_conf
+2023.wav	ep039	4.34	0.02	low_conf
+2024.wav	ep039	11.58	0.01	low_conf
+2025.wav	ep039	8.74	0.00	latin,low_conf
+2026.wav	ep039	8.14	0.00	latin,low_conf
+2027.wav	ep039	6.68	0.02	low_conf
+2028.wav	ep039	4.31	0.00	low_conf
+2030.wav	ep039	8.45	0.03	latin,low_conf
+2031.wav	ep039	7.37	0.11	latin,low_conf
+2032.wav	ep039	5.39	0.44	low_conf
+2033.wav	ep039	3.27	0.78	
+2035.wav	ep039	9.97	0.47	low_conf
+2036.wav	ep039	5.56	0.01	low_conf
+2037.wav	ep039	6.63	0.00	latin,low_conf
+2038.wav	ep039	4.63	0.00	low_conf
+2039.wav	ep039	8.29	0.01	low_conf
+2040.wav	ep039	5.69	0.06	low_conf
+2041.wav	ep039	9.58	0.08	latin,low_conf
+2042.wav	ep039	6.01	0.53	latin
+2043.wav	ep039	6.95	0.27	low_conf
+2044.wav	ep039	9.42	0.52	latin
+2045.wav	ep039	6.85	0.54	latin
+2046.wav	ep039	3.64	0.49	low_conf
+2047.wav	ep039	4.57	0.64	
+2048.wav	ep039	5.14	0.78	latin
+2050.wav	ep040	5.68	0.99	
+2052.wav	ep040	7.00	0.82	
+2053.wav	ep040	6.79	0.30	low_conf
+2055.wav	ep040	11.52	0.54	
+2057.wav	ep040	8.05	0.06	low_conf
+2058.wav	ep040	3.14	0.68	
+2059.wav	ep040	5.60	0.74	
+2060.wav	ep040	11.54	0.66	
+2061.wav	ep040	6.43	0.52	
+2062.wav	ep040	7.00	0.37	low_conf
+2063.wav	ep040	8.08	0.34	low_conf
+2064.wav	ep040	3.27	0.86	
+2065.wav	ep040	9.91	0.53	
+2066.wav	ep040	6.22	0.89	
+2067.wav	ep040	10.03	0.65	
+2068.wav	ep040	9.18	0.10	low_conf
+2070.wav	ep040	4.89	0.86	
+2071.wav	ep040	4.26	0.95	
+2073.wav	ep040	6.51	0.82	
+2074.wav	ep040	9.19	0.83	
+2076.wav	ep040	11.15	0.78	
+2078.wav	ep040	5.11	0.83	
+2079.wav	ep040	7.76	0.74	
+2080.wav	ep040	5.64	0.92	
+2081.wav	ep040	7.37	0.71	
+2082.wav	ep040	5.85	0.88	
+2083.wav	ep040	6.66	0.31	latin,low_conf
+2085.wav	ep040	5.25	0.39	low_conf
+2089.wav	ep040	10.78	0.75	
+2090.wav	ep040	3.64	0.75	
+2095.wav	ep040	8.65	0.86	
+2096.wav	ep040	8.52	0.63	
+2097.wav	ep040	3.84	0.83	
+2098.wav	ep040	7.26	0.82	
+2099.wav	ep040	4.32	0.86	
+2100.wav	ep040	7.32	0.67	
+2101.wav	ep040	2.47	0.87	
+2102.wav	ep040	5.38	0.65	
+2103.wav	ep040	4.03	0.64	
+2104.wav	ep040	6.26	0.39	low_conf
+2105.wav	ep040	10.08	0.69	
+2106.wav	ep040	5.05	0.94	
+2107.wav	ep040	3.21	0.77	
+2109.wav	ep040	3.39	0.78	
+2110.wav	ep040	5.88	0.34	low_conf
+2111.wav	ep040	5.02	0.95	
+2112.wav	ep040	7.78	0.81	
+2113.wav	ep040	4.81	0.31	low_conf
+2114.wav	ep040	6.50	0.65	
+2116.wav	ep040	9.63	0.47	low_conf
+2117.wav	ep040	11.10	0.55	latin
+2118.wav	ep040	7.71	0.45	low_conf
+2119.wav	ep040	7.50	0.78	
+2120.wav	ep040	4.85	0.60	
+2121.wav	ep040	7.98	0.74	
+2122.wav	ep040	5.00	0.32	latin,low_conf
+2125.wav	ep041	9.00	0.01	low_conf
+2129.wav	ep042	9.58	0.18	low_conf
+2131.wav	ep042	6.77	0.08	low_conf
+2132.wav	ep042	5.07	0.45	low_conf
+2133.wav	ep042	5.86	0.32	low_conf
+2134.wav	ep042	11.13	0.20	low_conf
+2135.wav	ep042	7.11	0.03	low_conf
+2136.wav	ep042	6.66	0.19	low_conf
+2137.wav	ep042	8.33	0.72	
+2138.wav	ep042	6.31	0.29	low_conf
+2139.wav	ep042	8.77	0.36	low_conf
+2141.wav	ep042	4.36	0.44	low_conf
+2143.wav	ep042	10.88	0.18	low_conf
+2144.wav	ep042	11.64	0.03	low_conf
+2146.wav	ep042	10.62	0.12	low_conf
+2148.wav	ep042	8.36	0.57	
+2149.wav	ep042	4.68	0.66	
+2150.wav	ep042	6.03	0.50	
+2151.wav	ep042	6.46	0.29	low_conf
+2153.wav	ep042	9.48	0.34	low_conf
+2154.wav	ep042	6.59	0.17	low_conf
+2156.wav	ep042	6.83	0.78	
+2157.wav	ep042	4.34	0.09	low_conf
+2158.wav	ep042	3.82	0.63	
+2159.wav	ep042	4.75	0.69	
+2160.wav	ep042	4.95	0.46	low_conf
+2161.wav	ep042	6.03	0.06	low_conf
+2162.wav	ep042	5.08	0.19	low_conf
+2164.wav	ep043	3.69	0.57	
+2166.wav	ep043	7.65	0.51	
+2167.wav	ep043	10.06	0.61	
+2168.wav	ep043	6.74	0.50	
+2169.wav	ep043	3.67	0.42	low_conf
+2170.wav	ep043	11.48	0.55	
+2171.wav	ep043	11.39	0.21	low_conf
+2172.wav	ep043	3.57	0.41	latin,low_conf
+2173.wav	ep043	3.16	0.51	
+2174.wav	ep043	5.15	0.59	
+2176.wav	ep043	9.46	0.73	
+2177.wav	ep043	8.27	0.09	low_conf
+2178.wav	ep043	9.37	0.43	latin,low_conf
+2179.wav	ep043	7.81	0.45	low_conf
+2181.wav	ep043	11.56	0.54	
+2182.wav	ep043	10.29	0.34	low_conf
+2183.wav	ep043	6.28	0.32	low_conf
+2184.wav	ep043	8.00	0.63	
+2185.wav	ep043	3.89	0.03	low_conf
+2188.wav	ep043	4.00	0.93	
+2189.wav	ep043	6.97	0.89	
+2190.wav	ep043	4.15	0.98	
+2191.wav	ep043	9.15	0.19	latin,low_conf
+2192.wav	ep043	10.84	0.05	low_conf
+2193.wav	ep043	11.14	0.46	low_conf
+2196.wav	ep043	6.90	0.84	latin
+2197.wav	ep043	9.93	0.53	
+2198.wav	ep043	7.80	0.67	
+2200.wav	ep043	7.77	0.32	low_conf
+2201.wav	ep043	9.20	0.49	low_conf
+2202.wav	ep043	7.44	0.75	
+2204.wav	ep043	5.05	0.47	low_conf
+2206.wav	ep043	7.31	0.89	
+2208.wav	ep043	5.00	0.96	
+2209.wav	ep043	10.16	0.73	
+2210.wav	ep043	6.11	1.00	
+2211.wav	ep043	11.70	0.88	
+2212.wav	ep043	6.48	0.71	
+2214.wav	ep043	7.01	0.78	
+2216.wav	ep043	7.34	0.46	low_conf
+2217.wav	ep043	11.76	0.02	latin,low_conf
+2218.wav	ep043	11.53	0.14	low_conf
+2219.wav	ep043	5.47	0.84	
+2222.wav	ep043	3.88	0.96	
+2224.wav	ep043	5.43	0.47	low_conf
+2225.wav	ep043	10.11	0.75	
+2228.wav	ep043	3.20	0.85	
+2229.wav	ep043	3.03	0.89	
+2233.wav	ep043	9.26	0.78	
+2234.wav	ep043	8.03	0.59	
+2237.wav	ep043	8.67	0.34	low_conf
+2238.wav	ep043	8.65	0.19	low_conf
+2239.wav	ep043	4.43	0.50	low_conf
+2240.wav	ep043	7.58	0.63	
+2242.wav	ep043	6.05	0.97	
+2243.wav	ep043	7.83	0.14	low_conf
+2244.wav	ep043	9.67	0.14	low_conf
+2245.wav	ep043	7.42	0.57	
+2246.wav	ep043	9.19	0.38	low_conf
+2248.wav	ep043	5.58	0.58	
+2249.wav	ep043	11.49	0.69	
+2250.wav	ep043	9.39	0.61	
+2251.wav	ep043	4.93	0.82	
+2252.wav	ep043	7.02	0.64	
+2254.wav	ep043	7.12	0.58	
+2255.wav	ep043	4.47	0.85	
+2256.wav	ep043	11.30	0.34	low_conf
+2257.wav	ep043	4.39	0.98	
+2258.wav	ep043	11.16	0.74	
+2259.wav	ep043	4.13	0.32	low_conf
+2260.wav	ep043	9.18	0.61	
+2261.wav	ep043	5.35	0.71	
+2262.wav	ep043	11.61	0.42	low_conf
+2263.wav	ep043	5.84	0.80	
+2265.wav	ep043	10.51	0.81	
+2266.wav	ep043	7.11	0.44	low_conf
+2267.wav	ep043	7.54	0.59	
+2268.wav	ep043	9.40	0.19	low_conf
+2269.wav	ep043	4.31	0.81	
+2270.wav	ep043	10.69	0.79	
+2271.wav	ep043	5.20	0.94	
+2272.wav	ep043	8.13	0.18	latin,low_conf
+2274.wav	ep043	8.38	0.72	
+2275.wav	ep043	7.98	0.78	
+2276.wav	ep043	6.21	0.07	low_conf
+2277.wav	ep043	6.58	0.55	
+2279.wav	ep043	3.29	0.74	
+2281.wav	ep043	6.35	0.82	
+2282.wav	ep043	6.69	0.88	
+2283.wav	ep043	11.41	0.56	latin
+2284.wav	ep043	6.61	0.10	latin,low_conf
+2287.wav	ep043	6.70	0.68	latin
+2288.wav	ep043	6.50	0.04	low_conf
+2289.wav	ep043	6.04	0.46	low_conf
+2290.wav	ep043	6.89	0.46	low_conf
+2292.wav	ep043	11.05	0.32	latin,low_conf
+2293.wav	ep043	11.67	0.48	latin,digits,low_conf
+2294.wav	ep043	8.97	0.21	latin,low_conf
+2295.wav	ep043	6.56	0.83	
+2296.wav	ep043	8.61	0.63	
+2298.wav	ep043	7.64	0.63	
+2299.wav	ep043	4.47	0.67	
+2301.wav	ep043	3.13	0.78	
+2305.wav	ep043	7.85	0.79	
+2306.wav	ep043	4.15	0.49	low_conf
+2307.wav	ep043	2.56	0.96	
+2308.wav	ep043	7.80	0.09	low_conf
+2309.wav	ep043	6.57	0.46	low_conf
+2310.wav	ep043	9.89	0.03	low_conf
+2311.wav	ep043	3.82	0.01	low_conf
+2313.wav	ep043	3.25	0.37	low_conf
+2314.wav	ep043	6.98	0.79	
+2315.wav	ep043	4.55	0.88	
+2316.wav	ep043	9.87	0.33	low_conf
+2317.wav	ep044	8.44	0.65	
+2320.wav	ep044	4.42	0.73	
+2321.wav	ep044	3.80	0.75	
+2322.wav	ep044	4.17	0.72	
+2325.wav	ep045	4.63	0.79	
+2326.wav	ep045	8.17	0.78	
+2327.wav	ep045	11.48	0.56	
+2330.wav	ep046	8.63	0.63	
+2332.wav	ep047	10.25	0.62	
+2333.wav	ep047	7.37	0.99	
+2334.wav	ep047	8.16	0.90	
+2336.wav	ep047	5.18	0.92	
+2337.wav	ep047	11.30	0.92	
+2339.wav	ep048	10.55	0.51	
+2340.wav	ep048	3.92	0.85	
+2341.wav	ep049	11.79	0.80	
+2342.wav	ep049	9.73	0.68	
+2348.wav	ep050	3.85	0.83	
+2349.wav	ep050	7.88	0.39	low_conf
+2350.wav	ep050	3.67	0.93	
+2351.wav	ep050	4.29	0.76	
+2352.wav	ep050	11.24	0.82	
+2354.wav	ep050	9.84	0.76	
+2355.wav	ep050	3.98	0.87	
+2356.wav	ep050	5.41	0.78	
+2357.wav	ep050	6.23	0.76	
+2359.wav	ep050	3.63	0.88	
+2360.wav	ep050	6.76	0.79	
+2361.wav	ep050	3.48	0.77	
+2362.wav	ep050	8.08	0.44	low_conf
+2363.wav	ep050	3.57	0.84	
+2364.wav	ep050	4.15	0.97	
+2367.wav	ep050	3.56	0.95	
+2368.wav	ep050	5.03	0.97	
+2369.wav	ep050	6.13	0.80	
+2370.wav	ep050	3.96	0.85	
+2371.wav	ep050	4.88	0.70	
+2373.wav	ep050	3.04	0.94	
+2374.wav	ep050	10.64	0.85	
+2375.wav	ep050	11.47	0.64	
+2376.wav	ep050	6.15	0.98	
+2377.wav	ep050	8.25	0.36	low_conf
+2378.wav	ep050	3.81	0.17	low_conf
+2379.wav	ep050	11.94	0.48	low_conf
+2380.wav	ep050	6.41	0.90	
+2381.wav	ep050	4.31	0.76	
+2383.wav	ep050	10.09	0.06	low_conf
+2384.wav	ep050	6.62	0.49	low_conf
+2385.wav	ep050	3.34	0.79	
+2386.wav	ep050	11.81	0.82	
+2387.wav	ep050	7.61	0.32	low_conf
+2389.wav	ep051	6.56	0.11	latin,low_conf
+2390.wav	ep051	11.55	0.04	latin,low_conf
+2391.wav	ep051	9.94	0.07	low_conf
+2392.wav	ep051	9.85	0.28	low_conf
+2393.wav	ep051	11.20	0.58	
+2394.wav	ep051	7.52	0.37	low_conf
+2395.wav	ep051	9.73	0.32	low_conf
+2396.wav	ep051	10.84	0.00	latin,low_conf
+2401.wav	ep051	6.91	0.66	
+2404.wav	ep051	6.63	0.26	low_conf
+2405.wav	ep051	3.16	0.61	
+2406.wav	ep051	9.84	0.28	low_conf
+2407.wav	ep051	7.36	0.66	latin
+2408.wav	ep051	10.33	0.05	low_conf
+2409.wav	ep051	6.73	0.49	low_conf
+2410.wav	ep051	4.68	0.64	
+2411.wav	ep051	10.23	0.63	
+2418.wav	ep051	7.02	0.44	low_conf
+2420.wav	ep051	5.49	0.67	
+2421.wav	ep051	6.23	0.01	low_conf
+2430.wav	ep051	6.13	0.02	low_conf
+2432.wav	ep051	8.98	0.06	latin,low_conf
+2433.wav	ep051	7.94	0.36	low_conf
+2434.wav	ep051	7.21	0.64	
+2435.wav	ep051	10.91	0.53	
+2436.wav	ep051	8.22	0.50	
+2437.wav	ep051	5.87	0.06	low_conf
+2438.wav	ep051	8.84	0.14	low_conf
+2439.wav	ep051	9.80	0.68	
+2440.wav	ep051	8.17	0.45	low_conf
+2441.wav	ep051	4.11	0.74	
+2442.wav	ep051	10.79	0.30	low_conf
+2446.wav	ep051	8.83	0.65	
+2447.wav	ep051	7.23	0.84	
+2448.wav	ep051	5.31	0.83	
+2449.wav	ep051	9.85	0.16	low_conf
+2450.wav	ep051	6.34	0.56	
+2452.wav	ep051	10.24	0.47	low_conf
+2454.wav	ep051	5.41	0.64	
+2455.wav	ep051	6.56	0.18	low_conf
+2462.wav	ep051	7.00	0.76	
+2468.wav	ep051	10.10	0.67	
+2472.wav	ep051	8.23	0.32	low_conf
+2473.wav	ep051	9.77	0.07	latin,low_conf
+2474.wav	ep051	5.20	0.69	
+2475.wav	ep051	8.20	0.42	latin,low_conf
+2476.wav	ep051	9.98	0.05	latin,low_conf
+2477.wav	ep051	11.35	0.53	
+2479.wav	ep051	6.70	0.49	latin,low_conf
+2480.wav	ep051	4.04	0.73	
+2481.wav	ep051	8.32	0.07	low_conf
+2482.wav	ep051	3.51	0.81	
+2483.wav	ep051	7.30	0.78	
+2484.wav	ep051	3.55	0.46	low_conf
+2485.wav	ep051	9.59	0.58	
+2486.wav	ep051	4.38	0.59	
+2487.wav	ep051	5.84	0.21	low_conf
+2488.wav	ep051	7.38	0.01	low_conf
+2489.wav	ep051	9.58	0.26	low_conf
+2490.wav	ep051	11.31	0.33	low_conf
+2491.wav	ep051	2.61	0.88	
+2492.wav	ep051	9.75	0.14	low_conf
+2493.wav	ep051	5.19	0.70	
+2494.wav	ep051	11.29	0.29	low_conf
+2495.wav	ep051	4.70	0.41	low_conf
+2496.wav	ep051	11.54	0.24	low_conf
+2497.wav	ep051	6.58	0.28	low_conf
+2498.wav	ep051	6.40	0.86	
+2499.wav	ep051	6.98	0.69	
+2502.wav	ep051	9.16	0.38	low_conf
+2503.wav	ep051	7.96	0.41	low_conf
+2504.wav	ep051	7.49	0.16	low_conf
+2508.wav	ep051	8.20	0.27	latin,low_conf
+2509.wav	ep051	3.48	0.79	
+2512.wav	ep051	7.27	0.23	low_conf
+2513.wav	ep051	9.80	0.62	
+2514.wav	ep051	9.12	0.07	low_conf
+2526.wav	ep051	5.04	0.83	
+2532.wav	ep051	3.90	0.97	
+2533.wav	ep051	4.68	0.59	
+2534.wav	ep051	3.04	0.81	
+2535.wav	ep051	6.10	0.62	
+2536.wav	ep051	8.87	0.52	
+2543.wav	ep051	11.43	0.29	low_conf
+2544.wav	ep051	7.38	0.33	low_conf
+2549.wav	ep051	7.16	0.81	
+2551.wav	ep051	11.09	0.17	low_conf
+2552.wav	ep051	11.27	0.38	low_conf
+2553.wav	ep051	6.20	0.41	low_conf
+2559.wav	ep051	11.07	0.19	low_conf
+2560.wav	ep051	7.14	0.59	
+2561.wav	ep051	11.19	0.59	
+2562.wav	ep051	8.09	0.85	
+2563.wav	ep051	6.34	0.69	
+2564.wav	ep051	11.53	0.49	low_conf
+2572.wav	ep051	9.50	0.45	low_conf
+2574.wav	ep051	6.57	0.17	low_conf
+2575.wav	ep051	5.91	0.42	low_conf
+2578.wav	ep051	9.09	0.00	latin,low_conf
+2579.wav	ep051	3.82	0.00	latin,digits,low_conf
+2581.wav	ep051	11.35	0.28	low_conf
+2583.wav	ep051	7.00	0.02	latin,low_conf
+2584.wav	ep051	10.31	0.27	low_conf
+2585.wav	ep051	5.26	0.06	low_conf
+2586.wav	ep051	11.89	0.34	low_conf
+2587.wav	ep051	3.68	0.32	low_conf
+2588.wav	ep051	5.82	0.37	low_conf
+2589.wav	ep051	9.89	0.16	low_conf
+2590.wav	ep051	3.90	0.87	
+2594.wav	ep051	10.95	0.51	
+2595.wav	ep051	4.12	0.60	
+2596.wav	ep051	9.42	0.01	low_conf
