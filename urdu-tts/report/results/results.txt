@@ -1,0 +1,16 @@
+## male voice, 100 held-out Rasa sentences
+real_recording: 100 utterances, CER median 1.7%, mean 2.6%, over 60%: 0
+stock_speed: real-time factor 0.025 (below 1 is faster than real time)
+original_piper_voice: 100 utterances, CER median 6.6%, mean 8.5%, over 60%: 0
+ours_speed: real-time factor 0.024 (below 1 is faster than real time)
+our_voice: 100 utterances, CER median 3.9%, mean 4.6%, over 60%: 0
+## female voice, 100 held-out Rasa sentences
+real_recording: 100 utterances, CER median 2.0%, mean 2.7%, over 60%: 0
+stock_speed: real-time factor 0.026 (below 1 is faster than real time)
+original_piper_voice: 100 utterances, CER median 7.0%, mean 8.0%, over 60%: 0
+ours_speed: real-time factor 0.022 (below 1 is faster than real time)
+our_voice: 100 utterances, CER median 4.8%, mean 5.7%, over 60%: 0
+## 20 casual one-line sentences (mixed Urdu/English), sentences/test_lines.txt
+original_piper_voice: 20 utterances, CER median 5.9%, mean 9.6%, over 60%: 0
+our_male_voice: 20 utterances, CER median 2.8%, mean 5.9%, over 60%: 0
+our_female_voice: 20 utterances, CER median 2.8%, mean 6.8%, over 60%: 0
