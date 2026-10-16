@@ -1,1 +1,2 @@
 *.sh text eol=lf
+urdu-tts/models/*.onnx filter=lfs diff=lfs merge=lfs -text
