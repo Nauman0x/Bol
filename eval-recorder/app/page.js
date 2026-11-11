@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { SENTENCES } from '../lib/sentences';
+import { ROMAN } from '../lib/roman';
 
 const GROUP_LABEL = {
   casual: 'Everyday sentence',
@@ -47,6 +48,8 @@ export default function Page() {
   const [error, setError] = useState('');
   const [busy, setBusy] = useState(false);
   const [code, setCode] = useState('');
+  const [script, setScript] = useState('urdu'); // urdu | roman
+  const [warn, setWarn] = useState('');
   const list = useMemo(() => (speakerId ? orderFor(speakerId) : SENTENCES), [speakerId]);
 
   // recording state
@@ -56,6 +59,8 @@ export default function Page() {
   const chunksRef = useRef([]);
   const startRef = useRef(0);
   const streamRef = useRef(null);
+  const peakRef = useRef(0);
+  const meterRef = useRef(null);
 
   const set = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.type === 'checkbox' ? e.target.checked : e.target.value }));
 
@@ -73,6 +78,7 @@ export default function Page() {
   }
 
   useEffect(() => {
+    if (store.get('script') === 'roman') setScript('roman');
     const id = store.get('speakerId');
     if (id) resume(id).catch(() => {});
   }, []);
@@ -114,9 +120,26 @@ export default function Page() {
         const ms = Date.now() - startRef.current;
         const type = rec.mimeType || mime || 'audio/webm';
         const blob = new Blob(chunksRef.current, { type });
-        setClip({ blob, url: URL.createObjectURL(blob), ms, mime: type });
+        meterRef.current?.();
+        setClip({ blob, url: URL.createObjectURL(blob), ms, mime: type, peak: peakRef.current });
         setRecording(false);
       };
+      // measure loudness so we can warn about a silent/muted microphone
+      peakRef.current = 0;
+      try {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        const an = ctx.createAnalyser();
+        an.fftSize = 1024;
+        ctx.createMediaStreamSource(streamRef.current).connect(an);
+        const buf = new Float32Array(an.fftSize);
+        const timer = setInterval(() => {
+          an.getFloatTimeDomainData(buf);
+          let sum = 0;
+          for (const v of buf) sum += v * v;
+          peakRef.current = Math.max(peakRef.current, Math.sqrt(sum / buf.length));
+        }, 100);
+        meterRef.current = () => { clearInterval(timer); ctx.close(); };
+      } catch {}
       recRef.current = rec;
       if (clip) URL.revokeObjectURL(clip.url);
       setClip(null);
@@ -131,6 +154,7 @@ export default function Page() {
   async function save() {
     const s = list[idx];
     if (clip.ms < 800) return setError('That was very short. Please record the whole sentence.');
+    if (clip.peak < 0.01) return setError('We could not hear any sound. Check your microphone is not muted, speak closer to it, and record again.');
     setBusy(true);
     setError('');
     try {
@@ -175,7 +199,13 @@ export default function Page() {
         <div className="bar"><div style={{ width: `${pct}%` }} /></div>
         <div className="card">
           <span className="tag">{GROUP_LABEL[s.group]}</span>
-          <p className="urdu">{s.text}</p>
+          <div className="row" style={{ marginTop: 8 }}>
+            <button className={script === 'urdu' ? 'primary' : ''} onClick={() => { setScript('urdu'); store.set('script', 'urdu'); }}>اردو</button>
+            <button className={script === 'roman' ? 'primary' : ''} onClick={() => { setScript('roman'); store.set('script', 'roman'); }}>Roman Urdu</button>
+          </div>
+          {script === 'urdu'
+            ? <p className="urdu">{s.text}</p>
+            : <p className="roman">{ROMAN[s.id] || s.text}</p>}
           <p className="hint">Press Record, read the sentence naturally at your normal pace, then press Stop. You can listen and re-record before saving.</p>
           <div className="row">
             <button className={recording ? '' : 'rec'} onClick={toggleRecord} disabled={busy}>
