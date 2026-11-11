@@ -66,3 +66,8 @@ th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line
 .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--danger); margin-right: 8px; animation: pulse 1s infinite; }
 @keyframes pulse { 50% { opacity: 0.3; } }
 .roman { text-align: center; font-size: 1.5rem; line-height: 1.7; padding: 16px 4px; }
+.codebox { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; padding: 12px 14px; margin-top: 16px; border: 2px dashed var(--accent); border-radius: 12px; background: var(--card); }
+.codelabel { color: var(--muted); font-size: 0.85rem; }
+.codevalue { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 1.3rem; font-weight: 700; letter-spacing: 0.08em; user-select: all; -webkit-user-select: all; background: color-mix(in srgb, var(--accent) 18%, transparent); padding: 4px 10px; border-radius: 8px; }
+.codebox.big { justify-content: center; padding: 24px 16px; }
+.codebox.big .codevalue { font-size: 2rem; }

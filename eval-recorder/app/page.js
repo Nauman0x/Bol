@@ -39,6 +39,32 @@ function orderFor(id) {
   return a;
 }
 
+function CodeBox({ code, big }) {
+  const [copied, setCopied] = useState(false);
+  async function copy() {
+    try {
+      await navigator.clipboard.writeText(code);
+    } catch {
+      const el = document.getElementById('resume-code');
+      const r = document.createRange();
+      r.selectNodeContents(el);
+      const sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(r);
+      try { document.execCommand('copy'); } catch {}
+    }
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  }
+  return (
+    <div className={big ? 'codebox big' : 'codebox'}>
+      <span className="codelabel">Your code</span>
+      <span id="resume-code" className="codevalue">{code}</span>
+      <button onClick={copy}>{copied ? 'Copied ✓' : 'Copy'}</button>
+    </div>
+  );
+}
+
 export default function Page() {
   const [stage, setStage] = useState('intro'); // intro | record | done
   const [speakerId, setSpeakerId] = useState(null);
@@ -179,6 +205,23 @@ export default function Page() {
     }
   }
 
+  if (stage === 'paused') {
+    return (
+      <main>
+        <div className="card">
+          <h1>Your progress is saved</h1>
+          <p className="sub">{done.length} of {list.length} sentences recorded. To continue later, open this page again and enter this code. Copy it or take a screenshot now.</p>
+          <CodeBox code={speakerId} big />
+          <div className="row"><button className="primary" onClick={() => {
+            const next = list.findIndex((x) => !done.includes(x.id));
+            setIdx(next === -1 ? 0 : next);
+            setStage('record');
+          }}>Continue recording</button></div>
+        </div>
+      </main>
+    );
+  }
+
   if (stage === 'done') {
     return (
       <main>
@@ -217,10 +260,12 @@ export default function Page() {
           {error && <p className="err">{error}</p>}
         </div>
         <div className="row">
+          <button onClick={() => { setClip(null); setStage('paused'); }} disabled={recording || busy}>Finish later</button>
           <button onClick={() => { setClip(null); setIdx((i) => Math.max(0, i - 1)); }} disabled={idx === 0 || recording || busy}>Back</button>
           <button onClick={() => { setClip(null); setIdx((i) => Math.min(list.length - 1, i + 1)); }} disabled={idx === list.length - 1 || recording || busy}>Skip</button>
         </div>
-        <p className="hint">Tip: use a quiet room and keep the phone about a hand-span from your mouth. Every sentence is saved as soon as you press Save, so you can stop any time. To continue later (even on another device), open this page again and enter your code: <b>{speakerId}</b>. Sentences you already recorded are skipped.</p>
+        <p className="hint">Tip: use a quiet room and keep the phone about a hand-span from your mouth. Every sentence is saved as soon as you press Save, so you can stop any time. Copy your code to continue later on any device. Sentences you already recorded are skipped.</p>
+        <CodeBox code={speakerId} />
       </main>
     );
   }
