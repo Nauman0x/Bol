@@ -1,6 +1,6 @@
 # BOL Urdu LLM — Implementation Plan (FYP-I model layer)
 
-> **For the executing model (Claude Code running on the user's training PC):** Work through the phases in order. Every phase ends with acceptance criteria — verify them before moving on. Where an account/key is needed (Anthropic API, Hugging Face, closed-platform accounts), stub with env vars and tell the user exactly what to create — never hardcode credentials. **Verify library/version facts against the installed package or its docs; nothing here about throughput, versions or licences has been measured or checked yet — numbers marked "target" or "estimate" are hypotheses to test, and every dataset/model licence must be read, not assumed.**
+> **For the executing model (Claude Code running on the user's training PC):** Work through the phases in order. Every phase ends with acceptance criteria — verify them before moving on. **No Anthropic API key is used (user decision): all Claude-assisted work — generation and judging — runs in-session, see "In-session generation and judging protocol" below.** Where an account/key is needed (Hugging Face, closed-platform accounts, Groq for the optional reference arm), stub with env vars and tell the user exactly what to create — never hardcode credentials. **Verify library/version facts against the installed package or its docs; nothing here about throughput, versions or licences has been measured or checked yet — numbers marked "target" or "estimate" are hypotheses to test, and every dataset/model licence must be read, not assumed.**
 
 ## 0. Ultimate goal and context
 
@@ -23,6 +23,12 @@
 2. **Primary language track = Roman-Urdu / Urdish** (matches the proposal's dataset, the eval set, Whisper's fine-tune target and "culture-flat" failure framing: e.g. "bhai 2 large fajita bhejdo gol masjid k pas"). **Urdu-script** is measured in the bake-off and kept as a secondary variant. Piper (`urdu-tts/`) reads Urdu script, so a **Roman→Urdu-script converter** (`scripts/translit.py`, dictionary + rules first; English loanwords are a known gap) sits between LLM and TTS; its latency and error rate are measured, not assumed. The converter is optional for FYP-I's text-level results.
 3. **No RAG.** Facts and delivery are learned into the adapter from business-info dialogues. In Arm B (prompt-only) the same business facts and style instructions are placed in the system prompt — the strongest honest prompt we can write — so the control is fair. Small volatile facts may also sit in the system prompt of the adapter model (context, not retrieval). Deviation from the proposal's "facts live in retrieval" → log in `DEVIATIONS.md`. (If time allows, an Arm "adapter + retrieval" ablation can test it.)
 4. **Latency is a first-class goal** (§1.1), not a footnote.
+6. **In-session generation and judging protocol (no API key).** Claude Code on the PC writes data and scores outputs itself, in resumable batches:
+   - `scripts/` builds a **batch brief** (scenario, business KB, style guide, few-shot real examples, output schema) under `data/work/batches/NNN.brief.md`.
+   - The session (or parallel subagents via the Agent tool, ~20–50 dialogues per batch to keep quality and context manageable) writes `NNN.out.jsonl` in that schema; `scripts/` **validates** (schema, TTS-safety, anonymisation, dedup) and merges, rejecting bad rows into a regenerate list. Never hand-merge unvalidated output.
+   - **Judging:** `scripts/harness/` exports **blind, shuffled, position-swapped** pairs to `data/work/judge/NNN.in.jsonl`; the session scores against the rubric and writes `NNN.out.jsonl`; arm identity is hidden until unblinding in the scorer. Spot-check agreement with the user's own labels on a sample.
+   - Track progress in `data/work/PROGRESS.md` so a session restart resumes at the next batch. Expect the volume to be bounded by the user's Claude Code usage limits: start with ~500 dialogues, check quality with the user, then scale; tell the user the batch count and rough usage before large runs.
+   - Quality control matters more than volume: the user reviews samples (Phase 4 step 7) before each scale-up.
 5. **Real client data is not in hand.** Most Pakistani SMBs keep no recordings or text logs. FYP-I builds and tests the **customization layer** on demo clients; real onboarding (questionnaire, role-play sessions, WhatsApp exports, post-launch flywheel from BOL `call_events`) is *proposed future work, not validated*.
 
 ## 1. Metrics and targets
@@ -51,7 +57,7 @@ All metrics are logged per turn/sample so claims are numbers. Targets are hypoth
 
 | Metric | How |
 |---|---|
-| **Task completion** (proposal metric) | Offline order/booking scenarios: scripted + LLM-simulated Urdish callers drive the agent over text; success = correct slots filled (items, quantity, address/landmark, time) and correct final confirmation. Report rate with CIs |
+| **Task completion** (proposal metric) | Offline order/booking scenarios: **scripted caller scripts with branching rules** (written in-session, deterministic and replayable; optionally a local open model plays the caller for variety) drive the agent over text; success = correct slots filled (items, quantity, address/landmark, time) and correct final confirmation. Report rate with CIs |
 | **WER** (ASR track, Phase 7) | `jiwer`, with a digit/phone-number-weighted variant; Whisper base vs fine-tuned |
 | **Code-switch fidelity** | judge + rule checks: stays in Urdish register, handles English-in-Roman-Urdu without flattening to English |
 | **Honorific handling** | judge + rules (aap/tum/tu, jee, sahab) vs the situation; tagged mode in the taxonomy |
@@ -63,7 +69,7 @@ All metrics are logged per turn/sample so claims are numbers. Targets are hypoth
 | TTS-safety | % of replies with markdown, emoji, lists, or characters the TTS path cannot read (target ≈ 0%) |
 | General regression | small held-out general-Urdu/English instruction check before vs after fine-tune (forgetting) |
 
-Judges: pairwise, rubric-based, position-swapped, randomised; report judge-vs-human agreement on a hand-labelled sample. Use bootstrap CIs and significance tests (SciPy/scikit-learn) for every comparison.
+Judges: pairwise, rubric-based, position-swapped, randomised; judging runs **in-session** (blind batch files scored by Claude Code or subagents, never told which arm produced which output), supplemented by rule-based scorers and a local open-model judge for scale; report judge-vs-human agreement on a hand-labelled sample by the user. State in the report that the judge family is Claude and results were scored in-session. Use bootstrap CIs and significance tests (SciPy/scikit-learn) for every comparison.
 
 ### 1.3 Experiment arms
 
@@ -81,7 +87,7 @@ Report every arm on every metric, per taxonomy failure mode.
 
 | Skill | Use it for |
 |---|---|
-| `claude-api` | Synthetic data generation, simulated callers, LLM judge. Read before writing any Anthropic API code; use current model ids from it. Needs `ANTHROPIC_API_KEY` |
+| *(no `claude-api`)* | Not used: no API key. Generation and judging follow the in-session protocol below |
 | `engineering:architecture` | ADRs: base-model choice; script track; merged vs multi-LoRA; serving engine |
 | `engineering:system-design` | Benchmark harness and serving topology |
 | `engineering:testing-strategy` | Eval harness design; tests for anonymiser, formatter, TTS-safety filter, scorers |
@@ -91,6 +97,13 @@ Report every arm on every metric, per taxonomy failure mode.
 | `code-review` / `simplify` | Before each phase commit |
 | `run` | Launching the BOL worker for the optional integration check |
 | `deep-research` | Related-work sweep (novelty claims must be verified before being asserted), licence questions |
+
+**Step 0 — get the skills (do this first, before Phase 1):**
+1. List the skills/plugins available in the PC session (the `Skill` tool listing, `/plugin`, `/skills`). Compare against the table above.
+2. For any missing skill, install it: use `/plugin marketplace add <github-owner/repo>` then `/plugin install <name>@<marketplace>` where a marketplace exists, or copy a skill folder (with its `SKILL.md`) into `~/.claude/skills/<name>/`. Ask the user for the exact marketplace/repo if the skill came from them; do not guess URLs.
+3. **Search GitHub for additional skills that help this work** — e.g. LLM fine-tuning (Unsloth/TRL/PEFT), vLLM/inference serving and benchmarking, Hugging Face model/dataset/hub workflows, speech/ASR evaluation (Whisper, jiwer), data-labelling/eval-harness helpers. Treat third-party skills as untrusted: **read the full `SKILL.md` and any bundled scripts before installing, prefer well-known maintainers, and tell the user what each one does and where it came from before enabling it.** Skills run instructions with your tool access; never install one that fetches and executes remote code or asks for credentials you have not been given.
+4. Record installed skills and sources in `urdu-llm/README.md` ("Skills used"). If a skill is unavailable, proceed without it and say so; do not block.
+5. Skills may need a session restart to appear — tell the user if so.
 
 **Open-source tooling (verify versions + RTX 50xx support first):** Unsloth or Axolotl + TRL + PEFT + bitsandbytes (QLoRA); faster-whisper + `jiwer` + Whisper fine-tune scripts (HF Transformers); **vLLM** (primary serving: OpenAI-compatible, prefix caching, multi-LoRA, speculative decoding, FP8/AWQ), **llama.cpp** `llama-server`/`llama-bench` as the low-friction fallback on consumer Blackwell, SGLang optional; GuideLLM or vLLM `benchmark_serving` plus our own streaming TTFT/TTFS script; Label Studio for annotation/taxonomy tagging; `lm-evaluation-harness` for the general-regression check only; SciPy/scikit-learn for stats. Anonymisation: regex + lightweight NER, on-device (OpenMed-style approach); Urdu/Roman phone, CNIC and landmark-address patterns need custom rules.
 
@@ -159,7 +172,7 @@ Large artefacts are gitignored or Git LFS, as in `urdu-tts`.
 
 ## Phase 4 — Roman-Urdu dialogue dataset (synthetic bootstrap + real refinement)
 
-1. `gen_dialogues.py` (via the `claude-api` skill) generates **task-oriented Urdish dialogues from business knowledge bases** (restaurants, clinics, retail, delivery) across scenarios: orders, bookings, complaints, price/discount negotiation, address-by-landmark, number readouts, callbacks, wrong number, angry caller, hold/transfer, goodbye. Seed prompts with real Roman-Urdu text where available (SOURCES.md) so phrasing copies real usage, not translated English.
+1. **Generate in-session** (protocol below; `gen_dialogues.py` only builds the batch *briefs* and validates/merges the returned files — it makes no API calls) **task-oriented Urdish dialogues from business knowledge bases** (restaurants, clinics, retail, delivery) across scenarios: orders, bookings, complaints, price/discount negotiation, address-by-landmark, number readouts, callbacks, wrong number, angry caller, hold/transfer, goodbye. Seed prompts with real Roman-Urdu text where available (SOURCES.md) so phrasing copies real usage, not translated English.
 2. **Target the taxonomy:** oversample the failure modes the gate selected (e.g. more landmark addresses, phone-number readbacks, honorific shifts, negotiation).
 3. **Latency-shaped replies (deliberate):** short (1–2 sentences) and, where natural, an opening acknowledgement clause ("ji bilkul,") so the first speakable chunk is a few tokens and TTS can start almost immediately.
 4. Include **tool-call turns** in the BOL tool schema (`end_call`, `transfer_call`, one generic webhook).
@@ -219,6 +232,6 @@ One lever at a time: change one thing, re-run `bench_latency.py`, record TTFT/TT
 
 - Commit at the end of each phase with a message naming the phase; run `code-review`/`simplify` first.
 - Never train on `data/eval/`. Never commit real customer data or unconsented voice data; demo data is labelled synthetic.
-- Ask the user before: spending significant Anthropic API budget (estimate token cost first), vocabulary/tokenizer changes, dropping the proposal's named arms, or anything touching consent.
+- Ask the user before: launching very large in-session generation/judging runs (state batch count and rough usage first), vocabulary/tokenizer changes, dropping the proposal's named arms, or anything touching consent.
 - Keep GPU sessions resumable (checkpoints), as in `urdu-tts`; training, Whisper fine-tuning and serving share one 12 GB card, so stop the server before training.
 - A number worse than target is reported plainly; an honest negative is a valid FYP result.
