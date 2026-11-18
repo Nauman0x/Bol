@@ -1,0 +1,242 @@
+{
+ "p000": {
+  "id": "c02",
+  "model": "qalb-llama3"
+ },
+ "p001": {
+  "id": "r02",
+  "model": "qwen25"
+ },
+ "p002": {
+  "id": "c01",
+  "model": "qalb-llama3"
+ },
+ "p003": {
+  "id": "r15",
+  "model": "qwen25"
+ },
+ "p004": {
+  "id": "r09",
+  "model": "qalb-llama3"
+ },
+ "p005": {
+  "id": "c02",
+  "model": "qwen25"
+ },
+ "p006": {
+  "id": "r16",
+  "model": "qwen25"
+ },
+ "p007": {
+  "id": "c01",
+  "model": "qwen25"
+ },
+ "p008": {
+  "id": "c07",
+  "model": "qalb-llama3"
+ },
+ "p009": {
+  "id": "r19",
+  "model": "qwen25"
+ },
+ "p010": {
+  "id": "r14",
+  "model": "qalb-llama3"
+ },
+ "p011": {
+  "id": "r18",
+  "model": "qalb-llama3"
+ },
+ "p012": {
+  "id": "r18",
+  "model": "qwen25"
+ },
+ "p013": {
+  "id": "c03",
+  "model": "qalb-llama3"
+ },
+ "p014": {
+  "id": "r07",
+  "model": "qwen25"
+ },
+ "p015": {
+  "id": "r16",
+  "model": "qalb-llama3"
+ },
+ "p016": {
+  "id": "r17",
+  "model": "qwen25"
+ },
+ "p017": {
+  "id": "c08",
+  "model": "qalb-llama3"
+ },
+ "p018": {
+  "id": "r17",
+  "model": "qalb-llama3"
+ },
+ "p019": {
+  "id": "c07",
+  "model": "qwen25"
+ },
+ "p020": {
+  "id": "r19",
+  "model": "qalb-llama3"
+ },
+ "p021": {
+  "id": "c04",
+  "model": "qalb-llama3"
+ },
+ "p022": {
+  "id": "r09",
+  "model": "qwen25"
+ },
+ "p023": {
+  "id": "r15",
+  "model": "qalb-llama3"
+ },
+ "p024": {
+  "id": "c05",
+  "model": "qalb-llama3"
+ },
+ "p025": {
+  "id": "r04",
+  "model": "qwen25"
+ },
+ "p026": {
+  "id": "r12",
+  "model": "qwen25"
+ },
+ "p027": {
+  "id": "r08",
+  "model": "qalb-llama3"
+ },
+ "p028": {
+  "id": "c08",
+  "model": "qwen25"
+ },
+ "p029": {
+  "id": "r14",
+  "model": "qwen25"
+ },
+ "p030": {
+  "id": "r02",
+  "model": "qalb-llama3"
+ },
+ "p031": {
+  "id": "r04",
+  "model": "qalb-llama3"
+ },
+ "p032": {
+  "id": "r05",
+  "model": "qalb-llama3"
+ },
+ "p033": {
+  "id": "r01",
+  "model": "qalb-llama3"
+ },
+ "p034": {
+  "id": "r11",
+  "model": "qalb-llama3"
+ },
+ "p035": {
+  "id": "r13",
+  "model": "qwen25"
+ },
+ "p036": {
+  "id": "c06",
+  "model": "qalb-llama3"
+ },
+ "p037": {
+  "id": "r03",
+  "model": "qalb-llama3"
+ },
+ "p038": {
+  "id": "r05",
+  "model": "qwen25"
+ },
+ "p039": {
+  "id": "r06",
+  "model": "qalb-llama3"
+ },
+ "p040": {
+  "id": "r10",
+  "model": "qalb-llama3"
+ },
+ "p041": {
+  "id": "r20",
+  "model": "qalb-llama3"
+ },
+ "p042": {
+  "id": "c04",
+  "model": "qwen25"
+ },
+ "p043": {
+  "id": "r07",
+  "model": "qalb-llama3"
+ },
+ "p044": {
+  "id": "c09",
+  "model": "qwen25"
+ },
+ "p045": {
+  "id": "r10",
+  "model": "qwen25"
+ },
+ "p046": {
+  "id": "r11",
+  "model": "qwen25"
+ },
+ "p047": {
+  "id": "r01",
+  "model": "qwen25"
+ },
+ "p048": {
+  "id": "c03",
+  "model": "qwen25"
+ },
+ "p049": {
+  "id": "r12",
+  "model": "qalb-llama3"
+ },
+ "p050": {
+  "id": "r13",
+  "model": "qalb-llama3"
+ },
+ "p051": {
+  "id": "r08",
+  "model": "qwen25"
+ },
+ "p052": {
+  "id": "r03",
+  "model": "qwen25"
+ },
+ "p053": {
+  "id": "c10",
+  "model": "qwen25"
+ },
+ "p054": {
+  "id": "c10",
+  "model": "qalb-llama3"
+ },
+ "p055": {
+  "id": "r20",
+  "model": "qwen25"
+ },
+ "p056": {
+  "id": "c05",
+  "model": "qwen25"
+ },
+ "p057": {
+  "id": "r06",
+  "model": "qwen25"
+ },
+ "p058": {
+  "id": "c06",
+  "model": "qwen25"
+ },
+ "p059": {
+  "id": "c09",
+  "model": "qalb-llama3"
+ }
+}

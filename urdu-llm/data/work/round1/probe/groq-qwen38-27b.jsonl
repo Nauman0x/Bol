@@ -1,0 +1,30 @@
+{"id": "r01", "tag": "order", "model": "groq-qwen38-27b", "reply": "Ji bhai, 2 large fajita pizza ka order note kar liya hai. Gol Masjid ke pas delivery 40 se 50 minute mein ho jayegi, kya aap cash ya mobile payment karayenge?"}
+{"id": "r02", "tag": "order", "model": "groq-qwen38-27b", "reply": "Walaikum Assalam, ji bilkul. Ek zinger burger aur do 345ml cold drinks ka order note kar liya hai. Kya aap delivery chahte hain ya khud aayenge?"}
+{"id": "r03", "tag": "order", "model": "groq-qwen38-27b", "reply": "Ji bilkul, humari family deal mein 1 full chicken karahi, 6 naan, raita aur 1.5 litre drink shamil hai. Iska total rate 3200 rupay hai."}
+{"id": "r04", "tag": "order", "model": "groq-qwen38-27b", "reply": "Ji, half chicken karahi 1400, char naan 160 aur raita 80 hai. Total aap ka bill 1640 rupees hoga."}
+{"id": "r05", "tag": "order", "model": "groq-qwen38-27b", "reply": "Ji bilkul, main note kar leta hoon ke pizza me pyaz nahi dalni. Aap kis size ka pizza order kar rahe hain?"}
+{"id": "r06", "tag": "order", "model": "groq-qwen38-27b", "reply": "Ji, delivery 40 se 50 minute me aa jaye gi. Aap ka order note kar raha hoon, thoda intezaar karna hoga."}
+{"id": "r07", "tag": "phone", "model": "groq-qwen38-27b", "reply": "Ji, aapka number 0301-2345678 note kar liya hai. Kya aap koi aur cheez order karna chahte hain?"}
+{"id": "r08", "tag": "phone", "model": "groq-qwen38-27b", "reply": "Ji, aapka number 0 3 3 3 4 5 6 7 8 9 0 hai."}
+{"id": "r09", "tag": "address", "model": "groq-qwen38-27b", "reply": "Ji, address note kar liya hai. Kya order karna hai?"}
+{"id": "r10", "tag": "negotiation", "model": "groq-qwen38-27b", "reply": "Sorry bhai, single items par koi discount nahi hota. Agar aapka bill 5000 se zyada ho to manager se baat karwa deta hoon."}
+{"id": "r11", "tag": "negotiation", "model": "groq-qwen38-27b", "reply": "Ji, pizza par single item discount nahi hota. Aap ka total 8000 se zyada hai, is liye manager se baat kar kar ke 10% off ki koshish karta hoon."}
+{"id": "r12", "tag": "negotiation", "model": "groq-qwen38-27b", "reply": "Ji sahab, humari half chicken karahi ki rate 1400 rupees hai. Single items par koi discount nahi hota, is liye main aap ko manager se connect kar deta hoon."}
+{"id": "r13", "tag": "honorific", "model": "groq-qwen38-27b", "reply": "Ji maafi chahta hoon, aap ka intezar karna theek nahi tha. Main abhi aap ki madad karne ke liye yahan hoon, bataiye kya chahiye?"}
+{"id": "r14", "tag": "honorific", "model": "groq-qwen38-27b", "reply": "Ji sahab, bilkul aaram se. Humare yahan chicken tikka, karahi, kabab aur biryani milti hai. Aap bataiye, aapko kya khane ka dil karta hai?"}
+{"id": "r15", "tag": "honorific", "model": "groq-qwen38-27b", "reply": "Maaf kijiye, aap ki shikayat sun kar humein afsos hua. Main abhi manager ko connect kar raha hoon taake aap ka masla hal ho sake."}
+{"id": "r16", "tag": "complaint", "model": "groq-qwen38-27b", "reply": "Ji, aap ki baat sun kar humein afsos ho raha hai. Main abhi aap ko manager se connect kar raha hoon taake yeh masla foran hal ho sake."}
+{"id": "r17", "tag": "codeswitch", "model": "groq-qwen38-27b", "reply": "Ji, yeh technical issue hai. Main aap ko manager se connect kar raha hoon jo aap ki refund request check karega."}
+{"id": "r18", "tag": "codeswitch", "model": "groq-qwen38-27b", "reply": "Ji bilkul, aap JazzCash se payment kar sakte hain. Cash on delivery aur Easypaisa bhi available hain, lekin card sirf counter par accept hota hai."}
+{"id": "r19", "tag": "unknown", "model": "groq-qwen38-27b", "reply": "Ji, gluten free options aur peanuts ke baare mein details manager hi batayenge. Main aap ko unse connect kar deta hoon."}
+{"id": "r20", "tag": "handoff", "model": "groq-qwen38-27b", "reply": "Ji bilkul, aap ka request note kar liya hai. Main aap ko seedha manager se connect kar raha hoon, thoda intezaar karein."}
+{"id": "c01", "tag": "booking", "model": "groq-qwen38-27b", "reply": "Ji bilkul, aap kaunsa doctor chahenge? Dr Imran, Dr Fatima ya Dr Saad?"}
+{"id": "c02", "tag": "booking", "model": "groq-qwen38-27b", "reply": "Ji, main medical advice nahi de sakti. Aap Dr Saad ke liye reception se slot check karwayen, ya agar bukhar bohat zyada hai to foran hospital jayen."}
+{"id": "c03", "tag": "booking", "model": "groq-qwen38-27b", "reply": "Ji bilkul, main aap ki date change karwa deta hoon. Aap agle hafte kaun sa din aur waqt prefer karte hain?"}
+{"id": "c04", "tag": "info", "model": "groq-qwen38-27b", "reply": "Ji, Dr Fatima ki fees 2500 rupay hai. Woh Monday, Wednesday aur Friday ko shaam 5 se raat 9 tak baithti hain."}
+{"id": "c05", "tag": "info", "model": "groq-qwen38-27b", "reply": "Ji haan, blood sugar test ke liye 8 se 10 ghante ka khali pait zaroori hai. Aap ki report 24 ghante ke andar ready ho jayegi."}
+{"id": "c06", "tag": "medical_advice", "model": "groq-qwen38-27b", "reply": "Maazrat, hum phone par medical advice ya dawai ki tafseel nahi de sakte. Aap Dr Imran se mil kar zaroor mashwara karein, wo aap ko sahi dawai bata denge."}
+{"id": "c07", "tag": "emergency", "model": "groq-qwen38-27b", "reply": "Yeh emergency hai, foran qareebi hospital jayen ya 1122 par call karein. Hum phone par medical advice nahi de sakte."}
+{"id": "c08", "tag": "handoff", "model": "groq-qwen38-27b", "reply": "Maaf kijiye, hum phone par doctor se baat nahi karwa sakte. Aap ka appointment book karwa sakte hain, kya aap bata sakte hain kis doctor se milna hai?"}
+{"id": "c09", "tag": "phone", "model": "groq-qwen38-27b", "reply": "Ji, Ayesha Khan sahab ka appointment confirm ho gaya hai. Number 0300 1234567 par reminder bheja jayega."}
+{"id": "c10", "tag": "booking", "model": "groq-qwen38-27b", "reply": "Ji, aap 15 minute late ho sakte hain, hum aap ka slot hold kar denge. Lekin agar aap 2 ghante se zyada late honge toh appointment cancel ho jayegi."}

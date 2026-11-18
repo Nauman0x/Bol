@@ -1,0 +1,482 @@
+{
+ "p000": {
+  "id": "r08",
+  "model": "qwen25"
+ },
+ "p001": {
+  "id": "c03",
+  "model": "qwen3"
+ },
+ "p002": {
+  "id": "r05",
+  "model": "qalb"
+ },
+ "p003": {
+  "id": "c06",
+  "model": "qwen25"
+ },
+ "p004": {
+  "id": "r04",
+  "model": "groq-qwen38-27b"
+ },
+ "p005": {
+  "id": "c02",
+  "model": "qalb"
+ },
+ "p006": {
+  "id": "r02",
+  "model": "qwen25"
+ },
+ "p007": {
+  "id": "r16",
+  "model": "qwen25"
+ },
+ "p008": {
+  "id": "c10",
+  "model": "qwen3"
+ },
+ "p009": {
+  "id": "r01",
+  "model": "groq-qwen38-27b"
+ },
+ "p010": {
+  "id": "r02",
+  "model": "groq-qwen38-27b"
+ },
+ "p011": {
+  "id": "c08",
+  "model": "qalb"
+ },
+ "p012": {
+  "id": "c09",
+  "model": "qalb"
+ },
+ "p013": {
+  "id": "c08",
+  "model": "qwen25"
+ },
+ "p014": {
+  "id": "r11",
+  "model": "qalb"
+ },
+ "p015": {
+  "id": "r17",
+  "model": "groq-qwen38-27b"
+ },
+ "p016": {
+  "id": "r14",
+  "model": "qalb"
+ },
+ "p017": {
+  "id": "r15",
+  "model": "groq-qwen38-27b"
+ },
+ "p018": {
+  "id": "c06",
+  "model": "groq-qwen38-27b"
+ },
+ "p019": {
+  "id": "r18",
+  "model": "qwen3"
+ },
+ "p020": {
+  "id": "r18",
+  "model": "qwen25"
+ },
+ "p021": {
+  "id": "r20",
+  "model": "qwen25"
+ },
+ "p022": {
+  "id": "c03",
+  "model": "groq-qwen38-27b"
+ },
+ "p023": {
+  "id": "r17",
+  "model": "qwen3"
+ },
+ "p024": {
+  "id": "r19",
+  "model": "qalb"
+ },
+ "p025": {
+  "id": "r13",
+  "model": "qalb"
+ },
+ "p026": {
+  "id": "c02",
+  "model": "qwen25"
+ },
+ "p027": {
+  "id": "r09",
+  "model": "qwen3"
+ },
+ "p028": {
+  "id": "c01",
+  "model": "qwen3"
+ },
+ "p029": {
+  "id": "r06",
+  "model": "qalb"
+ },
+ "p030": {
+  "id": "r11",
+  "model": "qwen3"
+ },
+ "p031": {
+  "id": "r03",
+  "model": "groq-qwen38-27b"
+ },
+ "p032": {
+  "id": "c10",
+  "model": "qalb"
+ },
+ "p033": {
+  "id": "r16",
+  "model": "qalb"
+ },
+ "p034": {
+  "id": "c05",
+  "model": "qwen3"
+ },
+ "p035": {
+  "id": "c03",
+  "model": "qalb"
+ },
+ "p036": {
+  "id": "r11",
+  "model": "groq-qwen38-27b"
+ },
+ "p037": {
+  "id": "r06",
+  "model": "qwen25"
+ },
+ "p038": {
+  "id": "r03",
+  "model": "qalb"
+ },
+ "p039": {
+  "id": "r07",
+  "model": "qwen25"
+ },
+ "p040": {
+  "id": "c04",
+  "model": "qwen3"
+ },
+ "p041": {
+  "id": "r09",
+  "model": "qalb"
+ },
+ "p042": {
+  "id": "r19",
+  "model": "qwen25"
+ },
+ "p043": {
+  "id": "c05",
+  "model": "qwen25"
+ },
+ "p044": {
+  "id": "c02",
+  "model": "groq-qwen38-27b"
+ },
+ "p045": {
+  "id": "r02",
+  "model": "qalb"
+ },
+ "p046": {
+  "id": "r04",
+  "model": "qalb"
+ },
+ "p047": {
+  "id": "c07",
+  "model": "qalb"
+ },
+ "p048": {
+  "id": "r07",
+  "model": "qalb"
+ },
+ "p049": {
+  "id": "c07",
+  "model": "qwen3"
+ },
+ "p050": {
+  "id": "r14",
+  "model": "qwen3"
+ },
+ "p051": {
+  "id": "r03",
+  "model": "qwen25"
+ },
+ "p052": {
+  "id": "r15",
+  "model": "qalb"
+ },
+ "p053": {
+  "id": "r10",
+  "model": "qwen3"
+ },
+ "p054": {
+  "id": "c07",
+  "model": "qwen25"
+ },
+ "p055": {
+  "id": "r17",
+  "model": "qwen25"
+ },
+ "p056": {
+  "id": "c09",
+  "model": "qwen3"
+ },
+ "p057": {
+  "id": "r06",
+  "model": "qwen3"
+ },
+ "p058": {
+  "id": "r01",
+  "model": "qwen25"
+ },
+ "p059": {
+  "id": "r02",
+  "model": "qwen3"
+ },
+ "p060": {
+  "id": "c10",
+  "model": "groq-qwen38-27b"
+ },
+ "p061": {
+  "id": "c01",
+  "model": "groq-qwen38-27b"
+ },
+ "p062": {
+  "id": "r20",
+  "model": "qalb"
+ },
+ "p063": {
+  "id": "r08",
+  "model": "qwen3"
+ },
+ "p064": {
+  "id": "r04",
+  "model": "qwen25"
+ },
+ "p065": {
+  "id": "c07",
+  "model": "groq-qwen38-27b"
+ },
+ "p066": {
+  "id": "c10",
+  "model": "qwen25"
+ },
+ "p067": {
+  "id": "r12",
+  "model": "qwen3"
+ },
+ "p068": {
+  "id": "c02",
+  "model": "qwen3"
+ },
+ "p069": {
+  "id": "r18",
+  "model": "qalb"
+ },
+ "p070": {
+  "id": "c05",
+  "model": "groq-qwen38-27b"
+ },
+ "p071": {
+  "id": "r14",
+  "model": "groq-qwen38-27b"
+ },
+ "p072": {
+  "id": "c04",
+  "model": "groq-qwen38-27b"
+ },
+ "p073": {
+  "id": "c03",
+  "model": "qwen25"
+ },
+ "p074": {
+  "id": "r10",
+  "model": "qalb"
+ },
+ "p075": {
+  "id": "c09",
+  "model": "qwen25"
+ },
+ "p076": {
+  "id": "r05",
+  "model": "qwen3"
+ },
+ "p077": {
+  "id": "r10",
+  "model": "qwen25"
+ },
+ "p078": {
+  "id": "r19",
+  "model": "groq-qwen38-27b"
+ },
+ "p079": {
+  "id": "r13",
+  "model": "qwen3"
+ },
+ "p080": {
+  "id": "r08",
+  "model": "qalb"
+ },
+ "p081": {
+  "id": "r18",
+  "model": "groq-qwen38-27b"
+ },
+ "p082": {
+  "id": "r12",
+  "model": "qwen25"
+ },
+ "p083": {
+  "id": "r06",
+  "model": "groq-qwen38-27b"
+ },
+ "p084": {
+  "id": "r04",
+  "model": "qwen3"
+ },
+ "p085": {
+  "id": "c06",
+  "model": "qwen3"
+ },
+ "p086": {
+  "id": "c08",
+  "model": "qwen3"
+ },
+ "p087": {
+  "id": "r01",
+  "model": "qwen3"
+ },
+ "p088": {
+  "id": "r14",
+  "model": "qwen25"
+ },
+ "p089": {
+  "id": "r07",
+  "model": "qwen3"
+ },
+ "p090": {
+  "id": "r20",
+  "model": "qwen3"
+ },
+ "p091": {
+  "id": "r03",
+  "model": "qwen3"
+ },
+ "p092": {
+  "id": "c01",
+  "model": "qwen25"
+ },
+ "p093": {
+  "id": "c09",
+  "model": "groq-qwen38-27b"
+ },
+ "p094": {
+  "id": "r16",
+  "model": "groq-qwen38-27b"
+ },
+ "p095": {
+  "id": "r13",
+  "model": "qwen25"
+ },
+ "p096": {
+  "id": "r19",
+  "model": "qwen3"
+ },
+ "p097": {
+  "id": "c05",
+  "model": "qalb"
+ },
+ "p098": {
+  "id": "r11",
+  "model": "qwen25"
+ },
+ "p099": {
+  "id": "r15",
+  "model": "qwen3"
+ },
+ "p100": {
+  "id": "r01",
+  "model": "qalb"
+ },
+ "p101": {
+  "id": "r09",
+  "model": "groq-qwen38-27b"
+ },
+ "p102": {
+  "id": "c04",
+  "model": "qalb"
+ },
+ "p103": {
+  "id": "c06",
+  "model": "qalb"
+ },
+ "p104": {
+  "id": "r12",
+  "model": "groq-qwen38-27b"
+ },
+ "p105": {
+  "id": "r05",
+  "model": "groq-qwen38-27b"
+ },
+ "p106": {
+  "id": "c08",
+  "model": "groq-qwen38-27b"
+ },
+ "p107": {
+  "id": "r05",
+  "model": "qwen25"
+ },
+ "p108": {
+  "id": "r08",
+  "model": "groq-qwen38-27b"
+ },
+ "p109": {
+  "id": "r15",
+  "model": "qwen25"
+ },
+ "p110": {
+  "id": "r17",
+  "model": "qalb"
+ },
+ "p111": {
+  "id": "r13",
+  "model": "groq-qwen38-27b"
+ },
+ "p112": {
+  "id": "r09",
+  "model": "qwen25"
+ },
+ "p113": {
+  "id": "r16",
+  "model": "qwen3"
+ },
+ "p114": {
+  "id": "r10",
+  "model": "groq-qwen38-27b"
+ },
+ "p115": {
+  "id": "r07",
+  "model": "groq-qwen38-27b"
+ },
+ "p116": {
+  "id": "c04",
+  "model": "qwen25"
+ },
+ "p117": {
+  "id": "c01",
+  "model": "qalb"
+ },
+ "p118": {
+  "id": "r20",
+  "model": "groq-qwen38-27b"
+ },
+ "p119": {
+  "id": "r12",
+  "model": "qalb"
+ }
+}

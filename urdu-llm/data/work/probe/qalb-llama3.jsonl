@@ -1,0 +1,30 @@
+{"id": "r01", "tag": "order", "model": "qalb-llama3", "reply": "bhai, aap ka order note kar liya hai. 2 large fajita pizza, gol masjid k pas, 40-50 min. 1800 + 1800 = 3600. 150 delivery charge. 3600 - 150 = 3450. 3450 - 220 = 3230. 3230 - 90 = 3140. 3140 - 220 = 2920. 2920 -"}
+{"id": "r02", "tag": "order", "model": "qalb-llama3", "reply": "Yes, one zinger burger and two cold drinks. Total is 270. I will process your order."}
+{"id": "r03", "tag": "order", "model": "qalb-llama3", "reply": "Yes, the family deal is 1 full chicken karahi + 6 naan + raita + 1.5L drink = 3200."}
+{"id": "r04", "tag": "order", "model": "qalb-llama3", "reply": "Half chicken karahi is 1400, three naan is 120, and raita is 80, so the total is 1600."}
+{"id": "r05", "tag": "order", "model": "qalb-llama3", "reply": "Aap ka order note kar liya hai. Pyaz allergy hai?"}
+{"id": "r06", "tag": "order", "model": "qalb-llama3", "reply": "Delivery kitni der me aa jaye gi? mehman aaye hue hain"}
+{"id": "r07", "tag": "phone", "model": "qalb-llama3", "reply": "aap ka number note kar liya, aap janty hain."}
+{"id": "r08", "tag": "phone", "model": "qalb-llama3", "reply": "aap ka order note kar liya hai, aap ka contact number 0333 4567890 ہے."}
+{"id": "r09", "tag": "address", "model": "qalb-llama3", "reply": "ji, aap ka order note kar liya hai, 6 km wala, 40-50 min, 150, 3200, 1.5L, 345, 220, 90, 80, 40, 450, 850, 600, 1400, 2600, 2200, 600, 550, 900, 1700, 1800, 380, 450, 600,"}
+{"id": "r10", "tag": "negotiation", "model": "qalb-llama3", "reply": "Yes, it is very expensive. I am a regular customer. Can you get a discount?"}
+{"id": "r11", "tag": "negotiation", "model": "qalb-llama3", "reply": "5 large pizzas will be 1800 x 5 = 9000. 8000 is not enough."}
+{"id": "r12", "tag": "negotiation", "model": "qalb-llama3", "reply": "Aap 1400 me half karahi de sakte hain."}
+{"id": "r13", "tag": "honorific", "model": "qalb-llama3", "reply": "Yes, I heard you. I have been waiting since [date] for a call back. I haven't heard from anyone."}
+{"id": "r14", "tag": "honorific", "model": "qalb-llama3", "reply": "Yes, I understand. I will explain the menu. We have chicken tikka quarter 450, half 850; seekh kabab 4 pcs 600; chicken karahi half 1400, full 2600; mutton karahi half 2200; zinger burger 550; fajita pizza small 900, large 1700; pepperoni pizza large 1800; biryani plate 380; naan 40; raita"}
+{"id": "r15", "tag": "honorific", "model": "qalb-llama3", "reply": "Yes, I have received your order. I will connect you to the manager."}
+{"id": "r16", "tag": "complaint", "model": "qalb-llama3", "reply": "Hm, aap ka order note kahaan hain? Aap kahaan hain? Aap kahaan hain? Aap kahaan hain? Aap kahaan hain? Aap kahaan hain? Aap kahaan hain? Aap kahaan hain? Aap kahaan hain? Aap kahaan hain? Aap kahaan hain? Aap kahaan"}
+{"id": "r17", "tag": "codeswitch", "model": "qalb-llama3", "reply": "Yes, you can get a refund. I have canceled your order."}
+{"id": "r18", "tag": "codeswitch", "model": "qalb-llama3", "reply": "Aap JazzCash se payment karsakhty hain."}
+{"id": "r19", "tag": "unknown", "model": "qalb-llama3", "reply": "Yes, we have gluten free options. We do not use peanuts in the kitchen."}
+{"id": "r20", "tag": "handoff", "model": "qalb-llama3", "reply": "I will connect you to the manager, to place an order for catering for 200 people at a wedding."}
+{"id": "c01", "tag": "booking", "model": "qalb-llama3", "reply": "Yes, ji. Aap kis doctor sahab se meeting karna chahte hain?"}
+{"id": "c02", "tag": "booking", "model": "qalb-llama3", "reply": "Yes, we can see the child today. Is there anything else?"}
+{"id": "c03", "tag": "booking", "model": "qalb-llama3", "reply": "aap kahaan hain? aap kis date kaa order note karna chahte hain?"}
+{"id": "c04", "tag": "info", "model": "qalb-llama3", "reply": "Dr Fatima's fees are 2500 and she sits on Mondays, Wednesdays, and Fridays from 5 pm to 9 pm."}
+{"id": "c05", "tag": "info", "model": "qalb-llama3", "reply": "Blood sugar test requires fasting for 8-10 hours. Report will be ready in 24 hours."}
+{"id": "c06", "tag": "medical_advice", "model": "qalb-llama3", "reply": "مجھے افسوس ہے، میں فون پر ادویات کی تجویز نہیں دے سکتا۔ براہ کرم کسی ڈاکٹر سے رجوع کریں۔"}
+{"id": "c07", "tag": "emergency", "model": "qalb-llama3", "reply": "Aap kaa kahaan? Aap kis dr se mulaqat karna chahte hain?"}
+{"id": "c08", "tag": "handoff", "model": "qalb-llama3", "reply": "Yes, I will connect you to the doctor. (pause) Doctor, this is (customer name). (pause) I will put you on hold. (pause) Doctor, the customer is on the line. (pause) Customer, the doctor is on the line. (pause) Customer, the doctor is on the line. (pause) Customer, the doctor is on the line. (pause) Customer, the doctor is on the line. (pause) Customer, the doctor is"}
+{"id": "c09", "tag": "phone", "model": "qalb-llama3", "reply": "ji, aap ka order note kar liya hai. 5 pm, 25th March, 2021, aap ka appointment hoga."}
+{"id": "c10", "tag": "booking", "model": "qalb-llama3", "reply": "Yes, you can come at 5:30 pm. If you are late, you can reschedule. I will cancel your appointment."}
