@@ -23,4 +23,4 @@ Qwen2.5-7B-Instruct as the C-arm base. Quality does not separate the two Qwens, 
 
 ## Action items
 1. Read full Qwen and Llama 3.1 licence texts (not yet read).
-2. Check bitsandbytes on sm_120 in `.venv-train` (env built, bf16 matmul OK).
+2. ~~Check bitsandbytes on sm_120~~ done: 4-bit NF4 forward works (bnb 0.50.2, capability 12.0).
