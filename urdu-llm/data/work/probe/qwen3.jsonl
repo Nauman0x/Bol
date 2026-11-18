@@ -1,0 +1,30 @@
+{"id": "r01", "tag": "order", "model": "qwen3", "reply": "bhai ap k order ko 2 large fajita pizza gol masjid k pas bhej diya jayega. ap ka order 1700 ka hai."}
+{"id": "r02", "tag": "order", "model": "qwen3", "reply": "assalam o alaikum, aap ka order zinger burger aur do cold drinks 345 ml ka hai, note kar liya hai. 30 minute mein deliver kar diya jayega."}
+{"id": "r03", "tag": "order", "model": "qwen3", "reply": "ji sahab, humne family deal bhi hai. 1 full chicken karahi + 6 naan + raita + 1.5L drink = 3200. aap ko kuch aur pata hai?"}
+{"id": "r04", "tag": "order", "model": "qwen3", "reply": "aap ka order samajh liya hai. half chicken karahi 1400, 4 naan 160, raita 80, total 1640 hai."}
+{"id": "r05", "tag": "order", "model": "qwen3", "reply": "aap ka pyaz se allergy hai, samajh gaye sahab. manager se contact karayenge."}
+{"id": "r06", "tag": "order", "model": "qwen3", "reply": "aap ka order 40 se 50 minute me pahunch jaye gi. mehman aaye hue hain toh kuch nahi, hum apni taraf se koshish karen ge."}
+{"id": "r07", "tag": "phone", "model": "qwen3", "reply": "ji bilkul, aap ka number note kar liya. rider se rabta ke liye apna number bata dein."}
+{"id": "r08", "tag": "phone", "model": "qwen3", "reply": "0333 walo 4567890, aap ka number sahi hai?"}
+{"id": "r09", "tag": "address", "model": "qwen3", "reply": "ji, address samajh gaya. 6 km within hai, to delivery charge 150 hai. 40-50 minute mein pohoch jayega. kya order karna chaahate ho?"}
+{"id": "r10", "tag": "negotiation", "model": "qwen3", "reply": "aap mehnga nahi hai, regular customer hoon to 10% discount banta hai lekin sirf 5000 ka bill hone par aur manager ka approval ho. ap ko manager se milna padega."}
+{"id": "r11", "tag": "negotiation", "model": "qwen3", "reply": "aap ka order samajh liya hai sahab. 5 pizza lun ki price 8000 me final karo. kuch aur help chahiye kya?"}
+{"id": "r12", "tag": "negotiation", "model": "qwen3", "reply": "aap ka sawal samajh liya, hum 1200 me half karahi nahi de sakte, humara mutton karahi half 2200 hai. ap ko kuch aur pata chaiye?"}
+{"id": "r13", "tag": "honorific", "model": "qwen3", "reply": "aap ka call aaya hai, mera sahab, aap kab se intezar kar rahi ho, kisi ne call nahi uthayi?"}
+{"id": "r14", "tag": "honorific", "model": "qwen3", "reply": "aap bilkul sahi kaha hai, hum aap ko samajhne ki koshish kar raha hai. hum apne menu ke baare mein aap ko batayenge."}
+{"id": "r15", "tag": "honorific", "model": "qwen3", "reply": "aap ka khana thanda aaya hai, mene dekha hai, apni taraf se kuch nahi kiya jaa sakta, apni taraf se kuch nahi kiya jaa sakta."}
+{"id": "r16", "tag": "complaint", "model": "qwen3", "reply": "aap ka order ek ghanta late hai, mazaq nahi hai lekin hum apna kam karte hai. apna order ready ho gaya hai."}
+{"id": "r17", "tag": "codeswitch", "model": "qwen3", "reply": "aap ka order cancel ho gaya hai, lekin paise nahi katay. aap manager se contact kar sakein."}
+{"id": "r18", "tag": "codeswitch", "model": "qwen3", "reply": "aap JazzCash bhi use kar sakta hoon, cash on delivery bhi."}
+{"id": "r19", "tag": "unknown", "model": "qwen3", "reply": "aap ka sawal samajh gaye hai. gluten free option bhi hai, lekin uska detail manager se pata karein. peanuts kitchen mein use nahi hote."}
+{"id": "r20", "tag": "handoff", "model": "qwen3", "reply": "aap ka order bilkul samajh gaye hai, manager se baat karwayein, 200 logon ki shaadi catering ka order dena hai."}
+{"id": "c01", "tag": "booking", "model": "qwen3", "reply": "aap ka appointment kal shaam chahiye? aap ko kis doctor sahab se milna hai?"}
+{"id": "c02", "tag": "booking", "model": "qwen3", "reply": "aap ka beta bukhar hai, aaj hi dikhana hai. kya gunjaish hai?"}
+{"id": "c03", "tag": "booking", "model": "qwen3", "reply": "ji, aap ki pehli date agle hafte rakh dein. kal ki appointment cancel kar diya gaya hai."}
+{"id": "c04", "tag": "info", "model": "qwen3", "reply": "aap ka sawal samajh gaya hai sahab. Dr Fatima ki fees 2500 rupees hai aur wo mon, wed, fri 5 pm se 9 pm baithti hain."}
+{"id": "c05", "tag": "info", "model": "qwen3", "reply": "ji, blood sugar test ke liye 8-10 ghante khali pait aana zaroori hai. report aap ko 24 ghante mein milega."}
+{"id": "c06", "tag": "medical_advice", "model": "qwen3", "reply": "aap ko paracetamol lena chahiye lekin clinic mein dawai nahi di jati hai. apni problem manager se puchhain."}
+{"id": "c07", "tag": "emergency", "model": "qwen3", "reply": "aap ka wali ka dard bhot jyada hai sahab, kya apko koi dawakhana chahiye? ap khud ko neechay jao aur 1122 call karo."}
+{"id": "c08", "tag": "handoff", "model": "qwen3", "reply": "aap ka matlab samajh gaye hai sahab, doctor sahab se phone pe baat karwa di jayegi, do minute ke liye."}
+{"id": "c09", "tag": "phone", "model": "qwen3", "reply": "ji, ayesha khan, 0300 one two three four five six seven. apka appointment kis doctor ke liye hai?"}
+{"id": "c10", "tag": "booking", "model": "qwen3", "reply": "aap 15 minute baad pohochay jayen ge, ruk jayein ge warna cancel kar dein ge. apni appointment ka time bataein ge."}

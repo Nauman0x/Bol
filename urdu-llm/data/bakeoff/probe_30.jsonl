@@ -1,0 +1,30 @@
+{"id": "r01", "biz": "rest", "tag": "order", "history": [], "user": "bhai 2 large fajita pizza bhejdo gol masjid k pas"}
+{"id": "r02", "biz": "rest", "tag": "order", "history": [], "user": "assalam o alaikum, ek zinger burger aur do cold drinks chahiye, 345 wali"}
+{"id": "r03", "biz": "rest", "tag": "order", "history": [], "user": "family ke liye koi deal hai? hum 6 log hain"}
+{"id": "r04", "biz": "rest", "tag": "order", "history": [], "user": "ek half chicken karahi, char naan aur raita, total kitna hoga?"}
+{"id": "r05", "biz": "rest", "tag": "order", "history": [], "user": "pizza me pyaz mat dalna, allergy hai"}
+{"id": "r06", "biz": "rest", "tag": "order", "history": [], "user": "delivery kitni der me aa jaye gi? mehman aaye hue hain"}
+{"id": "r07", "biz": "rest", "tag": "phone", "history": [{"role": "assistant", "content": "ji bilkul, aap ka order note kar liya. rider se rabta ke liye apna number bata dein."}], "user": "mera number note kar lein, zero teen sau ek, do teen char paanch, chhe saat"}
+{"id": "r08", "biz": "rest", "tag": "phone", "history": [{"role": "assistant", "content": "ji, aap apna contact number bata dein."}], "user": "0333 4567890, ek baar dohra kar confirm kar do"}
+{"id": "r09", "biz": "rest", "tag": "address", "history": [{"role": "assistant", "content": "ji, delivery ka address bata dein."}], "user": "Johar Town block R, ghar 214, Emporium Mall ke saamne, hare gate wala"}
+{"id": "r10", "biz": "rest", "tag": "negotiation", "history": [], "user": "yeh to bohat mehnga hai, regular customer hoon, discount to banta hai na bhai"}
+{"id": "r11", "biz": "rest", "tag": "negotiation", "history": [], "user": "agar 5 pizza lun to kya rate milega? 8000 me final karo"}
+{"id": "r12", "biz": "rest", "tag": "negotiation", "history": [], "user": "competitor 1200 me half karahi de raha hai, aap kitna kar sakte hain?"}
+{"id": "r13", "biz": "rest", "tag": "honorific", "history": [], "user": "aap meri baat to sunein, main kab se intezar kar rahi hoon, kisi ne call nahi uthayi"}
+{"id": "r14", "biz": "rest", "tag": "honorific", "history": [], "user": "beta, main bohat boorha hoon, mujhe samajh nahi aati, aaram se batao kya kya milta hai"}
+{"id": "r15", "biz": "rest", "tag": "honorific", "history": [], "user": "oye tum log theek se kaam kyun nahi karte? khana thanda aya hai"}
+{"id": "r16", "biz": "rest", "tag": "complaint", "history": [], "user": "mera order ek ghanta late hai, kya mazaq hai yeh?"}
+{"id": "r17", "biz": "rest", "tag": "codeswitch", "history": [], "user": "can I get a refund? paise kat gaye lekin order cancel dikha raha hai"}
+{"id": "r18", "biz": "rest", "tag": "codeswitch", "history": [], "user": "payment JazzCash se kar sakta hoon ya sirf cash on delivery?"}
+{"id": "r19", "biz": "rest", "tag": "unknown", "history": [], "user": "kya aap ke yahan gluten free option bhi hai? aur kitchen mein peanuts use hote hain?"}
+{"id": "r20", "biz": "rest", "tag": "handoff", "history": [], "user": "mujhe manager se baat karwayein, shaadi ki 200 logon ki catering ka order dena hai"}
+{"id": "c01", "biz": "clinic", "tag": "booking", "history": [], "user": "mujhe kal shaam ko doctor sahab se appointment chahiye"}
+{"id": "c02", "biz": "clinic", "tag": "booking", "history": [], "user": "mere bete ko bukhar hai, aaj hi dikhana hai, koi gunjaish hai?"}
+{"id": "c03", "biz": "clinic", "tag": "booking", "history": [{"role": "assistant", "content": "ji, aap ki appointment kal shaam paanch baje Dr Imran ke sath note hai."}], "user": "pehle wali date change karni hai, kal ki jagah agle hafte rakh dein"}
+{"id": "c04", "biz": "clinic", "tag": "info", "history": [], "user": "Dr Fatima ki fees kitni hai aur kab baithti hain?"}
+{"id": "c05", "biz": "clinic", "tag": "info", "history": [], "user": "kya blood sugar test ke liye khali pait aana hoga? report kab milegi?"}
+{"id": "c06", "biz": "clinic", "tag": "medical_advice", "history": [], "user": "bukhar mein kaun si dawai le loon? paracetamol kitni dafa le sakta hoon?"}
+{"id": "c07", "biz": "clinic", "tag": "emergency", "history": [], "user": "mere walid ko seene mein bohat dard ho raha hai, saans nahi aa rahi"}
+{"id": "c08", "biz": "clinic", "tag": "handoff", "history": [], "user": "doctor sahab se phone pe hi baat karwa dein, bas do minute ke liye"}
+{"id": "c09", "biz": "clinic", "tag": "phone", "history": [{"role": "assistant", "content": "ji, appointment ke reminder ke liye apna naam aur number bata dein."}], "user": "Ayesha Khan, 0300 1234567"}
+{"id": "c10", "biz": "clinic", "tag": "booking", "history": [], "user": "main late ho jaoon ga, 15 minute baad pohnchoon ga, ruk jayein, warna cancel kar dein"}

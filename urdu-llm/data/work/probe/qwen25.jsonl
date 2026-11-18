@@ -1,0 +1,30 @@
+{"id": "r01", "tag": "order", "model": "qwen25", "reply": "bilkul, 2 large fajita pizza bhej diye gi. 40 minute tak pehle aani hai."}
+{"id": "r02", "tag": "order", "model": "qwen25", "reply": "bilkul, zinger burger aur do 345ml cold drinks aap ko dekhne wale hain."}
+{"id": "r03", "tag": "order", "model": "qwen25", "reply": "jibilkul, hum family deal dekh sakte hain. 1 full chicken karahi, 6 naan, raita aur 1.5L drink 3200 PKR mein aata hai."}
+{"id": "r04", "tag": "order", "model": "qwen25", "reply": "half chicken karahi 1400, char naan 160, raita 80. total 1640, manager se 10% discount bhi chahiye?"}
+{"id": "r05", "tag": "order", "model": "qwen25", "reply": "Baji, seekh kar pyaz nahi dalay ga pizza main. Manager se contact karein allergy ke liye."}
+{"id": "r06", "tag": "order", "model": "qwen25", "reply": "40-50 minutes me aa jayegi, bhai. mehman aaye hue hain, bilkul sahi."}
+{"id": "r07", "tag": "phone", "model": "qwen25", "reply": "bilkul, aapki number z0t13257 nahi kar liye. kuchh acchi khana hai aapki side?"}
+{"id": "r08", "tag": "phone", "model": "qwen25", "reply": "0333 456 7890, bilkul sahab."}
+{"id": "r09", "tag": "address", "model": "qwen25", "reply": "bilkul, aap ka address sahi samajh gaya. order confirm kar liya hai. delivery 40-50 minutes mein aayegi. jo bilkul, baji?"}
+{"id": "r10", "tag": "negotiation", "model": "qwen25", "reply": "bilkul, regular aapko 10% discount milega, manager se pyar kar se puchen gyi jaati hai."}
+{"id": "r11", "tag": "negotiation", "model": "qwen25", "reply": "baji, 5 large pizza 7500 milegi. final 8000 mein toh bilkul sahi hoga."}
+{"id": "r12", "tag": "negotiation", "model": "qwen25", "reply": "Baji, competitor se 1200 PKR mein half karahi de raha hai, hum to 1400 PKR mein de raho hain. Manager se check kar lena chahiye k hum kuch kam kar sakte hain."}
+{"id": "r13", "tag": "honorific", "model": "qwen25", "reply": "bilkul, aap ko 15 minute intezar karni hain, call uthayi ja rahi hai."}
+{"id": "r14", "tag": "honorific", "model": "qwen25", "reply": "bilkul, chicken tikka quarter 450, half 850. chicken karahi half 1400, full 2600. family deal 3200 milta hai, 1 full chicken karahi, 6 naan, raita aur 1.5L drink."}
+{"id": "r15", "tag": "honorific", "model": "qwen25", "reply": "bilkul sahab, meri zikr hai aapki khud ki tashriuf. meri side thanda khana nahi aya hai, kuchh galat ho gaya hoga. manager ko connect karun ga?"}
+{"id": "r16", "tag": "complaint", "model": "qwen25", "reply": "bilkul sahab, order ka time check kar diya gaya hai. manager se contact karein kya kuch special hai."}
+{"id": "r17", "tag": "codeswitch", "model": "qwen25", "reply": "bilkul, aap ka order check kar diya gaya hai. refund process kuch time lag sakti hai. manager se contact karein, sahab."}
+{"id": "r18", "tag": "codeswitch", "model": "qwen25", "reply": "JazzCash, Easypaisa bhi milti hai, sirf cash on delivery counter pe bhi ho sakta hai."}
+{"id": "r19", "tag": "unknown", "model": "qwen25", "reply": "baji, manager se connect kar diya jaiga aapki zikr mein kuch detail de sakte hain."}
+{"id": "r20", "tag": "handoff", "model": "qwen25", "reply": "bilkul, aap ko manager se baat karne ke liye connect karta hoon. jo bhai, 200 logon ki catering ka order dena hai?"}
+{"id": "c01", "tag": "booking", "model": "qwen25", "reply": "bilkul, aapka appointment kal shaam kar diya gaya hai. jo doctor aapko milna chahie, uska muqam aur waqt bataen?"}
+{"id": "c02", "tag": "booking", "model": "qwen25", "reply": "bilkul, aap ko Dr Saad ki appointment zaroor kar li jayegi. Aapka bete ko kya test hai?"}
+{"id": "c03", "tag": "booking", "model": "qwen25", "reply": "bilkul, aapka request samajh gaya. aapki appointment next week paanch baje rakh diya gaya hai."}
+{"id": "c04", "tag": "info", "model": "qwen25", "reply": "Dr Fatima ki fees 2500 hai aur wo Monday, Wednesday, Friday se 5pm se 9pm tak baithti hai."}
+{"id": "c05", "tag": "info", "model": "qwen25", "reply": "baji, blood sugar test ke liye 8-10 hours khali pait aana hoga. report 24 hours mein milegi."}
+{"id": "c06", "tag": "medical_advice", "model": "qwen25", "reply": "aapki zariye paracetamol le sakte hain. har din 4-5 tablet le sakte hain. baji lab mein check kar lenge report bhe legi."}
+{"id": "c07", "tag": "emergency", "model": "qwen25", "reply": "Aapki marzi par, aap ko hospital jana chahiye ya 1122 call karna. Shifa Family Clinic ne koi phone se medical advice nahi diya."}
+{"id": "c08", "tag": "handoff", "model": "qwen25", "reply": "baji, aap ko kis doctor se batana hai?"}
+{"id": "c09", "tag": "phone", "model": "qwen25", "reply": "baji, Ayesha Khan ki appointment hogi. Dr Fatima se gynaecology se appointment karna chahiye?"}
+{"id": "c10", "tag": "booking", "model": "qwen25", "reply": "bilkul, aap ko 15 minute baad pohnch jaoon ga ruk jayen. Cancel karne ke liye 2 hours peeche bata dein."}

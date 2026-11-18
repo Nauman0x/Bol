@@ -1,0 +1,56 @@
+{
+  "qwen25-7b": {
+    "repo": "Qwen/Qwen2.5-7B-Instruct",
+    "vocab": 151665,
+    "roman": {
+      "n": 100,
+      "tokens_per_word": 1.7459562321598479,
+      "tokens_per_char": 0.34000370576246064,
+      "mean_tokens_per_sentence": 18.35,
+      "p95_tokens_per_sentence": 25.0
+    },
+    "urdu": {
+      "n": 100,
+      "tokens_per_word": 3.092224231464738,
+      "tokens_per_char": 0.7113144758735441,
+      "mean_tokens_per_sentence": 34.2,
+      "p95_tokens_per_sentence": 45.05
+    }
+  },
+  "qwen3-8b": {
+    "repo": "Qwen/Qwen3-8B",
+    "vocab": 151669,
+    "roman": {
+      "n": 100,
+      "tokens_per_word": 1.7459562321598479,
+      "tokens_per_char": 0.34000370576246064,
+      "mean_tokens_per_sentence": 18.35,
+      "p95_tokens_per_sentence": 25.0
+    },
+    "urdu": {
+      "n": 100,
+      "tokens_per_word": 3.092224231464738,
+      "tokens_per_char": 0.7113144758735441,
+      "mean_tokens_per_sentence": 34.2,
+      "p95_tokens_per_sentence": 45.05
+    }
+  },
+  "qalb-8b": {
+    "repo": "enstazao/Qalb-1.0-8B-Instruct",
+    "vocab": 128256,
+    "roman": {
+      "n": 100,
+      "tokens_per_word": 1.6964795432921027,
+      "tokens_per_char": 0.3303687233648323,
+      "mean_tokens_per_sentence": 17.83,
+      "p95_tokens_per_sentence": 24.0
+    },
+    "urdu": {
+      "n": 100,
+      "tokens_per_word": 3.0009041591320074,
+      "tokens_per_char": 0.6903078202995009,
+      "mean_tokens_per_sentence": 33.19,
+      "p95_tokens_per_sentence": 45.05
+    }
+  }
+}
