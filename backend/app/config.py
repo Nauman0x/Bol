@@ -15,7 +15,13 @@ class Settings(BaseSettings):
     internal_service_token: str = "change-me"
     api_base_url: str = "http://localhost:8000"
 
-    cors_origins: list[str] = ["http://localhost:3000"]
+    cors_origins: list[str] = [
+        "http://localhost:3000",
+        "https://bol-lovat.vercel.app",
+    ]
+
+    voice_data_dir: str = "data/voice_uploads"
+    max_voice_upload_bytes: int = 20 * 1024 * 1024
 
     livekit_url: str = ""
     livekit_api_key: str = ""

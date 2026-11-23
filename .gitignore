@@ -13,4 +13,7 @@ node_modules/
 .next/
 out/
 
+voice-data/
+data/voice_uploads/
+
 .DS_Store
