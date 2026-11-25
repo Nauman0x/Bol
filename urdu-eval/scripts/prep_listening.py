@@ -9,7 +9,7 @@ data/listening/<system>/<sentence>.wav (22.05 kHz mono 16-bit) and data/listenin
   stock_fasih      stock Piper Urdu voice
   bol_rasa_male    our fine-tuned male voice
   bol_rasa_female  our fine-tuned female voice
-  anchor           the human clip deliberately degraded (3 kHz bandwidth, noise, 6-bit); raters should score it low
+  anchor           the human clip deliberately degraded (3 kHz bandwidth, ~10 dB SNR noise, 8-bit); raters should score it low
 
 All clips get the same treatment so loudness and silence cannot give the system away: leading/trailing
 silence trimmed to 150 ms, RMS set to -23 dBFS (peak-limited to -1 dBFS).
@@ -69,11 +69,13 @@ def level(x: np.ndarray, rms_db: float = -23.0, peak_db: float = -1.0) -> np.nda
 
 
 def degrade(x: np.ndarray, seed: int) -> np.ndarray:
+    """Clearly worse than the other systems but still intelligible speech.
+    x must already be level-normalised, otherwise the quantiser below wipes out a quiet signal."""
     rng = np.random.default_rng(seed)
-    y = soxr.resample(soxr.resample(x, SR, 3000), 3000, SR)[: len(x)]
+    y = soxr.resample(soxr.resample(x, SR, 6000), 6000, SR)[: len(x)]  # ~3 kHz bandwidth
     y = np.pad(y, (0, len(x) - len(y)))
-    y = y + rng.normal(0, float(np.sqrt(np.mean(y**2))) * 0.35, size=len(y)).astype(np.float32)
-    return np.round(np.clip(y, -1, 1) * 31) / 31
+    y = y + rng.normal(0, float(np.sqrt(np.mean(y**2))) * 0.3, size=len(y)).astype(np.float32)  # ~10 dB SNR
+    return np.round(np.clip(y, -1, 1) * 127) / 127  # 8-bit
 
 
 def main() -> None:
@@ -87,7 +89,7 @@ def main() -> None:
         clips = {"human": load(raw)}
         for s in SYSTEMS[1:]:
             clips[s] = load(DATA / "tts" / s / f"{sid}.wav")
-        clips["anchor"] = degrade(clips["human"], seed=int(sum(map(ord, sid))))
+        clips["anchor"] = degrade(level(trim(clips["human"])), seed=int(sum(map(ord, sid))))
         for system, x in clips.items():
             y = level(trim(x))
             d = OUT / system

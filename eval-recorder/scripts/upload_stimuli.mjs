@@ -39,14 +39,16 @@ await pool.query(`
     id SERIAL PRIMARY KEY, sentence_id TEXT NOT NULL, system TEXT NOT NULL, grp TEXT NOT NULL,
     audio BYTEA NOT NULL, UNIQUE (sentence_id, system));
 `);
+// OVERWRITE=1 replaces the audio of clips that already exist (ids are kept, so they stay blind)
+const OVERWRITE = process.env.OVERWRITE === '1';
 let added = 0;
 for (const r of rows) {
   const res = await pool.query(
-    'INSERT INTO evalrec.stimuli (sentence_id, system, grp, audio) VALUES ($1,$2,$3,$4) ON CONFLICT DO NOTHING',
+    `INSERT INTO evalrec.stimuli (sentence_id, system, grp, audio) VALUES ($1,$2,$3,$4) ON CONFLICT (sentence_id, system) ${OVERWRITE ? 'DO UPDATE SET audio = EXCLUDED.audio' : 'DO NOTHING'}`,
     [r.sentence_id, r.system, r.group, readFileSync(join(dir, r.file))],
   );
   added += res.rowCount;
 }
 const n = await pool.query('SELECT count(*)::int AS n, pg_size_pretty(sum(octet_length(audio))) AS size FROM evalrec.stimuli');
-console.log(`added ${added} clips; table now holds ${n.rows[0].n} clips (${n.rows[0].size})`);
+console.log(`${OVERWRITE ? 'wrote' : 'added'} ${added} clips; table now holds ${n.rows[0].n} clips (${n.rows[0].size})`);
 await pool.end();
