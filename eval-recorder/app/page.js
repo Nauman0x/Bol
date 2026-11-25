@@ -39,6 +39,10 @@ function orderFor(id) {
   return a;
 }
 
+// In right-to-left text, browsers reorder digit runs ("0300 1234567" shows as "1234567 0300").
+// Wrap each digit run in a left-to-right isolate so digits display in the order they must be read.
+const isolateDigits = (t) => t.replace(/[0-9][0-9 -]*[0-9]|[0-9]/g, (m) => '⁦' + m + '⁩');
+
 function CodeBox({ code, big }) {
   const [copied, setCopied] = useState(false);
   async function copy() {
@@ -247,7 +251,7 @@ export default function Page() {
             <button className={script === 'roman' ? 'primary' : ''} onClick={() => { setScript('roman'); store.set('script', 'roman'); }}>Roman Urdu</button>
           </div>
           {script === 'urdu'
-            ? <p className="urdu">{s.text}</p>
+            ? <p className="urdu">{isolateDigits(s.text)}</p>
             : <p className="roman">{ROMAN[s.id] || s.text}</p>}
           <p className="hint">Press Record, read the sentence naturally at your normal pace, then press Stop. You can listen and re-record before saving.</p>
           <div className="row">
