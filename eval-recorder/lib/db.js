@@ -41,6 +41,32 @@ export async function db() {
         created_at  TIMESTAMPTZ NOT NULL DEFAULT now(),
         UNIQUE (speaker_id, sentence_id)
       );
+      CREATE TABLE IF NOT EXISTS evalrec.stimuli (
+        id          SERIAL PRIMARY KEY,
+        sentence_id TEXT NOT NULL,
+        system      TEXT NOT NULL,
+        grp         TEXT NOT NULL,
+        audio       BYTEA NOT NULL,
+        UNIQUE (sentence_id, system)
+      );
+      CREATE TABLE IF NOT EXISTS evalrec.raters (
+        id          TEXT PRIMARY KEY,
+        created_at  TIMESTAMPTZ NOT NULL DEFAULT now(),
+        consent_at  TIMESTAMPTZ NOT NULL,
+        native      TEXT, age_band TEXT, region TEXT, gender TEXT, listening_device TEXT, user_agent TEXT
+      );
+      CREATE TABLE IF NOT EXISTS evalrec.ratings (
+        rater_id    TEXT NOT NULL REFERENCES evalrec.raters(id) ON DELETE CASCADE,
+        trial_idx   INTEGER NOT NULL,
+        kind        TEXT NOT NULL,
+        stim_a      INTEGER NOT NULL,
+        stim_b      INTEGER,
+        score       INTEGER,
+        choice      TEXT,
+        listen_ms   INTEGER,
+        created_at  TIMESTAMPTZ NOT NULL DEFAULT now(),
+        PRIMARY KEY (rater_id, trial_idx)
+      );
     `)
     .catch((e) => {
       ready = undefined;
