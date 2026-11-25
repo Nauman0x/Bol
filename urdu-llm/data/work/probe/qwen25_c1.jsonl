@@ -1,0 +1,30 @@
+{"id": "r01", "tag": "order", "model": "qwen25_c1", "reply": "ji bilkul, do large fajita pizza, total 3400 rupay. address bata dein, delivery 40 se 50 minute lagenge."}
+{"id": "r02", "tag": "order", "model": "qwen25_c1", "reply": "ji sahab, zinger burger 550 aur do cold drinks 180, total 730 rupay. delivery ka address bata dein?"}
+{"id": "r03", "tag": "order", "model": "qwen25_c1", "reply": "ji, 6 logon ke liye family deal perfect hoga. 3200 rupay mein 1 full chicken karahi, 6 naan, raita aur 1.5 liter drink."}
+{"id": "r04", "tag": "order", "model": "qwen25_c1", "reply": "ji, half chicken karahi 1400, char naan 160, aur raita 80, total 1640 rupay. delivery ka address bata dein?"}
+{"id": "r05", "tag": "order", "model": "qwen25_c1", "reply": "ji sahab, allergy ke liye manager se baat karwa deta hoon. aap ka number bata dein?"}
+{"id": "r06", "tag": "order", "model": "qwen25_c1", "reply": "ji, delivery 40 se 50 minute lagta hai. mehman aaye hue hain, main reception se baat karwa deta hoon."}
+{"id": "r07", "tag": "phone", "model": "qwen25_c1", "reply": "zero teen sau ek, do teen char paanch, chhe saat. number note kar li, aap ka address bata dein?"}
+{"id": "r08", "tag": "phone", "model": "qwen25_c1", "reply": "ji, zero teen teen teen, char paanch chhe saat aath nau zero. confirm kar diya. aap ka order note kar loon?"}
+{"id": "r09", "tag": "address", "model": "qwen25_c1", "reply": "ji, Emporium Mall ke saamne, hare gate wala, address note kar liya. 40 se 50 minute mein pohonch jayega."}
+{"id": "r10", "tag": "negotiation", "model": "qwen25_c1", "reply": "ji sahab, regular customer hain to manager se baat karwa deta hoon, 10% discount de sakti hai. aap ka number bata dein?"}
+{"id": "r11", "tag": "negotiation", "model": "qwen25_c1", "reply": "ji, 5 pizza 8000 se kam milein ge, main order note kar deta hoon."}
+{"id": "r12", "tag": "negotiation", "model": "qwen25_c1", "reply": "ji, half chicken karahi hum 1400 se shart karte hain. aap ka order note kar loon?"}
+{"id": "r13", "tag": "honorific", "model": "qwen25_c1", "reply": "ji, main abhi manager se baat karwa deta hoon, wo aap ko kis tarah se mohabbat se dekhein ge."}
+{"id": "r14", "tag": "honorific", "model": "qwen25_c1", "reply": "ji sahab, main aap ko samajhne ke liye maazrat karta hoon. aap ka order note kar loon?"}
+{"id": "r15", "tag": "honorific", "model": "qwen25_c1", "reply": "maaf kijiye sahab, main abhi manager se connect kar deta hoon taake aap ko theek se tashrif kar lein."}
+{"id": "r16", "tag": "complaint", "model": "qwen25_c1", "reply": "sahab, maaf kijiye, delivery mein koi masla nahi, 40 se 50 minute lagte hain. aap ka order note kar leta hoon, main abhi manager se baat karwa deta hoon."}
+{"id": "r17", "tag": "codeswitch", "model": "qwen25_c1", "reply": "ji, refund ka masla manager dekhte hain. aap ka number bata dein, wo aap ko manager se connect karein?"}
+{"id": "r18", "tag": "codeswitch", "model": "qwen25_c1", "reply": "ji, JazzCash, Easypaisa aur cash on delivery sab kuch chalta hai."}
+{"id": "r19", "tag": "unknown", "model": "qwen25_c1", "reply": "ji, iske baare mein mujhe pakka nahi pata, main manager se baat karwa deta hoon. aur aap ka number bata dein to delivery ka confirm kar leta hoon."}
+{"id": "r20", "tag": "handoff", "model": "qwen25_c1", "reply": "ji sahab, 200 logon ki catering manager se baat karwa deta hoon. aap ka number bata dein?"}
+{"id": "c01", "tag": "booking", "model": "qwen25_c1", "reply": "ji, kal ka shaam kis doctor se chahiye? Dr Imran Friday ke ilawa roz shaam chaar se das baje tak milte hain, Dr Saad Tuesday, Thursday aur Saturday shaam paanch se aath baje tak, Dr Fatima Monday, Wednesday aur Friday shaam paanch se nau baje tak."}
+{"id": "c02", "tag": "booking", "model": "qwen25_c1", "reply": "maaf kijiye, phone par medical advice dena mumkin nahi. aap ko isliye derr na jaldi le jayein?"}
+{"id": "c03", "tag": "booking", "model": "qwen25_c1", "reply": "ji, agle hafte rakh doon. kis din aur kis slot par?"}
+{"id": "c04", "tag": "info", "model": "qwen25_c1", "reply": "ji, Dr Fatima ki fees 2500 hai aur wo Monday, Wednesday aur Friday ko shaam paanch se nau baje tak baithti hain."}
+{"id": "c05", "tag": "info", "model": "qwen25_c1", "reply": "ji, blood sugar test ke liye 8 se 10 ghante khali pait hoga aur report 24 ghante mein milegi."}
+{"id": "c06", "tag": "medical_advice", "model": "qwen25_c1", "reply": "shayad aap ko dawai ke liye doctor se appointment rakhna theek ho. aap ka number bata dein to note kar loon?"}
+{"id": "c07", "tag": "emergency", "model": "qwen25_c1", "reply": "maaf kijiye, phone par deta hain koi nahi, derr na karein, aap ko aap kaunsa hospital le jana hota hai ya 1122 par call karna?"}
+{"id": "c08", "tag": "handoff", "model": "qwen25_c1", "reply": "ji, doctor ke baare mein maloomat de deta hoon, lekin phone par baat nahi hoti, aap ka appointment note kar deta hoon."}
+{"id": "c09", "tag": "phone", "model": "qwen25_c1", "reply": "ji Ayesha sahab, zero teen zero zero, ek do teen char paanch chhe saat. aap ko kis doctor se appointment chahiye?"}
+{"id": "c10", "tag": "booking", "model": "qwen25_c1", "reply": "ji, cancel 2 ghante pehle karna hota hai. aap ka number bata dein, main reception se baat karwa deta hoon."}

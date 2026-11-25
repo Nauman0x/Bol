@@ -21,3 +21,17 @@ Hard rules on the tuned model: replies under 35 words 100%, no markup 100%, Roma
 2. One judge, one blind pass, n=40. CIs are bootstrap over items only.
 3. Tuned model evaluated on nf4 weights; serving it on the Q4_K_M GGUF (adapter converted) is a different 4-bit form. Latency of the tuned model is **not yet measured**.
 4. Closed-platform arm, per-client adapters and real data were dropped to fit the week.
+
+## Serving the tuned model (measured)
+
+Adapter converted to GGUF LoRA (`scripts/convert_lora.sh`) and loaded over the Qwen2.5-7B Q4_K_M GGUF in llama.cpp (`scripts/run_tuned.sh`). The 30 bake-off turns give 20 words on average and the same style as the nf4 run, so the conversion works. Quality was not re-scored on this form.
+
+| Setting | Base (Phase 1) | Tuned (LoRA unmerged) |
+|---|---|---|
+| Warm, 1 stream: TTFT / TTFS | 21 / 44 ms | 46 / 84 ms |
+| Warm, 1 stream: decode | 112 tok/s | 82 tok/s |
+| Cold prefix, 1 stream: TTFS | n/a | 244 ms |
+| Cold prefix, 4 streams: TTFS p50 | 255 ms | 364 ms |
+| VRAM | 6.8 GB | 5.8 GB (as logged) |
+
+Unmerged LoRA costs speed. Merging the adapter into the weights and re-quantising should recover most of it (not done). Raw rows: `report/bakeoff/latency.jsonl` (tag `qwen25_c1`).
