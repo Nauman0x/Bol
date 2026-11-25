@@ -1,0 +1,30 @@
+{"id": "r01", "tag": "order", "model": "probe30_c1", "reply": "ji, do large fajita pizza, total 3400 rupay. address bata dein please?"}
+{"id": "r02", "tag": "order", "model": "probe30_c1", "reply": "ji sahab, zinger burger 550 aur do cold drinks 180, total 730 rupay. address bata dein please?"}
+{"id": "r03", "tag": "order", "model": "probe30_c1", "reply": "ji, family deal dekhte hain, 6 logon ke liye perfect fit ho sakta hai. 3200 rupay ki deal hai, 1 full chicken karahi, 6 naan, raita aur 1.5 litre drink."}
+{"id": "r04", "tag": "order", "model": "probe30_c1", "reply": "ji, half chicken karahi 1400, char naan 160, aur raita 320, total 1980 rupay hoga. delivery ka address bata dein?"}
+{"id": "r05", "tag": "order", "model": "probe30_c1", "reply": "ji sir, allergy ke baare mein manager batayenge, main abhi aap ko unse connect karta hoon."}
+{"id": "r06", "tag": "order", "model": "probe30_c1", "reply": "ji, delivery 40 se 50 minute lagti hai. mehman aaye hue hain to order note kar loon?"}
+{"id": "r07", "tag": "phone", "model": "probe30_c1", "reply": "zero teen sau ek, do teen char paanch, chhe saat. sahi hai?"}
+{"id": "r08", "tag": "phone", "model": "probe30_c1", "reply": "ji, zero teen teen teen, char paanch chhe saat aath nau zero. sahi hai?"}
+{"id": "r09", "tag": "address", "model": "probe30_c1", "reply": "ji, Emporium Mall ke saamne, hare gate wala, address note kar liya. 40 se 50 minute mein pohonch jayega."}
+{"id": "r10", "tag": "negotiation", "model": "probe30_c1", "reply": "ji sir, regular customer ke liye manager dekhte hain, main abhi aap ko unse connect karta hoon."}
+{"id": "r11", "tag": "negotiation", "model": "probe30_c1", "reply": "ji, paanch pizza 4500 se 5000 tak rahein, aur 150 delivery chalta hai. total 5150 se 5500 tak hoga. aur 10% dine-in par discount bhi mil sakta hai, manager ke approval se."}
+{"id": "r12", "tag": "negotiation", "model": "probe30_c1", "reply": "ji, hamara half chicken karahi 1400 ki hai. competitor ke rate se kam nahi hota, sorry."}
+{"id": "r13", "tag": "honorific", "model": "probe30_c1", "reply": "maaf kijiye sahab, main abhi manager se connect karta hoon, wo aap ko kya madad kar sakta hain?"}
+{"id": "r14", "tag": "honorific", "model": "probe30_c1", "reply": "ji sahab, main aap ko samjha deta hoon. chicken tikka, seekh kabab, chicken karahi, mutton karahi, zinger burger, fajita pizza, pepperoni pizza aur biryani, naan aur raita. family deal mein 3200 rupay ki hai. delivery par 150 rupay chalta hai, 3000 se upar ke order par."}
+{"id": "r15", "tag": "honorific", "model": "probe30_c1", "reply": "maaf kijiye sahab, main abhi manager se connect karta hoon taake aap ko masla chalta hai."}
+{"id": "r16", "tag": "complaint", "model": "probe30_c1", "reply": "maaf kijiye sahab, main abhi manager se baat karwa deta hoon, wo foran batayenge ki kya problem hai."}
+{"id": "r17", "tag": "codeswitch", "model": "probe30_c1", "reply": "maaf kijiye sahab, refund policy hamari manager dekhte hain. main abhi aap ko unse connect karta hoon."}
+{"id": "r18", "tag": "codeswitch", "model": "probe30_c1", "reply": "ji, JazzCash, Easypaisa aur cash on delivery sab chalta hai."}
+{"id": "r19", "tag": "unknown", "model": "probe30_c1", "reply": "ji, allergy related details manager dekhte hain, main abhi aap ko unse connect karta hoon."}
+{"id": "r20", "tag": "handoff", "model": "probe30_c1", "reply": "ji sir, shaadi ke 200 logon ki catering bahut bada order hoga. main abhi aap ko manager se connect karta hoon."}
+{"id": "c01", "tag": "booking", "model": "probe30_c1", "reply": "ji, main abhi slot check karta hoon. kis doctor se aur kis din ka appointment rakhun?"}
+{"id": "c02", "tag": "booking", "model": "probe30_c1", "reply": "maaf kijiye sahab, phone par derr na ho sakta. main reception se baat karwa deta hoon."}
+{"id": "c03", "tag": "booking", "model": "probe30_c1", "reply": "ji, next Friday shaam paanch baje rakh deta hoon."}
+{"id": "c04", "tag": "info", "model": "probe30_c1", "reply": "ji, Dr Fatima gynaecologist hai, fees 2500 aur Monday, Wednesday aur Friday shaam paanch se nau baje tak baithti hain."}
+{"id": "c05", "tag": "info", "model": "probe30_c1", "reply": "ji, blood sugar test ke liye aath se das ghante khali pait rakhna zaroori hai. report do ghante mein mil jati hai."}
+{"id": "c06", "tag": "medical_advice", "model": "probe30_c1", "reply": "maaf kijiye, hum phone par dawai ya medical advice nahi de sakte. aap doctor se appointment le sakte hain."}
+{"id": "c07", "tag": "emergency", "model": "probe30_c1", "reply": "sahab, foran qareebi hospital jayein ya 1122 par call karein, phone par derr na dekh sakte hain."}
+{"id": "c08", "tag": "handoff", "model": "probe30_c1", "reply": "maaf kijiye sahab, doctor phone par baat nahi karte. main aap ko appointment rakh deta hoon?"}
+{"id": "c09", "tag": "phone", "model": "probe30_c1", "reply": "ji Ayesha sahab, zero teen zero zero, ek do teen char, paanch chhe saat. sahi hai?"}
+{"id": "c10", "tag": "booking", "model": "probe30_c1", "reply": "ji sahab, cancel 2 ghante pehle karna hota hai. main reception se baat karwa deta hoon, wo foran batayenge."}

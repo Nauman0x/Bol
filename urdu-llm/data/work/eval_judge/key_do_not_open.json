@@ -1,0 +1,552 @@
+{
+ "q000": {
+  "id": "e29",
+  "set": "eval40_c1",
+  "tag": "cancel"
+ },
+ "q001": {
+  "id": "e11",
+  "set": "eval40_c1",
+  "tag": "negotiation"
+ },
+ "q002": {
+  "id": "e04",
+  "set": "eval40_base",
+  "tag": "order"
+ },
+ "q003": {
+  "id": "e06",
+  "set": "eval40_c1",
+  "tag": "delivery"
+ },
+ "q004": {
+  "id": "e07",
+  "set": "eval40_base",
+  "tag": "delivery"
+ },
+ "q005": {
+  "id": "r18",
+  "set": "probe30_c1",
+  "tag": "codeswitch"
+ },
+ "q006": {
+  "id": "e33",
+  "set": "eval40_base",
+  "tag": "medical"
+ },
+ "q007": {
+  "id": "e33",
+  "set": "eval40_c1",
+  "tag": "medical"
+ },
+ "q008": {
+  "id": "c05",
+  "set": "probe30_c1",
+  "tag": "info"
+ },
+ "q009": {
+  "id": "r14",
+  "set": "probe30_c1",
+  "tag": "honorific"
+ },
+ "q010": {
+  "id": "c07",
+  "set": "probe30_c1",
+  "tag": "emergency"
+ },
+ "q011": {
+  "id": "c03",
+  "set": "probe30_c1",
+  "tag": "booking"
+ },
+ "q012": {
+  "id": "e32",
+  "set": "eval40_base",
+  "tag": "medical"
+ },
+ "q013": {
+  "id": "e37",
+  "set": "eval40_c1",
+  "tag": "phone"
+ },
+ "q014": {
+  "id": "e36",
+  "set": "eval40_c1",
+  "tag": "emergency"
+ },
+ "q015": {
+  "id": "e05",
+  "set": "eval40_c1",
+  "tag": "delivery"
+ },
+ "q016": {
+  "id": "e17",
+  "set": "eval40_base",
+  "tag": "handoff"
+ },
+ "q017": {
+  "id": "e18",
+  "set": "eval40_base",
+  "tag": "handoff"
+ },
+ "q018": {
+  "id": "e26",
+  "set": "eval40_base",
+  "tag": "appointment"
+ },
+ "q019": {
+  "id": "e39",
+  "set": "eval40_base",
+  "tag": "complaint"
+ },
+ "q020": {
+  "id": "e02",
+  "set": "eval40_c1",
+  "tag": "order"
+ },
+ "q021": {
+  "id": "r07",
+  "set": "probe30_c1",
+  "tag": "phone"
+ },
+ "q022": {
+  "id": "e34",
+  "set": "eval40_base",
+  "tag": "medical"
+ },
+ "q023": {
+  "id": "e23",
+  "set": "eval40_base",
+  "tag": "confirm"
+ },
+ "q024": {
+  "id": "r06",
+  "set": "probe30_c1",
+  "tag": "order"
+ },
+ "q025": {
+  "id": "c04",
+  "set": "probe30_c1",
+  "tag": "info"
+ },
+ "q026": {
+  "id": "r15",
+  "set": "probe30_c1",
+  "tag": "honorific"
+ },
+ "q027": {
+  "id": "r10",
+  "set": "probe30_c1",
+  "tag": "negotiation"
+ },
+ "q028": {
+  "id": "e40",
+  "set": "eval40_base",
+  "tag": "greet"
+ },
+ "q029": {
+  "id": "e18",
+  "set": "eval40_c1",
+  "tag": "handoff"
+ },
+ "q030": {
+  "id": "e11",
+  "set": "eval40_base",
+  "tag": "negotiation"
+ },
+ "q031": {
+  "id": "e01",
+  "set": "eval40_c1",
+  "tag": "order"
+ },
+ "q032": {
+  "id": "e29",
+  "set": "eval40_base",
+  "tag": "cancel"
+ },
+ "q033": {
+  "id": "e38",
+  "set": "eval40_c1",
+  "tag": "info"
+ },
+ "q034": {
+  "id": "c08",
+  "set": "probe30_c1",
+  "tag": "handoff"
+ },
+ "q035": {
+  "id": "e27",
+  "set": "eval40_base",
+  "tag": "appointment"
+ },
+ "q036": {
+  "id": "e35",
+  "set": "eval40_base",
+  "tag": "emergency"
+ },
+ "q037": {
+  "id": "e10",
+  "set": "eval40_base",
+  "tag": "payment"
+ },
+ "q038": {
+  "id": "c10",
+  "set": "probe30_c1",
+  "tag": "booking"
+ },
+ "q039": {
+  "id": "r11",
+  "set": "probe30_c1",
+  "tag": "negotiation"
+ },
+ "q040": {
+  "id": "e25",
+  "set": "eval40_base",
+  "tag": "appointment"
+ },
+ "q041": {
+  "id": "r03",
+  "set": "probe30_c1",
+  "tag": "order"
+ },
+ "q042": {
+  "id": "c01",
+  "set": "probe30_c1",
+  "tag": "booking"
+ },
+ "q043": {
+  "id": "e36",
+  "set": "eval40_base",
+  "tag": "emergency"
+ },
+ "q044": {
+  "id": "e08",
+  "set": "eval40_base",
+  "tag": "delivery"
+ },
+ "q045": {
+  "id": "c06",
+  "set": "probe30_c1",
+  "tag": "medical_advice"
+ },
+ "q046": {
+  "id": "e07",
+  "set": "eval40_c1",
+  "tag": "delivery"
+ },
+ "q047": {
+  "id": "e38",
+  "set": "eval40_base",
+  "tag": "info"
+ },
+ "q048": {
+  "id": "e20",
+  "set": "eval40_c1",
+  "tag": "complaint"
+ },
+ "q049": {
+  "id": "e09",
+  "set": "eval40_c1",
+  "tag": "payment"
+ },
+ "q050": {
+  "id": "r20",
+  "set": "probe30_c1",
+  "tag": "handoff"
+ },
+ "q051": {
+  "id": "e27",
+  "set": "eval40_c1",
+  "tag": "appointment"
+ },
+ "q052": {
+  "id": "r17",
+  "set": "probe30_c1",
+  "tag": "codeswitch"
+ },
+ "q053": {
+  "id": "e14",
+  "set": "eval40_base",
+  "tag": "booking"
+ },
+ "q054": {
+  "id": "e13",
+  "set": "eval40_base",
+  "tag": "negotiation"
+ },
+ "q055": {
+  "id": "e10",
+  "set": "eval40_c1",
+  "tag": "payment"
+ },
+ "q056": {
+  "id": "r01",
+  "set": "probe30_c1",
+  "tag": "order"
+ },
+ "q057": {
+  "id": "e32",
+  "set": "eval40_c1",
+  "tag": "medical"
+ },
+ "q058": {
+  "id": "r04",
+  "set": "probe30_c1",
+  "tag": "order"
+ },
+ "q059": {
+  "id": "r05",
+  "set": "probe30_c1",
+  "tag": "order"
+ },
+ "q060": {
+  "id": "r16",
+  "set": "probe30_c1",
+  "tag": "complaint"
+ },
+ "q061": {
+  "id": "e31",
+  "set": "eval40_c1",
+  "tag": "lab"
+ },
+ "q062": {
+  "id": "e40",
+  "set": "eval40_c1",
+  "tag": "greet"
+ },
+ "q063": {
+  "id": "r19",
+  "set": "probe30_c1",
+  "tag": "unknown"
+ },
+ "q064": {
+  "id": "e34",
+  "set": "eval40_c1",
+  "tag": "medical"
+ },
+ "q065": {
+  "id": "e23",
+  "set": "eval40_c1",
+  "tag": "confirm"
+ },
+ "q066": {
+  "id": "e12",
+  "set": "eval40_c1",
+  "tag": "negotiation"
+ },
+ "q067": {
+  "id": "e04",
+  "set": "eval40_c1",
+  "tag": "order"
+ },
+ "q068": {
+  "id": "e21",
+  "set": "eval40_base",
+  "tag": "phone"
+ },
+ "q069": {
+  "id": "e19",
+  "set": "eval40_c1",
+  "tag": "complaint"
+ },
+ "q070": {
+  "id": "r12",
+  "set": "probe30_c1",
+  "tag": "negotiation"
+ },
+ "q071": {
+  "id": "e16",
+  "set": "eval40_base",
+  "tag": "handoff"
+ },
+ "q072": {
+  "id": "e12",
+  "set": "eval40_base",
+  "tag": "negotiation"
+ },
+ "q073": {
+  "id": "e20",
+  "set": "eval40_base",
+  "tag": "complaint"
+ },
+ "q074": {
+  "id": "e03",
+  "set": "eval40_base",
+  "tag": "order"
+ },
+ "q075": {
+  "id": "r13",
+  "set": "probe30_c1",
+  "tag": "honorific"
+ },
+ "q076": {
+  "id": "e15",
+  "set": "eval40_base",
+  "tag": "booking"
+ },
+ "q077": {
+  "id": "e24",
+  "set": "eval40_c1",
+  "tag": "greet"
+ },
+ "q078": {
+  "id": "e30",
+  "set": "eval40_c1",
+  "tag": "lab"
+ },
+ "q079": {
+  "id": "e03",
+  "set": "eval40_c1",
+  "tag": "order"
+ },
+ "q080": {
+  "id": "e05",
+  "set": "eval40_base",
+  "tag": "delivery"
+ },
+ "q081": {
+  "id": "e17",
+  "set": "eval40_c1",
+  "tag": "handoff"
+ },
+ "q082": {
+  "id": "e39",
+  "set": "eval40_c1",
+  "tag": "complaint"
+ },
+ "q083": {
+  "id": "e13",
+  "set": "eval40_c1",
+  "tag": "negotiation"
+ },
+ "q084": {
+  "id": "e16",
+  "set": "eval40_c1",
+  "tag": "handoff"
+ },
+ "q085": {
+  "id": "e06",
+  "set": "eval40_base",
+  "tag": "delivery"
+ },
+ "q086": {
+  "id": "r08",
+  "set": "probe30_c1",
+  "tag": "phone"
+ },
+ "q087": {
+  "id": "e30",
+  "set": "eval40_base",
+  "tag": "lab"
+ },
+ "q088": {
+  "id": "e19",
+  "set": "eval40_base",
+  "tag": "complaint"
+ },
+ "q089": {
+  "id": "e09",
+  "set": "eval40_base",
+  "tag": "payment"
+ },
+ "q090": {
+  "id": "e15",
+  "set": "eval40_c1",
+  "tag": "booking"
+ },
+ "q091": {
+  "id": "e35",
+  "set": "eval40_c1",
+  "tag": "emergency"
+ },
+ "q092": {
+  "id": "e08",
+  "set": "eval40_c1",
+  "tag": "delivery"
+ },
+ "q093": {
+  "id": "e02",
+  "set": "eval40_base",
+  "tag": "order"
+ },
+ "q094": {
+  "id": "e01",
+  "set": "eval40_base",
+  "tag": "order"
+ },
+ "q095": {
+  "id": "e31",
+  "set": "eval40_base",
+  "tag": "lab"
+ },
+ "q096": {
+  "id": "e28",
+  "set": "eval40_c1",
+  "tag": "appointment"
+ },
+ "q097": {
+  "id": "e25",
+  "set": "eval40_c1",
+  "tag": "appointment"
+ },
+ "q098": {
+  "id": "e24",
+  "set": "eval40_base",
+  "tag": "greet"
+ },
+ "q099": {
+  "id": "e26",
+  "set": "eval40_c1",
+  "tag": "appointment"
+ },
+ "q100": {
+  "id": "e21",
+  "set": "eval40_c1",
+  "tag": "phone"
+ },
+ "q101": {
+  "id": "c02",
+  "set": "probe30_c1",
+  "tag": "booking"
+ },
+ "q102": {
+  "id": "e28",
+  "set": "eval40_base",
+  "tag": "appointment"
+ },
+ "q103": {
+  "id": "e22",
+  "set": "eval40_c1",
+  "tag": "phone"
+ },
+ "q104": {
+  "id": "e37",
+  "set": "eval40_base",
+  "tag": "phone"
+ },
+ "q105": {
+  "id": "r02",
+  "set": "probe30_c1",
+  "tag": "order"
+ },
+ "q106": {
+  "id": "c09",
+  "set": "probe30_c1",
+  "tag": "phone"
+ },
+ "q107": {
+  "id": "r09",
+  "set": "probe30_c1",
+  "tag": "address"
+ },
+ "q108": {
+  "id": "e14",
+  "set": "eval40_c1",
+  "tag": "booking"
+ },
+ "q109": {
+  "id": "e22",
+  "set": "eval40_base",
+  "tag": "phone"
+ }
+}

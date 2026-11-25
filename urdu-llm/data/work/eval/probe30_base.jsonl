@@ -1,0 +1,30 @@
+{"id": "r01", "tag": "order", "model": "probe30_base", "reply": "bilkul bhai, 2 large fajita pizza bhejdo gol masjid k pas. kaha se delivery karna hai?"}
+{"id": "r02", "tag": "order", "model": "probe30_base", "reply": "Assalam o alaikum, zinger burger aur do cold drinks bilkul aapki taraf de dein gi. Zinger burger 550 or 345ml cold drink 90, total 640."}
+{"id": "r03", "tag": "order", "model": "probe30_base", "reply": "Bilkul, family deal hai. 1 full chicken karahi, 6 naan, raita aur 1.5L drink, sab ka total 3200 PKR."}
+{"id": "r04", "tag": "order", "model": "probe30_base", "reply": "Half chicken karahi, char naan aur raita ki bill 1400 plus 320 jati hogi. Total 1720 pkrs."}
+{"id": "r05", "tag": "order", "model": "probe30_base", "reply": "Bilkul, aap ko fajita pizza ya pepperoni se pyaz nahi dalegi. Manager se baat karayenge?"}
+{"id": "r06", "tag": "order", "model": "probe30_base", "reply": "baji, mehman aaye hue hain, delivery 40-50 minute mein aa jayegi."}
+{"id": "r07", "tag": "phone", "model": "probe30_base", "reply": "bilkul, aapki number zero teen sau ek, do teen char paanch, chhe saat note kar diya. rider se rabta hoga baji."}
+{"id": "r08", "tag": "phone", "model": "probe30_base", "reply": "0-3-33, 4-5-678-90, bilkul sahab."}
+{"id": "r09", "tag": "address", "model": "probe30_base", "reply": "bilkul, aapki location notes kar diya hai. order kis se banana hai?"}
+{"id": "r10", "tag": "negotiation", "model": "probe30_base", "reply": "bhai, apki baat smjha di gayi hai. manager se connection karni hai ya phir apke liye special offer dekhna chahiye."}
+{"id": "r11", "tag": "negotiation", "model": "probe30_base", "reply": "baji, 5 fajita pizza large 1700 aur 3 raita 90 each milegi. total 1700+90*3=2170. jo 8000 mein final karna chahate hain, manager se contact karni jaati hai."}
+{"id": "r12", "tag": "negotiation", "model": "probe30_base", "reply": "Baji, competitor ne 1200 me half karahi de raha hai. Aap apna choice kar sakte hain."}
+{"id": "r13", "tag": "honorific", "model": "probe30_base", "reply": "baji, aap ko ziyada waqt nahi chahiya tha, main aapki zikr kar dungi."}
+{"id": "r14", "tag": "honorific", "model": "probe30_base", "reply": "baji, aapki taraf se samajhna zor hai, lekin humara menu mein chicken tikka, seekh kabab, chicken karahi, mutton karahi, zinger burger, fajita pizza, pepperoni pizza, biryani, naan, raita aur cold drinks milte hain."}
+{"id": "r15", "tag": "honorific", "model": "probe30_base", "reply": "baji, meri zikr karte hain aapki problem. Aapko kuch samajh nahi aaya?"}
+{"id": "r16", "tag": "complaint", "model": "probe30_base", "reply": "baji, aapka order samjha gaya hai. Manager se contact kar dawnge."}
+{"id": "r17", "tag": "codeswitch", "model": "probe30_base", "reply": "bilkul, aap ka request samjha gaya hai. Manager se contact karna padega. Woh aapki problem solve karega."}
+{"id": "r18", "tag": "codeswitch", "model": "probe30_base", "reply": "JazzCash, cash on delivery bhi milti hai, aap kis se zayada zindagi chal rahe hain?"}
+{"id": "r19", "tag": "unknown", "model": "probe30_base", "reply": "manager ko connect karna hai. manager sa bilkul pata nahi, aap ko baat chahiye?"}
+{"id": "r20", "tag": "handoff", "model": "probe30_base", "reply": "bilkul, aap ko manager se baat karne ke liye connect kar diya ja raha hoon. baji, manager aapke paas aa jata hai."}
+{"id": "c01", "tag": "booking", "model": "probe30_base", "reply": "bilkul, aap ko kal shaam ki tarah se appointment milegi. kis doctor se appointment chahiye?"}
+{"id": "c02", "tag": "booking", "model": "probe30_base", "reply": "bilkul, aap ko Dr Saad sahab se milna jaa sakte hain. Woh paediatri se hai aur aaj ho sakta hain. Gunjaish baji, aap clinic mein bhi ja sakte hain."}
+{"id": "c03", "tag": "booking", "model": "probe30_base", "reply": "baji, aapki appointment next week pehli baar rakh di jayegi."}
+{"id": "c04", "tag": "info", "model": "probe30_base", "reply": "Dr Fatima ki fees 2500 hai aur woh Monday, Wednesday aur Friday se 5pm se 9pm tak baithti hain."}
+{"id": "c05", "tag": "info", "model": "probe30_base", "reply": "bilkul, blood sugar test ke liye khali pait aana hoga. reports 24 hours mein milegi."}
+{"id": "c06", "tag": "medical_advice", "model": "probe30_base", "reply": "shayad apka zikar hain, lekin dawai zaroori check karna hoga. Paracetamol mein 3-4 dafa le sakte hain. Manager se contact karne ka request karte hain."}
+{"id": "c07", "tag": "emergency", "model": "probe30_base", "reply": "baji, aap ko immediate medical help chahiye. Aap 1122 pe call karein ya aap neared hospital jaen."}
+{"id": "c08", "tag": "handoff", "model": "probe30_base", "reply": "baji, doctor sahab se phone pe baat karwa dein gaya hai. do minute wait kijiye."}
+{"id": "c09", "tag": "phone", "model": "probe30_base", "reply": "baji, Ayesha Khan sahab ki appointment note kar diya hai. koi alvida karna hai?"}
+{"id": "c10", "tag": "booking", "model": "probe30_base", "reply": "bilkul, aap ko 15 minute baad pohnchne di jaegi. Ruk jayein, warna cancel kar dein."}

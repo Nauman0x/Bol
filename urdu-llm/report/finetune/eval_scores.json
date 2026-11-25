@@ -1,0 +1,113 @@
+{
+  "eval40_c1": {
+    "n": 40,
+    "overall": {
+      "mean": 3.95,
+      "ci95": [
+        3.65,
+        4.225
+      ]
+    },
+    "understood": 3.825,
+    "register": 3.925,
+    "tone": 4.15,
+    "faithful": 3.9,
+    "rules_pass": {
+      "short": 1.0,
+      "no_markup": 1.0,
+      "roman_only": 1.0,
+      "digits_spoken": 1.0
+    },
+    "by_tag": {
+      "appointment": 4.0,
+      "booking": 3.38,
+      "cancel": 5,
+      "complaint": 4.25,
+      "confirm": 4.75,
+      "delivery": 4.0,
+      "emergency": 4.25,
+      "greet": 4,
+      "handoff": 4.42,
+      "info": 3.25,
+      "lab": 3.38,
+      "medical": 4.42,
+      "negotiation": 3.25,
+      "order": 4.62,
+      "payment": 3.12,
+      "phone": 3.08
+    }
+  },
+  "eval40_base": {
+    "n": 40,
+    "overall": {
+      "mean": 2.44375,
+      "ci95": [
+        2.18125,
+        2.7125
+      ]
+    },
+    "understood": 2.225,
+    "register": 2.325,
+    "tone": 2.675,
+    "faithful": 2.55,
+    "rules_pass": {
+      "short": 1.0,
+      "no_markup": 1.0,
+      "roman_only": 1.0,
+      "digits_spoken": 0.975
+    },
+    "by_tag": {
+      "appointment": 2.12,
+      "booking": 1.88,
+      "cancel": 2,
+      "complaint": 2.33,
+      "confirm": 3.25,
+      "delivery": 2.88,
+      "emergency": 1.88,
+      "greet": 3.38,
+      "handoff": 2.92,
+      "info": 3,
+      "lab": 1.5,
+      "medical": 2.25,
+      "negotiation": 2.58,
+      "order": 1.81,
+      "payment": 3.25,
+      "phone": 2.75
+    }
+  },
+  "probe30_c1": {
+    "n": 30,
+    "overall": {
+      "mean": 4.108333333333333,
+      "ci95": [
+        3.7583333333333333,
+        4.425
+      ]
+    },
+    "understood": 4,
+    "register": 4.033333333333333,
+    "tone": 4.2,
+    "faithful": 4.2,
+    "rules_pass": {
+      "short": 0.9666666666666667,
+      "no_markup": 1.0,
+      "roman_only": 1.0,
+      "digits_spoken": 1.0
+    },
+    "by_tag": {
+      "address": 4.25,
+      "booking": 3.56,
+      "codeswitch": 4.62,
+      "complaint": 4.25,
+      "emergency": 4,
+      "handoff": 4.88,
+      "honorific": 3.33,
+      "info": 3.88,
+      "medical_advice": 5,
+      "negotiation": 3.08,
+      "order": 4.5,
+      "phone": 4.58,
+      "unknown": 4.75
+    }
+  }
+}

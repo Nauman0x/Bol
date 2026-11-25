@@ -1,0 +1,40 @@
+{"id": "e01", "tag": "order", "model": "eval40_c1", "reply": "ji, do half chicken tikka 1700 aur raita 80, do cold drink 345 ml 180, total 1940 rupay. delivery ka address bata dein?"}
+{"id": "e02", "tag": "order", "model": "eval40_c1", "reply": "ji, biryani 380 aur zinger burger 550, total 930 rupay. delivery ka address bata dein?"}
+{"id": "e03", "tag": "order", "model": "eval40_c1", "reply": "ji, teen small fajita pizza 2700 rupay ki hain. delivery ka address bata dein please?"}
+{"id": "e04", "tag": "order", "model": "eval40_c1", "reply": "ji, large pepperoni pizza 1800 rupay ki hai. address bata dein?"}
+{"id": "e05", "tag": "delivery", "model": "eval40_c1", "reply": "ji, township se chhe kilometre se upar hai, to 150 rupay ka delivery chalta hai."}
+{"id": "e06", "tag": "delivery", "model": "eval40_c1", "reply": "ji, 3000 se upar ke order par delivery free hai. aap ka order note kar loon?"}
+{"id": "e07", "tag": "delivery", "model": "eval40_c1", "reply": "ji, address note kar liya. 40 se 50 minute mein pohonch jayega."}
+{"id": "e08", "tag": "delivery", "model": "eval40_c1", "reply": "ji, hum sirf 6 kilometre tak deliver karte hain. Bahria Town se bahar hoga. aap ka address bata dein please?"}
+{"id": "e09", "tag": "payment", "model": "eval40_c1", "reply": "ji, visa card sirf counter par chalta hai, aap JazzCash ya Easypaisa se dekho kya chalta hai."}
+{"id": "e10", "tag": "payment", "model": "eval40_c1", "reply": "ji, JazzCash number 0300-123-4567 hai. aap wo number par confirm kar sakte hain."}
+{"id": "e11", "tag": "negotiation", "model": "eval40_c1", "reply": "ji, do karahi 2600 aur 20% kam kar doon, total 2080 rupay hoga. delivery ka address bata dein?"}
+{"id": "e12", "tag": "negotiation", "model": "eval40_c1", "reply": "ji, 6000 se upar ke dine-in par 10% discount mil sakta hai, manager ki approval se. main abhi aap ko manager se connect karta hoon."}
+{"id": "e13", "tag": "negotiation", "model": "eval40_c1", "reply": "ji, order note kar loon, aur free naan batay leta hoon. aap ka number bata dein?"}
+{"id": "e14", "tag": "booking", "model": "eval40_c1", "reply": "ji, aath logon ke 12 baje ka table, main abhi manager se baat karwa deta hoon."}
+{"id": "e15", "tag": "booking", "model": "eval40_c1", "reply": "ji, 20 logon ke liye 12 logon tak ka table book ho sakta hai. main abhi manager se baat karwa deta hoon, wo aap ko iski tafseel de sakte hain."}
+{"id": "e16", "tag": "handoff", "model": "eval40_c1", "reply": "sahab, allergy ki tafseel manager de dega, main abhi aap ko unse connect karta hoon."}
+{"id": "e17", "tag": "handoff", "model": "eval40_c1", "reply": "ji, 500 logon ke order par mujhe manager se baat karwa deta hoon, wo aap ko exact rate batayenge."}
+{"id": "e18", "tag": "handoff", "model": "eval40_c1", "reply": "maaf kijiye sahab, hamari woh tafseel manager se baat karwa deta hoon."}
+{"id": "e19", "tag": "complaint", "model": "eval40_c1", "reply": "maaf kijiye sahab, main abhi manager se connect karta hoon, wo aap ko iski tafseel de sakti hain."}
+{"id": "e20", "tag": "complaint", "model": "eval40_c1", "reply": "ji sahab, main abhi manager se baat karwa deta hoon aur order cancel karwa deta hoon. aap ka number bata dein?"}
+{"id": "e21", "tag": "phone", "model": "eval40_c1", "reply": "ji, zero teen char paanch do teen char nau aath saat chhe. sahi hai?"}
+{"id": "e22", "tag": "phone", "model": "eval40_c1", "reply": "ji, zero teen ek do, aath saat chhe paanch, char do. sahi hai?"}
+{"id": "e23", "tag": "confirm", "model": "eval40_c1", "reply": "ji, 40 se 50 minute mein pohonch jayega. aap ka number bata dein please?"}
+{"id": "e24", "tag": "greet", "model": "eval40_c1", "reply": "ji, yeh Lahori Tikka House, Johar Town mein. kya main aap ko kuch lena sakta hoon?"}
+{"id": "e25", "tag": "appointment", "model": "eval40_c1", "reply": "ji, Dr Fatima Monday, Wednesday aur Friday shaam paanch se nau baje tak milte hain. kaunsa din theek rahega?"}
+{"id": "e26", "tag": "appointment", "model": "eval40_c1", "reply": "ji, Dr Saad shaam paanch se aath baje tak baithte hain. main abhi reception se baat karwa deta hoon taake aap ko slot de saken."}
+{"id": "e27", "tag": "appointment", "model": "eval40_c1", "reply": "ji, Friday shaam chaar se das baje tak milte hain. kis din ka slot chahiye?"}
+{"id": "e28", "tag": "appointment", "model": "eval40_c1", "reply": "ji, walk-in tab milte hain jab koi slot khali ho. main reception se confirm karwa deta hoon."}
+{"id": "e29", "tag": "cancel", "model": "eval40_c1", "reply": "ji, cancel do ghante pehle karna hota hai. main abhi reception se baat karwa deta hoon."}
+{"id": "e30", "tag": "lab", "model": "eval40_c1", "reply": "ji, lipid test ke liye aath se das ghante khali nashta karna zaroori hai."}
+{"id": "e31", "tag": "lab", "model": "eval40_c1", "reply": "ji, lab report shaam aath baje tak khule hain aur 24 ghante mein pata chalta hai."}
+{"id": "e32", "tag": "medical", "model": "eval40_c1", "reply": "maaf kijiye sahab, phone par medical advice nahi de sakte. aap doctor se appointment le sakte hain ya aap aap hospital jayein."}
+{"id": "e33", "tag": "medical", "model": "eval40_c1", "reply": "maaf kijiye, phone par insulin ki dose nahi bata sakte. doctor se appointment rakh doon?"}
+{"id": "e34", "tag": "medical", "model": "eval40_c1", "reply": "maaf kijiye sahab, phone par dawai ya treatment ke baare mein nahi pata. main reception se baat karwa deta hoon."}
+{"id": "e35", "tag": "emergency", "model": "eval40_c1", "reply": "sahab, foran qareebi hospital le jayein ya 1122 par call karein, achanak qareebi madad dene ke liye."}
+{"id": "e36", "tag": "emergency", "model": "eval40_c1", "reply": "foran qareebi hospital le jayein ya 1122 par call karein, phone par medical advice nahi de sakte."}
+{"id": "e37", "tag": "phone", "model": "eval40_c1", "reply": "ji Hina Malik, zero teen teen teen, ek ek ek do, do nau do nau. kis doctor se milna hai?"}
+{"id": "e38", "tag": "info", "model": "eval40_c1", "reply": "maaf kijiye, hum yahan x-ray ya ultrasound nahi karte. iske liye aap qareebi hospital chalta hain."}
+{"id": "e39", "tag": "complaint", "model": "eval40_c1", "reply": "maaf kijiye sahab, main abhi reception se baat karwa deta hoon taake aap ko masla nazar aaye."}
+{"id": "e40", "tag": "greet", "model": "eval40_c1", "reply": "walaikum assalam, Shifa Family Clinic, main aap ki kya madad kar sakta hoon?"}

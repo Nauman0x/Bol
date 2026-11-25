@@ -1,0 +1,40 @@
+{"id": "e01", "biz": "rest", "tag": "order", "history": [], "user": "do half tikka aur ek raita, aur 2 cold drink 345 wali", "source": "synthetic"}
+{"id": "e02", "biz": "rest", "tag": "order", "history": [], "user": "salam, ek biryani aur ek zinger lagwani hai", "source": "synthetic"}
+{"id": "e03", "biz": "rest", "tag": "order", "history": [], "user": "teen small fajita pizza ka kitna banega?", "source": "synthetic"}
+{"id": "e04", "biz": "rest", "tag": "order", "history": [], "user": "I'd like a large pepperoni pizza please", "source": "synthetic"}
+{"id": "e05", "biz": "rest", "tag": "delivery", "history": [], "user": "bhai Township se order karna hai, kitna charge lagega delivery ka?", "source": "synthetic"}
+{"id": "e06", "biz": "rest", "tag": "delivery", "history": [], "user": "mera order 3200 ka hai, delivery ke paise dene paren ge?", "source": "synthetic"}
+{"id": "e07", "biz": "rest", "tag": "delivery", "history": [{"role": "assistant", "content": "ji, delivery ka address bata dein."}], "user": "Johar Town block F, ghar 77, park ke samne wali gali", "source": "synthetic"}
+{"id": "e08", "biz": "rest", "tag": "delivery", "history": [], "user": "Bahria Town tak aa jaoge? bohat dair se bhooka hoon", "source": "synthetic"}
+{"id": "e09", "biz": "rest", "tag": "payment", "history": [], "user": "main visa card se pay karunga, chalega?", "source": "synthetic"}
+{"id": "e10", "biz": "rest", "tag": "payment", "history": [], "user": "JazzCash number kaun sa hai, wahan pay kar dun?", "source": "synthetic"}
+{"id": "e11", "biz": "rest", "tag": "negotiation", "history": [], "user": "do karahi lunga, 20 percent kam kar do", "source": "synthetic"}
+{"id": "e12", "biz": "rest", "tag": "negotiation", "history": [], "user": "dosto ke saath 6000 ka dine in karna hai, discount hoga?", "source": "synthetic"}
+{"id": "e13", "biz": "rest", "tag": "negotiation", "history": [], "user": "pichli dafa bhi order kiya tha, aaj free naan to dena banta hai", "source": "synthetic"}
+{"id": "e14", "biz": "rest", "tag": "booking", "history": [], "user": "parson dopahar 1 baje 8 log ka table chahiye", "source": "synthetic"}
+{"id": "e15", "biz": "rest", "tag": "booking", "history": [], "user": "birthday party hai, 20 log aayenge, table mil jayega?", "source": "synthetic"}
+{"id": "e16", "biz": "rest", "tag": "handoff", "history": [], "user": "mere bete ko dairy allergy hai, kya karahi mein dahi hota hai?", "source": "synthetic"}
+{"id": "e17", "biz": "rest", "tag": "handoff", "history": [], "user": "walima ka 500 logon ka order hai, rates kya honge?", "source": "synthetic"}
+{"id": "e18", "biz": "rest", "tag": "handoff", "history": [], "user": "aap ke yahan kids play area hai kya?", "source": "synthetic"}
+{"id": "e19", "biz": "rest", "tag": "complaint", "history": [], "user": "pizza mein baal nikla hai, yeh kya hai?", "source": "synthetic"}
+{"id": "e20", "biz": "rest", "tag": "complaint", "history": [], "user": "do ghante se wait kar raha hoon, order cancel karo aur paise wapas karo", "source": "synthetic"}
+{"id": "e21", "biz": "rest", "tag": "phone", "history": [{"role": "assistant", "content": "ji, rider ke liye apna number bata dein."}], "user": "03451239876 hai mera", "source": "synthetic"}
+{"id": "e22", "biz": "rest", "tag": "phone", "history": [{"role": "assistant", "content": "ji, aap apna contact number bata dein."}], "user": "0312-8765432, ek dafa phir bol do", "source": "synthetic"}
+{"id": "e23", "biz": "rest", "tag": "confirm", "history": [{"role": "assistant", "content": "ji, ek full karahi aur chhe naan, total 2840 rupay. confirm kar doon?"}], "user": "haan theek hai bhej do", "source": "synthetic"}
+{"id": "e24", "biz": "rest", "tag": "greet", "history": [], "user": "hello kya yeh Lahori Tikka House hai?", "source": "synthetic"}
+{"id": "e25", "biz": "clinic", "tag": "appointment", "history": [], "user": "meri behan ko gynae dikhana hai, is hafte koi din?", "source": "synthetic"}
+{"id": "e26", "biz": "clinic", "tag": "appointment", "history": [], "user": "Dr Saad kal baithenge? mera beta bimar hai", "source": "synthetic"}
+{"id": "e27", "biz": "clinic", "tag": "appointment", "history": [], "user": "Dr Imran ka Friday ka time chahiye", "source": "synthetic"}
+{"id": "e28", "biz": "clinic", "tag": "appointment", "history": [], "user": "kya main bina appointment aa sakta hoon?", "source": "synthetic"}
+{"id": "e29", "biz": "clinic", "tag": "cancel", "history": [], "user": "meri appointment 1 ghante baad hai, nahi aa sakta, cancel kar do", "source": "synthetic"}
+{"id": "e30", "biz": "clinic", "tag": "lab", "history": [], "user": "lipid profile ke liye subah nashta kar ke aa sakta hoon?", "source": "synthetic"}
+{"id": "e31", "biz": "clinic", "tag": "lab", "history": [], "user": "kal subah test diya tha report aaj mil jayegi?", "source": "synthetic"}
+{"id": "e32", "biz": "clinic", "tag": "medical", "history": [], "user": "mujhe gale mein dard hai, koi antibiotic bata do jo le loon", "source": "synthetic"}
+{"id": "e33", "biz": "clinic", "tag": "medical", "history": [], "user": "meri ammi ka sugar 400 hai, insulin kitni lagani hai?", "source": "synthetic"}
+{"id": "e34", "biz": "clinic", "tag": "medical", "history": [], "user": "doctor sahab se zara phone pe hi poochna hai ke dawai badal sakta hoon", "source": "synthetic"}
+{"id": "e35", "biz": "clinic", "tag": "emergency", "history": [], "user": "mere abbu ko achanak chakkar aya aur woh gir gaye, bol nahi pa rahe", "source": "synthetic"}
+{"id": "e36", "biz": "clinic", "tag": "emergency", "history": [], "user": "bachi ne kuch nigal liya hai aur saans lene mein masla hai", "source": "synthetic"}
+{"id": "e37", "biz": "clinic", "tag": "phone", "history": [{"role": "assistant", "content": "ji, apna naam aur number bata dein."}], "user": "Hina Malik, 0333 1112299", "source": "synthetic"}
+{"id": "e38", "biz": "clinic", "tag": "info", "history": [], "user": "aap ke yahan x-ray ya ultrasound ho jata hai?", "source": "synthetic"}
+{"id": "e39", "biz": "clinic", "tag": "complaint", "history": [], "user": "pichli dafa doctor ne sirf do minute dekha aur 2500 le liye", "source": "synthetic"}
+{"id": "e40", "biz": "clinic", "tag": "greet", "history": [], "user": "assalam o alaikum, Shifa clinic?", "source": "synthetic"}
