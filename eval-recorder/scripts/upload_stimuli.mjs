@@ -16,7 +16,8 @@ function loadEnv(path) {
 }
 loadEnv(new URL('../.env.local', import.meta.url));
 
-const dir = fileURLToPath(new URL('../../urdu-eval/data/listening/', import.meta.url));
+// STIMULI_DIR selects a stimulus set under urdu-eval/data (default: listening)
+const dir = fileURLToPath(new URL(`../../urdu-eval/data/${process.env.STIMULI_DIR || 'listening'}/`, import.meta.url));
 const tsv = readFileSync(join(dir, 'stimuli.tsv'), 'utf8').replace(/^﻿/, '').trim().split(/\r?\n/);
 const head = tsv[0].split('\t');
 const rows = tsv.slice(1).map((l) => Object.fromEntries(l.split('\t').map((v, i) => [head[i], v])));

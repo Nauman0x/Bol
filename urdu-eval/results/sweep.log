@@ -1,0 +1,24 @@
+[transformers] Passing `generation_config` together with generation-related arguments=({'no_repeat_ngram_size'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[transformers] Passing `generation_config` together with generation-related arguments=({'begin_suppress_tokens', 'suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+device: cpu
+tuning on 40 sentences (even positions of the 80 held-out)
+checkpoint            noise  noise_w     CER     WER
+epoch149_last         0.667      0.8   11.4%   28.5%
+epoch149_last         0.667      1.0   12.6%   29.5%
+epoch149_last           0.5      0.8    8.1%   24.0%
+epoch149_last           0.5      1.0   10.2%   24.0%
+epoch149_last           0.4      0.8    8.6%   23.8%
+epoch149_last           0.4      1.0    8.6%   22.8%
+epoch149_last           0.3      0.8    7.0%   20.5%
+epoch149_last           0.3      1.0    8.2%   22.5%
+epoch110_best_mel     0.667      0.8   12.4%   30.5%
+epoch110_best_mel     0.667      1.0   12.6%   30.2%
+epoch110_best_mel       0.5      0.8    7.7%   23.2%
+epoch110_best_mel       0.5      1.0    9.6%   25.0%
+epoch110_best_mel       0.4      0.8    8.3%   20.8%
+epoch110_best_mel       0.4      1.0    6.8%   22.0%
+epoch110_best_mel       0.3      0.8    7.7%   21.0%
+epoch110_best_mel       0.3      1.0    6.8%   20.2%
+
+best: {'ckpt': 'epoch110_best_mel', 'noise_scale': 0.4, 'noise_w': 1.0, 'cer': 0.06780660377358491, 'wer': 0.22}
+default: {'ckpt': 'epoch149_last', 'noise_scale': 0.667, 'noise_w': 0.8, 'cer': 0.11379716981132075, 'wer': 0.285}

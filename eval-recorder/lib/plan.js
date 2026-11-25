@@ -22,8 +22,9 @@ function shuffle(arr, rand) {
   return a;
 }
 
-const SYSTEMS = ['human', 'stock_fasih', 'bol_rasa_male', 'bol_rasa_female'];
-const PER_GROUP = { casual: 3, business: 3, numbers: 2, codeswitch: 2 }; // 10 sentences per rater
+// v2: Esha's held-out sentences. esha_real is the human ceiling (same speaker as esha_voice).
+const SYSTEMS = ['esha_real', 'esha_voice', 'bol_rasa_female', 'stock_fasih'];
+const PER_GROUP = { esha: 10 }; // 10 sentences per rater
 
 /** stimuli: [{id, sentence_id, system, grp}] -> trials: [{idx, kind, a, b?}] */
 export function buildPlan(raterId, stimuli) {
@@ -45,7 +46,7 @@ export function buildPlan(raterId, stimuli) {
   // Part 2: A/B preference on sentences not used above (falls back to any sentence).
   const spare = shuffle(complete.filter((sid) => !chosen.includes(sid)), rand);
   const pick = (i) => spare[i % Math.max(1, spare.length)] ?? chosen[i % chosen.length];
-  const pairs = [['bol_rasa_female', 'stock_fasih'], ['bol_rasa_male', 'stock_fasih'], ['bol_rasa_female', 'human']];
+  const pairs = [['esha_voice', 'stock_fasih'], ['esha_voice', 'bol_rasa_female'], ['esha_voice', 'esha_real']];
   const ab = pairs.map(([x, y], i) => {
     const sid = pick(i);
     const flip = rand() < 0.5;

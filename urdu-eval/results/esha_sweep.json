@@ -1,0 +1,131 @@
+{
+ "tune_set": "even positions of esha test.csv",
+ "best": {
+  "ckpt": "epoch110_best_mel",
+  "noise_scale": 0.4,
+  "noise_w": 1.0,
+  "cer": 0.06780660377358491,
+  "wer": 0.22
+ },
+ "default": {
+  "ckpt": "epoch149_last",
+  "noise_scale": 0.667,
+  "noise_w": 0.8,
+  "cer": 0.11379716981132075,
+  "wer": 0.285
+ },
+ "all": [
+  {
+   "ckpt": "epoch149_last",
+   "noise_scale": 0.667,
+   "noise_w": 0.8,
+   "cer": 0.11379716981132075,
+   "wer": 0.285
+  },
+  {
+   "ckpt": "epoch149_last",
+   "noise_scale": 0.667,
+   "noise_w": 1.0,
+   "cer": 0.12617924528301888,
+   "wer": 0.295
+  },
+  {
+   "ckpt": "epoch149_last",
+   "noise_scale": 0.5,
+   "noise_w": 0.8,
+   "cer": 0.08136792452830188,
+   "wer": 0.24
+  },
+  {
+   "ckpt": "epoch149_last",
+   "noise_scale": 0.5,
+   "noise_w": 1.0,
+   "cer": 0.10200471698113207,
+   "wer": 0.24
+  },
+  {
+   "ckpt": "epoch149_last",
+   "noise_scale": 0.4,
+   "noise_w": 0.8,
+   "cer": 0.08608490566037735,
+   "wer": 0.2375
+  },
+  {
+   "ckpt": "epoch149_last",
+   "noise_scale": 0.4,
+   "noise_w": 1.0,
+   "cer": 0.08608490566037735,
+   "wer": 0.2275
+  },
+  {
+   "ckpt": "epoch149_last",
+   "noise_scale": 0.3,
+   "noise_w": 0.8,
+   "cer": 0.07016509433962265,
+   "wer": 0.205
+  },
+  {
+   "ckpt": "epoch149_last",
+   "noise_scale": 0.3,
+   "noise_w": 1.0,
+   "cer": 0.08195754716981132,
+   "wer": 0.225
+  },
+  {
+   "ckpt": "epoch110_best_mel",
+   "noise_scale": 0.667,
+   "noise_w": 0.8,
+   "cer": 0.12382075471698113,
+   "wer": 0.305
+  },
+  {
+   "ckpt": "epoch110_best_mel",
+   "noise_scale": 0.667,
+   "noise_w": 1.0,
+   "cer": 0.12617924528301888,
+   "wer": 0.3025
+  },
+  {
+   "ckpt": "epoch110_best_mel",
+   "noise_scale": 0.5,
+   "noise_w": 0.8,
+   "cer": 0.07665094339622641,
+   "wer": 0.2325
+  },
+  {
+   "ckpt": "epoch110_best_mel",
+   "noise_scale": 0.5,
+   "noise_w": 1.0,
+   "cer": 0.09610849056603774,
+   "wer": 0.25
+  },
+  {
+   "ckpt": "epoch110_best_mel",
+   "noise_scale": 0.4,
+   "noise_w": 0.8,
+   "cer": 0.08313679245283019,
+   "wer": 0.2075
+  },
+  {
+   "ckpt": "epoch110_best_mel",
+   "noise_scale": 0.4,
+   "noise_w": 1.0,
+   "cer": 0.06780660377358491,
+   "wer": 0.22
+  },
+  {
+   "ckpt": "epoch110_best_mel",
+   "noise_scale": 0.3,
+   "noise_w": 0.8,
+   "cer": 0.07724056603773585,
+   "wer": 0.21
+  },
+  {
+   "ckpt": "epoch110_best_mel",
+   "noise_scale": 0.3,
+   "noise_w": 1.0,
+   "cer": 0.06839622641509434,
+   "wer": 0.2025
+  }
+ ]
+}

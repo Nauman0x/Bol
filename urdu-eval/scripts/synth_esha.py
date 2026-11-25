@@ -33,6 +33,10 @@ ESHA_WAVS = TTS / "data" / "esha" / "wavs"
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--ckpt", type=Path, default=TTS / "runs_esha/lightning_logs/version_2/checkpoints/last.ckpt")
+    ap.add_argument("--noise-scale", type=float, default=None, help="Esha voice only (default: voice config, 0.667)")
+    ap.add_argument("--noise-w", type=float, default=None, help="Esha voice only (default: voice config, 0.8)")
+    ap.add_argument("--half", choices=["all", "tune", "report"], default="all",
+                    help="tune = even positions (used to pick settings), report = odd positions (never tuned on)")
     args = ap.parse_args()
 
     items = []  # (id, text)
@@ -40,17 +44,21 @@ def main() -> None:
         name, _, text = line.partition("|")
         if text.strip():
             items.append((Path(name).stem, text.strip()))
+    items = {"all": items, "tune": items[0::2], "report": items[1::2]}[args.half]
     out_root = DATA / "esha"
     out_root.mkdir(exist_ok=True)
 
     # Esha's real recordings of the held-out sentences
     real = out_root / "esha_real"
-    real.mkdir(exist_ok=True)
+    shutil.rmtree(real, ignore_errors=True)
+    real.mkdir()
     for sid, _ in items:
         shutil.copyfile(ESHA_WAVS / f"{sid}.wav", real / f"{sid}.wav")
 
     systems = {
-        "esha_voice": [str(args.ckpt), "--config", str(TTS / "runs_esha/ur_PK-bol_esha-medium.onnx.json")],
+        "esha_voice": [str(args.ckpt), "--config", str(TTS / "runs_esha/ur_PK-bol_esha-medium.onnx.json"),
+                       *(["--noise-scale", str(args.noise_scale)] if args.noise_scale is not None else []),
+                       *(["--noise-w", str(args.noise_w)] if args.noise_w is not None else [])],
         "bol_rasa_female": [str(TTS / "export/ur_PK-bol_rasa_female-medium.onnx")],
         "stock_fasih": [str(TTS / "voices/ur/ur_PK/fasih/medium/ur_PK-fasih-medium.onnx")],
     }
